@@ -1,0 +1,92 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: diaply googleBooks
+**          Version : 7.2.0
+**          Created : 05-MAR-2008
+**      Orig Author : Mel Pemble
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+.googleBooks label
+{
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 5px;   
+}
+
+#data
+{
+   margin:5px;
+}
+
+.bookInfo p
+{
+   text-align:left;
+}
+
+.googleBooks
+{
+   margin:5px;
+}
+
+.thumbnail { float: left; width: 6em; border: 1px solid #999;
+margin: 1em 1em 1em 0em; padding: 5px; text-align: center;}
+.thumbnail img { border: 1px solid #aaa; }
+.thumbnail p { margin:0em 0em 0em 0em; }
+.clearboth { clear: both; }
+
+
+
+#googleBooksRow
+{
+   padding:0px;
+   margin:0px;
+   clear:both;
+}
+
+
+.bookinfo
+{
+   clear:both;
+   padding:0px;
+   margin:0px;
+}
+
+.bookinfo img 
+{
+   margin:0px;
+   padding:0px;
+   margin-left:5px;
+   border:2px solid #aeaeae;
+}
+
+.googleImage
+{
+   margin-right:5px;
+   margin-left:0px;
+   border:1px solid #111;
+   background: infobackground;
+   padding:4px;
+   float:left;
+}
+.bookInfo a
+{
+   
+}
+.bookInfo p
+{
+   margin:0px;
+   padding:0px;
+   padding-bottom:5px;
+   text-decoration:underline;
+}
+
+
+

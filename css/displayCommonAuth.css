@@ -1,0 +1,62 @@
+/* $Revision: 1.4.2.1 $ $Date: 2012/07/10 20:07:57 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: displayCommonAuth.css
+**          Version : 8.2.0
+**          Created : 23-JAN-2012
+**      Orig Author : Mel Pemble
+**    Last Modified : 23-JAN-2012 
+** Last Modified By : Mel Pemble
+*/
+
+
+
+.bibTags ul li
+{
+  FONT-SIZE: 14px;
+  padding-top: 5px;
+  width:auto;
+}
+
+.fieldLabelSpan
+{
+   FONT-WEIGHT: bold;
+   FONT-SIZE: 14px;
+   min-width: 190px;
+   float:left;
+   text-align: right;
+}
+
+.subfieldData
+{
+   display:table-cell;
+   margin-left: 0px;
+   padding-top: 1px;
+}
+
+
+
+
+
+
+
+
+
+.marcData p 
+{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  //float: left;
+  display: inline;
+
+}
+
+
+
+

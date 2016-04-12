@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Revision: 1.4.2.1 $ $Date: 2012/06/11 22:25:07 $ -->
+<!--
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+-->
+
+<!--
+**          Product : WebVoyage :: displaycfg
+**          Version : 7.1.0
+**          Created : 17-OCT-2007
+**      Orig Author : David Sellers
+**    Last Modified : 09-MAR-2009
+** Last Modified By : Mel Pemble
+
+-->
+
+<display>
+
+    <titleTags>
+        <displayTag field="130" indicator1="X" indicator2="X" subfield="aplskf"/>
+        <displayTag field="240" indicator1="X" indicator2="X" subfield="aplskf"/>
+        <displayTag field="245" indicator1="X" indicator2="X" subfield="ab"/>
+    </titleTags>
+
+
+<!--     <displayTags label="Database: " notFound="No information available">
+        <displayTag field="5000" />    </displayTags>
+ -->
+     <displayTags label="Main Author:">
+        <displayTag field="100" indicator1="X" indicator2="X" subfield="aqd"  />
+        <displayTag field="110" indicator1="X" indicator2="X" subfield="ab" />
+    </displayTags>
+    <displayTags label="Other Author(s):">
+        <displayTag field="700" indicator1="X" indicator2="X" subfield="aqd" />
+        <displayTag field="710" indicator1="X" indicator2="X" subfield="ab"  />
+    </displayTags>
+    <displayTags label="Conference Name:">
+        <displayTag field="111" indicator1="X" indicator2="X" subfield="acnd" />
+        <displayTag field="711" indicator1="X" indicator2="X" subfield="acnd" />
+    </displayTags>
+    <displayTags label="Title:">
+        <displayTag field="130" indicator1="X" indicator2="X" subfield="aplskfmnor" />
+        <displayTag field="240" indicator1="X" indicator2="X" subfield="aplskfmnor" preText="[" postText="]" />
+        <displayTag field="730" indicator1="X" indicator2="X" subfield="aplskfmnor" />
+        <displayTag field="245" indicator1="X" indicator2="X" subfield="abcfknps" />
+    </displayTags>
+
+    <displayTags label="Variant Title:">
+        <displayTag field="246" indicator1="X" indicator2="X" subfield="abfnp" />
+    </displayTags>
+    <displayTags label="Continues:">
+        <displayTag field="780" indicator1="0" indicator2="0" subfield="at" />
+        <displayTag field="780" indicator1="0" indicator2="1" subfield="at" />
+    </displayTags>
+    <displayTags label="Supersedes:">
+        <displayTag field="780" indicator1="0" indicator2="2" subfield="at" />
+        <displayTag field="780" indicator1="0" indicator2="3" subfield="at" />
+    </displayTags>
+    <displayTags label="Absorbed:">
+        <displayTag field="780" indicator1="0" indicator2="5" subfield="at" />
+        <displayTag field="780" indicator1="0" indicator2="6" subfield="at" />
+    </displayTags>
+    <displayTags label="Continued by:">
+        <displayTag field="785" indicator1="0" indicator2="0" subfield="at" />
+        <displayTag field="785" indicator1="0" indicator2="1" subfield="at" />
+    </displayTags>
+    <displayTags label="Superseded by:">
+        <displayTag field="785" indicator1="0" indicator2="2" subfield="at" />
+        <displayTag field="785" indicator1="0" indicator2="3" subfield="at" />
+    </displayTags>
+    <displayTags label="Absorbed by:">
+        <displayTag field="785" indicator1="0" indicator2="4" subfield="at" />
+        <displayTag field="785" indicator1="0" indicator2="5" subfield="at" />
+    </displayTags>
+    <displayTags label="Split into:">
+        <displayTag field="785" indicator1="0" indicator2="6" subfield="at" />
+    </displayTags>
+<!--
+    <displayTags label="Physical Description:">
+        <displayTag field="7107"/>
+    </displayTags>
+
+    <displayTags label="Includes:">
+        <displayTag field="7106"/>
+    </displayTags>
+-->
+    <displayTags label="Format:">
+        <displayTag field="7000"/>
+    </displayTags>
+
+    <displayTags label="Subject(s):">
+        <displayTag field="600" indicator1="X" indicator2="X" subfield="abcdefghkjlmnopqrstuvxyz" >
+            <subfield value="v" preText="--" />
+            <subfield value="x" preText="--" />
+            <subfield value="y" preText="--" />
+            <subfield value="z" preText="--" />
+        </displayTag>
+        <displayTag field="610" indicator1="X" indicator2="X" subfield="abcdefghklmnoprstuvxyz" >
+            <subfield value="v" preText="--" />
+            <subfield value="x" preText="--" />
+            <subfield value="y" preText="--" />
+            <subfield value="z" preText="--" />
+        </displayTag>
+        <displayTag field="611" indicator1="X" indicator2="X" subfield="acdefghklnpqstuvxyz" >
+            <subfield value="v" preText="--" />
+            <subfield value="x" preText="--" />
+            <subfield value="y" preText="--" />
+            <subfield value="z" preText="--" />
+        </displayTag>
+        <displayTag field="630" indicator1="X" indicator2="X" subfield="adfghklmnoprstvxyz" >
+            <subfield value="v" preText="--" />
+            <subfield value="x" preText="--" />
+            <subfield value="y" preText="--" />
+            <subfield value="z" preText="--" />
+        </displayTag>
+        <displayTag field="650" indicator1="X" indicator2="X" subfield="abcdvxzy" >
+            <subfield value="v" preText="--" />
+            <subfield value="x" preText="--" />
+            <subfield value="z" preText="--" />
+            <subfield value="y" preText="--" />
+        </displayTag>
+        <displayTag field="651" indicator1="X" indicator2="X" subfield="avxyz" >
+            <subfield value="v" preText="--" />
+            <subfield value="x" preText="--" />
+            <subfield value="y" preText="--" />
+            <subfield value="z" preText="--" />
+        </displayTag>
+        <displayTag field="655" indicator1="|" indicator2="7" subfield="avxyz" >
+            <subfield value="v" preText="--" />
+            <subfield value="x" preText="--" />
+            <subfield value="y" preText="--" />
+            <subfield value="z" preText="--" />
+        </displayTag>
+        <displayTag field="690" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="691" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="692" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="693" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="694" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="695" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="696" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="697" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="698" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="699" indicator1="X" indicator2="X" subfield="a" />
+    </displayTags>
+    <displayTags label="Publisher:">
+        <displayTag field="260" indicator1="X" indicator2="X" subfield="abc" />
+    </displayTags>
+    <displayTags label="Description:">
+        <displayTag field="250" indicator1="X" indicator2="X" subfield="ab" />
+        <displayTag field="254" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="255" indicator1="X" indicator2="X" subfield="abcde" />
+        <displayTag field="507" indicator1="X" indicator2="X" subfield="ab" />
+        <displayTag field="256" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="516" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="753" indicator1="X" indicator2="X" subfield="abc" />
+        <displayTag field="755" indicator1="X" indicator2="X" subfield="axyz" />
+        <displayTag field="300" indicator1="X" indicator2="X" subfield="abcefg" />
+        <displayTag field="306" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="310" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="515" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="340" indicator1="X" indicator2="X" subfield="abcdefh" />
+        <displayTag field="351" indicator1="X" indicator2="X" subfield="abc" />
+        <displayTag field="362" indicator1="X" indicator2="X" subfield="a" />
+    </displayTags>
+    <displayTags label="Series:">
+        <displayTag field="400" indicator1="X" indicator2="X" subfield="abdfklnptv" />
+        <displayTag field="410" indicator1="X" indicator2="X" subfield="abdfklnptv" />
+        <displayTag field="411" indicator1="X" indicator2="X" subfield="acdefklnpt" />
+        <displayTag field="440" indicator1="X" indicator2="X" subfield="anpv" />
+        <displayTag field="490" indicator1="X" indicator2="X" subfield="av" />
+    </displayTags>
+    <displayTags label="Notes:">
+        <displayTag field="500" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="501" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="502" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="504" indicator1="X" indicator2="X" subfield="ab" />
+        <displayTag field="506" indicator1="X" indicator2="X" subfield="abcde" />
+        <displayTag field="520" indicator1="X" indicator2="X" subfield="ab" />
+        <displayTag field="525" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="530" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="533" indicator1="X" indicator2="X" subfield="ae" />
+        <displayTag field="538" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="540" indicator1="X" indicator2="X" subfield="abcd" />
+        <displayTag field="545" indicator1="X" indicator2="X" subfield="ab" />
+        <displayTag field="546" indicator1="X" indicator2="X" subfield="ab" />
+        <displayTag field="555" indicator1="X" indicator2="X" subfield="ab" />
+        <displayTag field="590" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="591" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="592" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="593" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="594" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="595" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="596" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="597" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="598" indicator1="X" indicator2="X" subfield="a" />
+        <displayTag field="599" indicator1="X" indicator2="X" subfield="a" />
+    </displayTags>
+    <displayTags label="Indexed In:">
+        <displayTag field="510" indicator1="X" indicator2="X" subfield="ab" />
+    </displayTags>
+    <displayTags label="Original Language:">
+        <displayTag field="880" indicator1="X" indicator2="X" subfield="abc" />
+    </displayTags>
+    <displayTags label="Link:">
+        <displayTag field="856" indicator1="4" indicator2="X" subfield="z" />
+    </displayTags>
+    <displayTags label="URL:">
+        <displayTag field="856" indicator1="4" indicator2="X" subfield="u" />
+    </displayTags>
+<!--
+    <displayTags label="Control Number:">
+        <displayTag field="001"/>
+    </displayTags>
+-->
+    <displayTags label="Holdings Information: " notFound="No Data Available--Ask at Reference">
+    <displayTag field="9000" />    </displayTags>
+
+</display>
+
+

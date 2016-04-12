@@ -1,0 +1,75 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: searchLinkedCourses css
+**          Version : 7.2.0
+**          Created : 26-OCT-2007
+**      Orig Author : David Sellers 
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+#searchCRlocationInfo, #searchCRDropDowns, #searchCRInstructions
+{
+   padding: 10px 0px 10px 10px;
+}
+
+#fieldText
+{
+   FONT-SIZE: smaller;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   white-space: nowrap;
+   width: 98%;
+}
+
+#linkedCourseLinks 
+{
+   padding: 0px 0px 10px 25px;
+}
+
+#linkedCourseLinks #fieldLabel
+{
+   width: 100%;
+}
+
+.linkedCoursesList 
+{
+   padding: 0px 0px 0px 10px;
+}
+
+.linkedCoursesList span
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   white-space: nowrap;
+   width: 1%;
+}
+
+.linkedCoursesList ul
+{
+   list-style: none; 
+   padding: 0px 0px 0px 40px;
+   margin: 5px 0px 10px 0px;
+}
+
+#searchHTML 
+{
+   padding: 10px 0px 20px 10px;
+}
+
+

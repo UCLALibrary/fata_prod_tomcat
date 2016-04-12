@@ -1,0 +1,99 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: searchBasic css
+**          Version : 7.2.0
+**          Created : 30-OCT-2007
+**      Orig Author : Mel Pemble
+**    Last Modified : 21-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+
+/* searchAdvanced */
+
+#buildAdvancedSearch
+{
+   padding-top: 10px;
+}
+
+.searchAdvancedSearchMargin
+{
+	margin-left: 22px;
+}
+
+.searchAdvancedCriteriaMargin
+{
+	margin-right: 05px;
+}
+
+.searchAdvancedBlankMargin
+{
+	margin-left: 118px;
+}
+
+.searchAdvancedBlankMargin
+{
+	margin-left: 72px;
+}
+
+.searchAdvancedWithinMargin
+{
+	margin-left: 7px;
+}
+
+.searchAdvancedYearMargin
+{
+	margin-left: 38px;
+}
+
+.searchAdvancedToMargin
+{
+	margin-left: 3px;
+}
+
+
+.searchAdvancedInputs
+{
+	padding: 0px 10px 10px 10px;
+	text-align: left;
+}
+
+.searchAdvancedInputs .argument label
+{
+	display: none;
+}
+
+#searchAdvancedInputs
+{
+	padding: 0px 10px 10px 10px;
+	text-align: left;
+}
+
+#searchAdvancedInputs .argument label
+{
+   display: none;
+}
+
+.limitDiv
+{
+   clear: left;
+   margin: 0;
+   padding: 5px 0 6px 0;
+}
+
+.limitDiv label
+{
+   float: left;
+   padding-left:10px;
+   margin-left: 0;
+   width: 72px;
+}
+
+

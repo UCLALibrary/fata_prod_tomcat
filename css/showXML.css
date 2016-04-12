@@ -1,0 +1,41 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage
+**          Version : 7.2.0
+**          Created : 28-AUG-2007
+**      Orig Author : Mel Pemble
+**    Last Modified : 21-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+#showXmlLink a
+{
+   float:right;
+   padding:3px;
+   text-align:center;
+   display:block;
+   margin-top:26px;
+   margin-right:10px;
+   margin-bottom: 5px;
+   background: #DDD;   
+   border: 1px solid #444;
+   font-weight: bold;
+   color: #444;
+   text-decoration:none;
+}
+
+#showXmlLink a:hover
+{
+   background: #fff;
+   font-weight: bold;
+   color: #aaa;
+}
+
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Revision: 1.4.2.1 $ $Date: 2012/06/11 22:25:06 $ -->
+<!--
+**========================================================================
+**
+**          Copyright 2010-2012 Ex Libris (USA) Inc.
+**                          All Rights Reserved
+**
+**========================================================================
+-->
+
+<!--
+    This file is based upon XSL coding created by the University of Kansas
+-->
+
+<!--
+    This file is used to convert numeric values defined in MARC for month
+    and season, into chronological names.
+
+    The element/attribute names in this file are arbitrary, but
+    must match the XPath expression used to reference them from
+    the translateChron template in holdingsDisplay.xsl.
+
+    Additional languages may be added by creating new lang elements
+    and populating them with the appropriate chron elements:
+
+    1) lang id attribute = {language code from 008 field}
+    2) chron id attribute = {01-12 for months, 21-24 for seasons}
+    3) chron value = {chronological name to be displayed}
+-->
+
+<chron-values>
+    <lang id="SPA">
+        <chron id="1">enero</chron>
+        <chron id="2">feb.</chron>
+        <chron id="3">marzo</chron>
+        <chron id="4">abr.</chron>
+        <chron id="5">mayo</chron>
+        <chron id="6">jun.</chron>
+        <chron id="7">jul.</chron>
+        <chron id="8">agosto</chron>
+        <chron id="9">sept.</chron>
+        <chron id="10">oct.</chron>
+        <chron id="11">nov.</chron>
+        <chron id="12">dic.</chron>
+        <chron id="21">primavera</chron>
+        <chron id="22">verano</chron>
+        <chron id="23">otono</chron>
+        <chron id="24">invierno</chron>
+    </lang>
+    <lang id="POR">
+        <chron id="1">jan.</chron>
+        <chron id="2">fev.</chron>
+        <chron id="3">marco</chron>
+        <chron id="4">abril</chron>
+        <chron id="5">maio</chron>
+        <chron id="6">junho</chron>
+        <chron id="7">julho</chron>
+        <chron id="8">agosto</chron>
+        <chron id="9">set.</chron>
+        <chron id="10">out.</chron>
+        <chron id="11">nov.</chron>
+        <chron id="12">dez.</chron>
+        <chron id="21">primavera</chron>
+        <chron id="22">ver~ao</chron>
+        <chron id="23">outono</chron>
+        <chron id="24">inverno</chron>
+    </lang>
+    <lang id="ITA">
+        <chron id="1">genn.</chron>
+        <chron id="2">febbr.</chron>
+        <chron id="3">mar.</chron>
+        <chron id="4">apr.</chron>
+        <chron id="5">magg.</chron>
+        <chron id="6">giugno</chron>
+        <chron id="7">luglo</chron>
+        <chron id="8">ag.</chron>
+        <chron id="9">sett.</chron>
+        <chron id="10">ott.</chron>
+        <chron id="11">nov.</chron>
+        <chron id="12">dic.</chron>
+        <chron id="21">primavera</chron>
+        <chron id="22">estate</chron>
+        <chron id="23">autunno</chron>
+        <chron id="24">invierno</chron>
+    </lang>
+    <lang id="FRE">
+        <chron id="1">janv.</chron>
+        <chron id="2">fevr.</chron>
+        <chron id="3">mars</chron>
+        <chron id="4">avril</chron>
+        <chron id="5">mai</chron>
+        <chron id="6">juin</chron>
+        <chron id="7">juil.</chron>
+        <chron id="8">aout</chron>
+        <chron id="9">sept.</chron>
+        <chron id="10">oct.</chron>
+        <chron id="11">nov.</chron>
+        <chron id="12">dic.</chron>
+        <chron id="21">printemps</chron>
+        <chron id="22">ete</chron>
+        <chron id="23">automne</chron>
+        <chron id="24">hiver</chron>
+    </lang>
+    <lang id="GER">
+        <chron id="1">Jan.</chron>
+        <chron id="2">Feb.</chron>
+        <chron id="3">Marz</chron>
+        <chron id="4">Apr.</chron>
+        <chron id="5">Mai</chron>
+        <chron id="6">Juni</chron>
+        <chron id="7">Juli</chron>
+        <chron id="8">Aug.</chron>
+        <chron id="9">Sept.</chron>
+        <chron id="10">Okt.</chron>
+        <chron id="11">Nov.</chron>
+        <chron id="12">Dez.</chron>
+        <chron id="21">Fruhling</chron>
+        <chron id="22">Sommer</chron>
+        <chron id="23">Herbst</chron>
+        <chron id="24">Winter</chron>
+    </lang>
+    <lang id="RUS">
+        <chron id="1">ianv [Jan.]</chron>
+        <chron id="2">febr. [Feb.]</chron>
+        <chron id="3">mart [March]</chron>
+        <chron id="4">apr. [April]</chron>
+        <chron id="5">mai [May]</chron>
+        <chron id="6">iiun [June]</chron>
+        <chron id="7">iiul [July]</chron>
+        <chron id="8">avg. [Aug.]</chron>
+        <chron id="9">sent. [Sep.]</chron>
+        <chron id="10">okt. [Oct.]</chron>
+        <chron id="11">noiabr [Nov.]</chron>
+        <chron id="12">dek. [Dec.]</chron>
+        <chron id="21">vesna [spring]</chron>
+        <chron id="22">leto [summer]</chron>
+        <chron id="23">osen [fall]</chron>
+        <chron id="24">zima [winter]</chron>
+    </lang>
+    <lang id="POL">
+        <chron id="1">stycz.</chron>
+        <chron id="2">luty</chron>
+        <chron id="3">mar.</chron>
+        <chron id="4">kwiec.</chron>
+        <chron id="5">maj.</chron>
+        <chron id="6">czerw.</chron>
+        <chron id="7">lip.</chron>
+        <chron id="8">sierp.</chron>
+        <chron id="9">wrzes.</chron>
+        <chron id="10">pazdz.</chron>
+        <chron id="11">listop</chron>
+        <chron id="12">grudz.</chron>
+        <chron id="21">vesna</chron>
+        <chron id="22">lato</chron>
+        <chron id="23">jesien</chron>
+        <chron id="24">zima</chron>
+    </lang>
+    <lang id="ENG">
+        <chron id="1">Jan.</chron>
+        <chron id="2">Feb.</chron>
+        <chron id="3">Mar.</chron>
+        <chron id="4">Apr.</chron>
+        <chron id="5">May</chron>
+        <chron id="6">Jun.</chron>
+        <chron id="7">Jul.</chron>
+        <chron id="8">Aug.</chron>
+        <chron id="9">Sep.</chron>
+        <chron id="10">Oct.</chron>
+        <chron id="11">Nov.</chron>
+        <chron id="12">Dec.</chron>
+        <chron id="21">spring</chron>
+        <chron id="22">summer</chron>
+        <chron id="23">fall</chron>
+        <chron id="24">winter</chron>
+    </lang>
+    <lang id="ENG-b">
+        <chron id="1">Jan/Feb</chron>
+        <chron id="2">Mar/Apr</chron>
+        <chron id="3">May/Jun</chron>
+        <chron id="4">Jul/Aug</chron>
+        <chron id="5">Sep/Oct</chron>
+        <chron id="6">Nov/Dec</chron>
+    </lang>
+</chron-values>
+
+

@@ -1,0 +1,159 @@
+/* $Revision: 1.7 $ $Date: 2013/01/10 21:45:29 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2013 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: personalInfo.css
+**          Version : 7.2.0
+**          Created : 29-AUG-2007
+**      Orig Author : David Sellers
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+.fieldLabel
+{
+    FONT-SIZE: smaller;
+    FONT-WEIGHT: bold;
+	border: 0px;
+	margin: 0px;
+	padding: 1px;
+	padding-right: 5px;
+	text-align: left;
+	white-space: nowrap;
+	width: 1%;
+}
+
+.fieldText
+{
+    FONT-SIZE: smaller;
+	border: 0px;
+	margin: 0px;
+	padding: 1px;
+	text-align: left;
+	width: 98%;
+}
+
+.fieldLink
+{
+    FONT-SIZE: smaller;
+	margin: 0px;
+	border: 0px;
+	padding: 1px;
+	text-align: left;
+	width: 98%;
+}
+
+.lableValuePair
+{
+	margin: 0px 0px 0px 0px;
+	padding: 8px 0px 8px 0px;
+}
+
+#personalInfoBody
+{
+	background-color: #c9e5ff;
+	border-top: 2px solid #62b3ff;
+	border-bottom: 1px solid #62b3ff;
+	border-left: 0px none;
+	border-right: 0px none;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 25px 10px;
+	width: 540px;
+    overflow: hidden;
+}
+
+
+
+#myAccountLinks
+{
+   padding: 0px 0px 50px 0px;
+}
+
+#myAccountLinks ul
+{
+   float: left;
+   list-style: none;
+   margin: 0px 0px 0px -10px;
+   padding: 0px 0px 0px 0px;
+}
+
+#myAccountLinks li
+{
+    COLOR: #ffffff;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+	border-top: 1px none #013064;
+	border-bottom: 1px none #013064;
+	border-left: 0px none #013064;
+	border-right: 0px none #013064;
+	cursor: pointer;
+	display:block;
+	float:left;
+	margin: 0px;
+	white-space: nowrap;
+}
+
+#myAccountLinks a
+{
+   background:url("../images/btn_ltblue_bg.gif") no-repeat right top;
+   display:block;
+   float:left;
+   padding: 0px 6px 2px 0px;
+   margin: 0px 0px 0px 11px;
+   text-decoration:none;
+}
+
+#myAccountLinks a span
+{
+   background:url("../images/btn_ltblue_left.gif") no-repeat left top;
+   display:block;
+   float:left;
+   padding: 6px 15px 5px;
+   text-align:center;
+}
+
+
+
+#myAccountLinks a:link, #myAccountLinks a:visited, #myAccountLinks a:hover
+{
+    COLOR: #FFF;
+    TEXT-DECORATION: none;
+}
+
+
+#dataActiveAddress, #dataPermanentAddress
+{
+   float: left;
+   padding: 0px 0px 20px 0px;
+   width: 100%;
+}
+
+.addressLabel
+{
+   float:left;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 80px 0px;
+   width: 200px;
+}
+
+.accessibilityHeader
+{
+	COLOR: white;
+	float:left;
+   	position: relative;
+	right: 999em;
+	width: 0px;
+}
+.patronExpireDateMessage
+{
+	font-size: .75em;
+	font-style: normal;
+	color: red;
+}
+
+

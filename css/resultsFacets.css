@@ -1,0 +1,697 @@
+/* $Revision: 1.9 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+   
+**          Product : WebVoyage :: resultsFacets css
+**          Version : 8.2.0
+**          Created : 19-OCT-2007
+**      Orig Author : David Sellers
+**    Last Modified : 30-JAN-2012
+** Last Modified By : Mel Pemble
+*/
+   
+/* Results Header*/
+.resultsHeader 
+{
+   border: 0px;
+   margin: 2px;
+   padding: 2px;
+   width: auto; 
+}
+   
+.resultsHeader .resultsHeaderHeader span
+{
+   COLOR: #9f175e;
+   FONT-SIZE: larger;
+}
+   
+.resultsHeader .searchTerms span
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+}
+   
+.resultsHeader .actions ul
+{
+   list-style: none; 
+   margin: 0px 0px 0px 0px;
+   padding: 5px 0px 0px 0px;
+   overflow-y: hidden;
+}
+   
+.resultsHeader .actions li
+{
+   float: left;
+   position: relative;
+   margin: 0px 0px 0px 0px;
+   padding-right: 10px;
+}
+   
+.resultsHeader .hitsActionBtn
+{
+   color: #013064;
+   font-size: 12px;   
+   background-image: url('../images/btn_yellow_bg.gif'); 
+   background-color: #fefeca; 
+   float:left;
+   border: 0px none  #013064;
+   margin: 0px 0px 0px 0px; 
+   padding: 2px 5px 2px 5px;	
+   height: 14px; 
+   cursor: pointer;
+   white-space: nowrap;
+   text-decoration:none;    
+}
+/* End Results Header*/
+   
+   
+   
+   
+   
+/* Jump Bar */
+.jumpBarContent
+{
+   margin: 0;
+   padding: 0;
+   float: right;
+}
+#jumpBarNavTop,#jumpBarNavBottom
+{
+   display: block;
+   margin: 0;
+   padding: 0;
+   background-color: #ffffff; 
+   clear:both;
+   float:left;
+   width: 100%;
+}
+#jumpBarNavTop
+{
+   border-bottom: 1px solid #013064; 
+   margin-bottom: 2px;
+   background-color: #ffffff;    
+   clear:both;
+}
+ 
+#jumpBarNavBottom
+{
+   border-top: 1px solid #013064; 	
+   margin-top: 2px; 
+   background-color: #ffffff; 
+   overflow-x: hidden;
+}   
+
+#jumpBarFooter
+{
+   clear:both;
+}
+
+.jumpBar
+{
+   list-style: none; 
+   padding:0px;
+   margin: 0px;
+   float: right;
+}
+   
+.jumpBarTabLeft, .jumpBarMiddle, .jumpBarTabRight, .jumpBarTab
+{
+   float: left;
+   padding:0px;
+   margin:0px;
+}
+
+#jumpBarNavTop .jumpBarMiddle
+{
+   padding:2px;
+   margin:1px;
+}
+ 
+#jumpBarNavBottom .jumpBarMiddle
+{
+   padding:1px;
+   margin:1px;
+}
+   
+#jumpBarNavTop .jumpBarTabLeft,  #jumpBarNavTop .jumpBarTabRight
+{
+   padding: 5px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+}
+   
+#jumpBarNavTop .jumpBarTab
+{
+   padding: 5px 0px 0px 0px;
+   margin: 0px 20px 0px 0px;
+}
+   
+#jumpBarNavBottom .jumpBarTab
+{
+   padding: 0px 0px 0px 0px;
+   margin: 0px 20px 0px 0px;
+}
+   
+.jumpBarButton
+{
+   COLOR: #ffffff;
+   FONT-SIZE: 12px;
+   FONT-WEIGHT: bold;
+}
+   
+.jumpBarLabel
+{
+   font-size: smaller;
+}
+   
+.jumpBarLabelHighlight
+{
+   color: #9f175e;
+   font-size: smaller;
+   font-weight: bold;
+}
+   
+.jumpBarLink
+{
+   font-size: medium;
+font-weight: bold;
+   padding:2px;
+   margin:2px;
+}
+   
+.jumpBarLabelSelected
+{
+   padding:1px;
+   margin:0px;
+   color: #9f175e;
+   font-size: 12px;
+font-weight: bold;
+   border: 1px solid #013064;
+}
+
+.jumpBarPrevious, .jumpBarNext, .jumpBarTabLink
+{
+   
+   background-color: #013064; 
+   margin: 0px;
+   cursor: pointer;
+   white-space: nowrap;
+   text-align:center;
+}
+   
+.jumpBarPrevious:link, .jumpBarPrevious:visited, .jumpBarPrevious:hover, .jumpBarNext:link, .jumpBarNext:visited, .jumpBarNext:hover, .jumpBarTabLink:link, .jumpBarTabLink:visited, .jumpBarTabLink:hover
+{
+   COLOR: #ffffff;
+   TEXT-DECORATION: none;
+}
+   
+.jumpBarEndCap
+{
+   background:url("../images/resnav_end.gif");
+   margin: 0px 0px 0px 0px;	
+   padding: 0px;
+}
+      
+.jumpBarPrevious
+{
+   margin: 0px 5px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+   
+.jumpBarNext 
+{
+   margin: 0px 0px 0px 5px;
+   padding: 0px 0px 0px 0px;
+}
+   
+.jumpBarTabLink 
+{
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+   
+#jumpBarNavTop .jumpBarPrevious, #jumpBarNavTop .jumpBarNext, #jumpBarNavTop .jumpBarTabLink  
+{
+   padding: 0px 0px 1px 0px;
+}
+   
+#jumpBarNavTop .jumpBarLeft     {background:url("../images/resnavtop_left.gif")  no-repeat left top;}
+#jumpBarNavTop .jumpBarRight    {background:url("../images/resnavtop_right.gif") no-repeat right top;}
+#jumpBarNavBottom .jumpBarLeft  {background:url("../images/resnavbtm_left.gif")  no-repeat left bottom;}
+#jumpBarNavBottom .jumpBarRight {background:url("../images/resnavbtm_right.gif") no-repeat right bottom;}
+   
+.jumpBarLeft, .jumpBarRight
+{
+   margin: 0px 0px 0px 0px;	
+   padding: 0px 0px 0px 0px;
+   height: 18px; 	
+   width: 4px;	
+}
+   
+.jumpBarArrowRight {background:url("../images/resnav_arrow_right.gif")  no-repeat center;}
+.jumpBarArrowLeft  {background:url("../images/resnav_arrow_left.gif")   no-repeat center;}
+.jumpBarArrowRight, .jumpBarArrowLeft
+{
+   border: 0px;
+   margin: 0px 0px 0px 0px;	
+   padding: 0px 7px 0px 7px;
+   height: 7px;	
+   width: 4px;
+}
+
+.jumpBarMiddle .current, .jumpBarMiddle .totalHits
+{
+   color: #9f175e;
+   font-size: smaller;
+   font-weight: bold;
+}
+
+.jumpBarMiddle .separator
+{
+   font-size: smaller;
+   margin: 0px 0px 0px 0px;	
+   padding: 0px 3.5px 0px 3.5px;
+}
+/* End Jump Bar */
+   
+   
+   
+   
+   
+   
+/* Browse Bar */
+   
+/* Hack to keep filter bar from flowing into the result list */
+#browseHeaderTop,#browseHeaderbottom
+{
+   overflow:hidden;
+   clear:both;
+   margin: 0px;
+   padding:0px;
+   float:left;
+   width: 100%;
+}
+  
+#browseHeaderbottom ul
+{
+   list-style: none; 
+   padding: 0px 0px 0px 50px;
+   margin: 0px 0px 0px 0px;
+}
+   
+#browseHeaderbottom li
+{
+   float: left; 
+   padding: 6px 0px 0px 0px;
+}
+   
+#browseHeaderTop ul
+{
+   list-style: none; 
+   padding: 0px 0px 0px 50px;
+   margin: 0px 0px 0px 0px;
+   
+}
+   
+#browseHeaderTop li
+{
+   float: left; 
+   padding: 6px 0px 0px 0px;
+}
+   
+#browseHeaderTop .browseHeaderNoImage
+{
+   FONT-SIZE: smaller;
+   background-color: #c9e5ff; 
+   
+   padding: 0px 0px 30px 0px;
+   margin: 0px 0px 0px 0px;
+   
+   border-right: 1px solid #c9e5ff;	
+}
+   
+#browseHeaderbottom .browseHeaderNoImage
+{
+   FONT-SIZE: smaller;
+   background-color: #c9e5ff; 
+   
+   padding: 0px 0px 30px 0px;
+   margin: 0px 0px 0px 0px;
+   
+   border-right: 1px solid #c9e5ff;	
+}
+
+.browseHeaderNoImage
+{
+background-image: none;
+background-repeat: no-repeat;
+}
+
+#browseHeaderTop .browseHeader
+{
+   FONT-SIZE: smaller;   
+   background:url("../images/line_corner.gif") no-repeat left top;
+   background-color: #c9e5ff; 
+   
+   padding: 0px 0px 30px 0px;
+   margin: 0px 0px 0px 0px;
+   
+   border-right: 1px solid #c9e5ff;
+}
+   
+#browseHeaderbottom .browseHeader
+{
+   FONT-SIZE: smaller;
+   background:url("../images/line_corner_btm.gif") no-repeat left top;
+   background-color: #c9e5ff; 
+   
+   padding: 0px 0px 30px 0px;
+   margin: 0px 0px 0px 0px;
+   
+   border-right: 1px solid #c9e5ff;
+}
+
+   
+.browseBarRecCount, .browseBarSortBy
+{
+   margin: 5px 0px 0px 0px; 
+   padding: 0px 10px 0px 0px;
+   float: right;
+}
+   
+.browseBarSortBy input
+{
+   cursor:pointer;
+   border: 3px double #999999;
+   border-top-color: #CCCCCC;
+   border-left-color: #CCCCCC;
+   padding: 0.25em;
+   background-color: #eee;
+   background-repeat: repeat-x;
+   color: #333333;
+   font-size: 75%;
+   font-weight: bold;
+   padding: 1px 5px 1px 5px;
+   margin-bottom:1px;
+}
+.browseBarSortBy input:hover
+{
+   cursor:pointer;
+   border: 3px double #999999;
+   border-top-color: #eee;
+   border-left-color: #eee;
+   padding: 0.25em;
+   background-color: #333;
+   background-repeat: repeat-x;
+   color: #ccc;
+   font-size: 75%;
+   font-weight: bold;
+   padding: 1px 5px 1px 5px;
+   margin-bottom:1px;
+}
+   
+.browseBarRecCount  select, .browseBarSortBy Select
+{
+   margin: 0px 5px 0px 5px; 
+   padding: 0px 0px 0px 0px;
+   
+}
+   
+.browseBarRecCount label, .browseBarSortBy label
+{
+   FONT-WEIGHT: bold;
+}
+/* End Browse Bar */
+
+   
+/* Results */
+
+
+#theResults
+{
+   overflow-y: hidden;	
+   overflow-x: hidden;
+   clear:both;
+   float: left;
+   width: 100%;
+}   
+
+.oddRow
+{
+   background-image:url(../images/checkbox_bg.gif); 
+   background-repeat:repeat-y;
+   clear:both;
+   float:left;
+}
+
+.evenRowNoBox
+{
+   background-color: #EBEBEB; 
+}
+   
+.evenRow
+{
+   clear:both;
+   background-color: #EBEBEB; 
+   background-image:url(../images/checkbox_bg_highlight.gif); 
+   background-repeat:repeat-y;
+   float:left;
+}
+   
+.oddRow, .evenRow, .oddRowNoBox, .evenRowNoBox
+{
+   FONT-SIZE: smaller;
+   padding-top: 3px;	
+   padding-bottom: 3px;	
+   width: 100%;
+	
+}
+   
+.oddRow .resultListCheckBox, .evenRow .resultListCheckBox
+{
+   /*padding: 0px;
+   margin: 0px 0px 0px 22px;*/
+   padding: 1px 10px 25px 10px;   
+   margin: 0px 0px 0px 7px;
+   float: left;
+   border: 0px solid black;
+   width: auto;
+}
+
+#resultList
+{
+   width:79%;
+   float: left;
+}  
+
+#resultListAuth
+{
+   width:100%;
+   float: left;
+}  
+.resultListIcon
+{
+   padding: 2px;
+   margin: 0px 0px 0px 2px;
+   float: left;
+}
+   
+.resultListTextCell div a
+{
+   FONT-WEIGHT: bold;
+}
+   
+.resultListTextCell
+{
+   padding-top: 2px;
+   padding-right: 2px;
+   padding-bottom: 2px;
+   padding-left: 2px;
+   margin-top: 0px;
+   margin-right: 0px;
+   margin-bottom: 0px;
+   margin-left: 3px;
+   float: left;
+   width: 90%;
+   overflow-y: hidden;	
+   overflow-x: hidden;	
+}
+   
+.resultListCoverImageCell
+{  
+   overflow-y: hidden;	
+   overflow-x: hidden;	
+}
+   
+   
+.resultListCoverImage
+{
+   margin: 3px;
+   border: 0px;
+}
+   
+.available
+{
+   background-image:url(../images/icon_available.gif); 
+   width: 18px;	
+   height: 18px;
+   float: left;
+   margin-right: 5px;
+}
+   
+.notAvailable
+{
+   background-image:url(../images/icon_notavailable.gif); 
+   width: 18px;	
+   height: 18px;
+   float: left;
+   margin-right: 5px;
+}
+   
+.databaseName
+{
+   padding-top: 2px;
+}
+/* End Results */
+   
+   
+
+
+/* Course Reserve Results Search Terms */
+.crSearch
+{
+   FONT-SIZE: smaller;   
+}
+
+.crSearch .label
+{
+   FONT-WEIGHT: bold;
+   margin: 0px 0px 0px 0px; 
+   padding: 0px 0px 0px 0px;
+}
+
+.crSearch .value
+{
+   margin: 0px 0px 0px 0px; 
+   padding: 0px 25px 0px 0px;
+}
+/* End Course Reserve Results Search Terms */
+
+
+
+
+
+
+
+#fieldLabel
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   white-space: nowrap;
+   width: 1%;
+}
+   
+#fieldText
+{
+   FONT-SIZE: smaller;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   white-space: nowrap;
+   width: 98%;
+}
+   
+ 
+
+   
+   
+/* Inputs & Input Images */
+.yellowBtn
+{
+   float:left;
+   background-image: url('../images/btn_yellow_bg.gif'); 
+   
+   margin: 0px 0px 0px 0px; 
+   padding: 0px 5px 2px 5px;	
+
+   FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;   
+   FONT-SIZE: 12px;   
+   color: #013064;
+   background-color: #fefeca; 
+   border: 0px none  #013064;
+   height: 18px; 
+   cursor: pointer;
+   white-space: nowrap;   
+   
+   
+}
+   
+.yellowBtnLeft
+{
+   background:url("../images/btn_yellow_left.gif") no-repeat right top;
+   float:left;	
+   margin: 0px 0px 0px 0px; 
+   padding: 0px 0px 0px 0px;
+   height: 18px; 
+   width: 4px;
+   
+}
+   
+.yellowBtnRight
+{
+   background:url("../images/btn_yellow_right.gif") no-repeat left top;
+   float:left;	
+   margin: 0px 0px 0px 0px; 
+   padding: 0px 0px 0px 0px;
+   height: 18px;    
+   width: 4px;
+}
+   
+.horzLine
+{
+   background:url("../images/line_middle.gif") no-repeat center;
+   float:left;	
+   margin: 0px 0px 0px 0px; 
+   padding: 0px 0px 0px 0px;
+   height: 18px; 
+   width: 8px; 
+}
+   
+.endLine
+{
+   background:url("../images/line_end.gif") no-repeat center;
+   float:left;	
+   margin: 0px 0px 0px 0px; 
+   padding: 0px 0px 0px 0px;
+   height: 18px; 
+   width: 20px; 
+}
+   
+.selectChkBox
+{
+   padding: 0px 0px 0px 15px;
+   margin: 0px;
+   white-space: nowrap;
+   width: 1%;
+}
+   
+.selectChkBox .fieldBold
+{
+   FONT-WEIGHT: bold;
+}
+
+#linkFloater	{float:left; height:50%; margin-top:15px;}
+#linkContent	{clear:both; height:0px; position:relative;}
+
+

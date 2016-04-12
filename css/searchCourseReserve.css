@@ -1,0 +1,86 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: searchCourseReserve css
+**          Version : 7.2.0
+**          Created : 24-OCT-2007
+**      Orig Author : David Sellers
+**    Last Modified : 17-SEP-2009
+** Last Modified By : Mel Pemble
+*/
+
+
+#searchCRButtons
+{ 
+   text-align: right; 
+   margin:0px 20px 20px 0px
+}
+
+#searchCRButtons a
+{
+   background:url("../images/icon_srchtips.gif") no-repeat left top;
+   padding:0px 0px 10px 20px ;
+   margin: 0px 0px 3px 100px;
+   FONT-SIZE: xx-small
+}
+
+#searchCRButtons input
+{  
+   margin:0px 0px 0px 10px ;
+}
+
+#fieldLabel
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   white-space: nowrap;
+   width: 1%;
+}
+
+#fieldText
+{
+   FONT-SIZE: smaller;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   white-space: nowrap;
+   width: 98%;
+}
+
+#searchCRlocationInfo, #searchCRDropDowns, #searchCRInstructions
+{
+   padding: 10px 0px 10px 6px;
+}
+
+#searchCRDropDowns label
+{
+   white-space: nowrap;
+   padding: 1px 1px 1px 1px;
+   margin: 3px 5px 1px 1px;
+   text-align: right; 
+   width: 120px;
+   float: left;
+}
+
+#searchCRDropDowns select
+{
+   padding: 1px 1px 1px 1px;
+   margin: 1px 1px 5px 1px;
+   float: none;
+}
+
+
+

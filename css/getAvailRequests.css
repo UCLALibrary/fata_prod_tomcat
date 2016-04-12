@@ -1,0 +1,56 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+   
+**          Product : WebVoyage :: getAvailRequests css
+**          Version : 7.2.0
+**          Created : 12-NOV-2007
+**      Orig Author : Mel Pemble
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+#requestNavigation
+{
+   padding:10px 5px 10px 30px;
+   margin:5px 0px 0px 0px;
+   background-color:#eed;
+   border: 1px solid #455;
+   width: 600px;
+}
+
+#requestNavigation li
+{
+   list-style-type: disc;
+   padding: 5px;
+}
+
+#requestNavigation li:hover
+{
+   list-style-type: circle;
+}
+#requestNavigation a:hover
+{
+   text-decoration: none;
+   color:#040;
+}
+
+#requestNavigation .requestPreText
+{
+
+}
+#requestNavigation .requestLinkText
+{
+
+}
+#requestNavigation span.requestPostText
+{
+   margin-left: 10px;
+}
+
+

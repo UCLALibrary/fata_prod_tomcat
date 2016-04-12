@@ -1,0 +1,123 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: printRecordDialog css
+**          Version : 7.2.0
+**          Created : 29-OCT-2007
+**      Orig Author : Scott Morgan
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+.bibliographicData
+{
+   padding-left: 20px;
+}
+
+.bibTitle 
+{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px; 
+}
+
+.bibTitle p 
+{
+   font-size: larger;
+   font-weight: bold;
+}
+
+.bold 
+{
+   width: 25%;
+   min-width: 200px;
+   float: left;
+}
+
+.notbold
+{
+   display:inline;	
+}
+
+.bibTags ul
+{
+   list-style: none;
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;   
+}
+
+.bibTag
+{
+   padding: 3px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+   clear:both;
+}
+
+.evenHoldingsRow,.oddHoldingsRow
+{
+   clear:both;
+   float:left;
+   padding-bottom:15px;
+}
+
+.fieldLabel
+{
+   clear:both;
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: right;
+   white-space: nowrap;
+   width:150px;
+   float:left;
+}
+
+.fieldData
+{
+   FONT-SIZE: smaller;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   float:left;
+   width:65%;
+}
+
+h2.nav,h2.navFooter
+{
+   position: absolute;
+   left: -200em;
+}
+h3
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   margin-left:155px;
+}
+
+/*
+.textHeading
+{
+	font-weight: bold;
+	text-indent: 20px;
+}
+
+
+.text
+{
+ text-indent: 20px;
+}
+
+*/
+
+
+

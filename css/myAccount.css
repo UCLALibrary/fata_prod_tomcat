@@ -1,0 +1,685 @@
+/* $Revision: 1.10 $ $Date: 2013/01/10 21:45:27 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2013 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: myAccount.css
+**          Version : 9.0.0
+**          Created : 13-SEP-2007
+**      Orig Author : David Sellers
+**    Last Modified : 27-JUL-2012
+** Last Modified By : Mel Pemble
+*/
+#myAccount{
+   clear: both;
+   width: 100%;
+}
+
+#pageLinks,#renew,#requests
+{
+   clear: both;
+}
+
+
+
+.btnYellow
+{
+   float:left;
+   margin: 2px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+
+.bottomLinks .btnYellow
+{
+   margin: -3px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+
+#imageBtnYellowLeft
+{
+   background:url("../images/btn_yellow_left.gif") no-repeat right top;
+   float:left;
+   margin: 0px 0px 0px 0px;
+   padding: 2px 0px 0px 1px;
+}
+
+.btnYellow a
+{
+   COLOR: #013064;
+   FONT-SIZE: 12px;
+   background-color: #fefeca;
+   background-image: url('../images/btn_yellow_bg.gif');
+   background-repeat: repeat-x;
+   height: 17px;
+   cursor: pointer;
+   margin: 0px;
+   white-space: nowrap;
+   margin: 0px 0px 0px 0px;
+   padding: 1px 4px 0px 4px;
+   float:left;
+}
+
+#imageBtnYellowRight
+{
+   background:url("../images/btn_yellow_right.gif") no-repeat right top;
+   float:left;
+   margin: 0px 0px 0px 0px;
+   padding: 2px 0px 0px 1px;
+}
+
+.imageLineEnd
+{
+   background:url("../images/line_end.gif") no-repeat right top;
+   float:left;
+   width: 20px;
+   margin: 1px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+
+.menu
+{
+   float: right;
+   clear: both;
+   border: 1px solid #62B3FF;
+   background-color: #F0F6FB;
+   padding: 5px;
+}
+
+.subTitle
+{
+   COLOR: #013064;
+   FONT-SIZE: larger;
+}
+
+#availableRequests
+{
+   border: 1px solid #62B3FF;
+   background-color: #c9e5ff;
+}
+
+#availableRequests #tableAvailableRequests
+{
+   background-color: #c9e5ff;
+}
+
+#availableRequests th
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   background-color: #c9e5ff;
+   border-top: 1px solid #62b3ff;
+   border-bottom: 1px solid #62b3ff;
+   border-left: 1px solid #62b3ff;
+}
+
+#availableRequests ul li
+{
+   float: left;
+}
+
+#availableRequests ul
+{
+   list-style:none;
+   FONT-SIZE: smaller
+}
+
+#availableRequests table
+{
+   clear: left;
+   width: 100%;
+   /*
+   border-spacing: 0px 0px;
+   cellspacing: 0px;
+   cellpadding: 0px;
+   */
+}
+
+#availableRequests th#headerCheck
+{
+   /** ff displays border for empty cell **/
+   border: 0px;
+}
+
+#availableRequests tr#row
+{
+   vertical-align: top;
+   background-color: #FFFFFF;
+}
+
+#availableRequests tr#rowHighlight
+{
+   vertical-align: top;
+   background-color: #EBEBEB;
+}
+
+#availableRequests td#data
+{
+   FONT-SIZE: smaller;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   border-bottom: 1px solid #62b3ff;
+   border-left: 1px solid #62b3ff;
+}
+
+#checkfield
+{
+   FONT-WEIGHT: bold;
+   padding: 1px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   width: 98%;
+}
+
+.subTitleWarning
+{
+   COLOR: #FF0000;
+   FONT-WEIGHT: bold
+}
+
+#myAccountLinks
+{
+   padding: 0px 0px 50px 0px;
+}
+
+#myAccountLinks ul
+{
+   float: left;
+   list-style: none;
+   margin: 0px 0px 0px -10px;
+   padding: 0px 0px 0px 0px;
+}
+
+#myAccountLinks li
+{
+   COLOR: #ffffff;
+   FONT-SIZE: 12px;
+   FONT-WEIGHT: bold;
+   border-top: 1px none #013064;
+   border-bottom: 1px none #013064;
+   border-left: 0px none #013064;
+   border-right: 0px none #013064;
+   cursor: pointer;
+   margin: 0px;
+   white-space: nowrap;
+   float:left;
+   display:block;
+}
+
+#myAccountLinks a
+{
+   text-decoration:none;
+   display:block;
+   background:url("../images/btn_ltblue_bg.gif") no-repeat right top;
+   padding: 0px 6px 2px 0px;
+   margin: 0px 0px 0px 11px;
+   float:left;
+}
+
+#myAccountLinks a span
+{
+   float:left;
+   background:url("../images/btn_ltblue_left.gif") no-repeat left top;
+   padding: 6px 15px 5px;
+   text-align:center;
+   display:block;
+}
+
+#myAccountLinks a:link, #myAccountLinks a:visited, #myAccountLinks a:hover
+{
+   COLOR: #FFF;
+   TEXT-DECORATION: none;
+   cursor:pointer;
+}
+
+.tableCell
+{
+   FONT-SIZE: smaller;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   border-bottom: 1px solid #62b3ff;
+}
+
+.tableCell .bold
+{
+   font-weight: bold;
+}
+
+#tableBlocks .tableCell, #tableFinesFees .tableCell, #tableDemerits .tableCell
+{
+   border-right: 1px solid #62b3ff;
+}
+
+#tableBlocks, #tableFinesFees, #tableDemerits
+{
+   border: 1px solid red;
+   width: 100%;
+}
+
+#tableChargedItems, #tablePendingReq, #tableAvailable, #tableUpcomingBookingsReq
+{
+   width: 100%;
+}
+
+
+#tableCellHeading, .tableHeadingRowFinesFees th, #tableHeadingRowDemerits th
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   background-color: #c9e5ff;
+   border-bottom: 1px solid #62b3ff;
+   border-right: 1px solid #62b3ff;
+   /*
+   scope: col;
+   align: left;
+   */
+   text-align: inherit;
+}
+
+.resultListRow
+{
+   background-color: #FFF;
+}
+
+.resultListRowHighlight
+{
+   background-color: #EBEBEB;
+}
+
+.tableDisplay li
+{
+   float: left;
+}
+
+.tableDisplay ul
+{
+   list-style:none;
+   FONT-SIZE: smaller
+}
+
+.headerCheckbox, #chargedHeaderCheckbox, #headerPendingCheckbox, #headerCheckboxBooking
+{
+   background-color: #c9e5ff;
+   background-image:url(../images/line_side.gif);
+   background-repeat:repeat-y;
+}
+
+
+
+.resultListRowHighlight .checkbox
+{
+   background-image:url(../images/checkbox_bg_highlight.gif);
+   background-repeat:repeat-y;
+   width: 1%;
+   padding-left: 20px;
+   padding-right: 17px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+}
+
+.topLinks, .bottomLinks
+{
+   padding: 0px 0px 10px 0px;
+   margin: -5px 0px 0px -15px;
+}
+
+/*
+#cellFeeDate { width: 15%; }
+#cellFeeItem { width: 80%; }
+#cellFeeType { width: 2%; }
+#cellFeeAmount { width: 1%; }
+#cellFeePayment { width: 1%; }
+#cellFeeBalance { width: 1%; }
+*/
+
+#cellDemeritDate  { width: auto; }
+#cellDemeritLoc { width: auto; }
+#cellDemeritItem { width: auto; }
+#cellDemeritType { width: auto; }
+#cellDemeritDemerits { width: auto; }
+#cellDemeritPosting { width: auto; }
+#cellDemeritBalance { width: auto; }
+
+#cellChargedItem , #cellChargedType , #cellChargedStatus, #cellChargedDueDate, .cellChargedItem
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   background-color: #c9e5ff;
+   /*
+   scope: col;
+   align: left;
+   border-bottom: 1px solid #62b3ff;
+   */
+   border-top: 1px solid #62b3ff;
+}
+
+.cellChargedItem { width: auto; }
+#cellChargedType { width: auto; }
+#cellChargedStatus { width: auto; }
+#cellChargedDueDate { width: auto; }
+
+#cellAvailableItem , #cellAvailableDB, #cellAvailableExpires, #cellAvailablePickupLoc {
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   background-color: #c9e5ff;
+   /*
+   scope: col;
+   align: left;
+   */
+   border-bottom: 1px solid #62b3ff;
+   border-top: 1px solid #62b3ff;
+}
+
+#cellAvailableItem { width: auto; }
+#cellAvailableDB { width: auto; }
+#cellAvailablePickupLoc { width: auto; }
+#cellAvailableExpires    { width: auto; }
+
+
+
+#cellRequestItem , #cellRequestItem, #cellRequestDB, #cellRequestStatus, #cellRequestHoldExp, #cellRequestPickUp, #cellRequestNoFillReason, #cellRequestReplyNote {
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   background-color: #c9e5ff;
+   /*
+   scope: col;
+   align: left;
+   */
+   border-bottom: 1px solid #62b3ff;
+   border-top: 1px solid #62b3ff;
+}
+
+#cellRequestNoFillReason { width: auto; }
+#cellRequestReplyNote { width: auto; }
+#cellRequestItem { width: auto; }
+#cellRequestPickUp { width: auto; }
+#cellRequestDB { width: auto; }
+#cellRequestStatus { width: auto; }
+#cellRequestHoldExp { width: auto; }
+
+#cellStyle {
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   background-color: #c9e5ff;
+   /*
+   scope: col;
+   align: left;
+   */
+   border-bottom: 1px solid #62b3ff;
+   border-top: 1px solid #62b3ff;
+}
+
+#cellStartTime, #cellEndTime, #cellConfirmationNumber, #cellBookingType, #cellRoom, #cellEquipmentCount, #cellItemCount
+{
+    background-color:#C9E5FF;
+    border-bottom:1px solid #62B3FF;
+    border-top:1px solid #62B3FF;
+    border-left:1px solid #62B3FF;
+    font-size:smaller;
+    font-weight:bold;
+    padding:6px 3px;
+}
+
+
+
+#cellStartTime { width: auto; }
+#cellEndTime { width: auto; }
+#cellConfirmationNumber { width: auto; }
+#cellBookingType { width: auto; }
+#cellRoom { width: auto; }
+#cellEquipmentCount { width: auto; }
+#cellItemCount { width: auto; }
+
+
+
+.tableDisplay
+{
+   border: 1px solid #62B3FF;
+   background-color: #c9e5ff;
+   padding: 0px 0px 0px 0px;
+   overflow-y: hidden;
+   overflow-x: hidden;
+}
+
+#yourItems
+{
+   font-size: smaller;
+}
+
+#tableChargedItems th,
+#tableAvailable th,
+#tablePendingReq th,
+#tableUpcomingBookingsReq th
+{
+   border-left: 1px solid #62b3ff;
+   text-align: inherit;
+}
+
+#tableAvailable th,
+#tablePendingReq th,
+{
+   width: auto;
+}
+
+#tableChargedItems,
+#tableAvailable,
+#tablePendingReq,
+#tableUpcomingBookingsReq
+{
+   margin: -1px 0px -1px -1px;
+   padding: 0px 0px 0px 0px;
+   text-align: inherit;
+}
+.tableCell
+{
+   border-left: 1px solid #62b3ff;
+   width: auto;
+}
+.resultListRow .checkbox
+{
+   background-image:url(../images/checkbox_bg.gif);
+   background-repeat:repeat-y;
+   width: 1%;
+   padding-left: 20px;
+   padding-right: 17px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+}
+.checkbox
+{
+   border-style: none;
+   width: 50px;
+}
+
+/* Inputs & Input Images */
+.yellowBtn
+{
+   float:left;
+   background-image: url('../images/btn_yellow_bg.gif');
+   margin: 0px 0px 0px 0px;
+   padding: 0px 5px 2px 5px;
+   FONT-SIZE: 12px;
+   color: #013064;
+   background-color: #fefeca;
+   border: 0px none  #013064;
+   height: 18px;
+   cursor: pointer;
+   white-space: nowrap;
+}
+
+.yellowBtnLeft
+{
+   background:url("../images/btn_yellow_left.gif") no-repeat right top;
+   float:left;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   height: 18px;
+   width: 4px;
+}
+
+.yellowBtnRight
+{
+   background:url("../images/btn_yellow_right.gif") no-repeat left top;
+   float:left;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   height: 18px;
+   width: 4px;
+}
+
+.endLine
+{
+   background:url("../images/line_end.gif") no-repeat center;
+   float:left;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   height: 18px;
+   width: 20px;
+}
+
+.imageLineCorner
+{
+   background:url("../images/line_corner.gif") no-repeat right top;
+   padding: 0px 0px 0px 0px;
+   width: 30px;
+   height: 30px;
+   float:left;
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+}
+
+.imageLineCornerBottom
+{
+   background:url("../images/line_corner_btm.gif") no-repeat right top;
+   padding: 0px 0px 0px 0px;
+   width: 30px;
+   height: 30px;
+   float:left;
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+}
+
+.topLinks, .bottomLinks
+{
+   overflow-y: hidden;
+   overflow-x: hidden;
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+}
+
+.tableLinksBottom, .tableLinksTop {
+
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 26px;
+
+}
+
+.tableCancelLink
+{
+   padding: 0px;
+   margin: 0px;
+}
+
+div.yellowButton
+{
+   float: left;
+   padding: 6px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+}
+
+.selectChkBox
+{
+   FONT-WEIGHT: bold;
+   padding: 6px 0px 0px 10px;
+   margin: 0px 0px 0px 0px;
+}
+
+.accessibilityHeader
+{
+   width: 0px;
+   float:left;
+   COLOR: white;
+   position: relative;
+   right: 999em;
+}
+
+.horzLine
+{
+   background:url("../images/line_middle.gif") no-repeat center;
+   float:left;
+   width: 8px;
+   margin: 0px 0px 0px 0px;
+   padding: 3px 0px 0px 0px;
+}
+
+/* One of more items fail to renew reason */
+.renewFailReason
+{
+   FONT-SIZE: small;
+}
+
+.renewFailReason .label
+{
+   FONT-WEIGHT: bold;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+
+.renewFailReason .value
+{
+   margin: 0px 0px 0px 0px;
+   padding: 0px 25px 0px 0px;
+}
+/* One of more items fail to renew reason */
+
+
+
+.patronExpireDateContainer {
+    clear: both;
+}
+
+
+.patronExpireDateMessage
+{
+	font-size: .75em;
+	font-style: italic;
+	color: black;
+   background-color: yellow;
+   border:2px solid red;
+   padding:5px;
+   margin-bottom: 15px;
+   width:500px;
+}
+

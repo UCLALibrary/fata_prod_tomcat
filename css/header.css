@@ -1,0 +1,252 @@
+/* $Revision: 1.6 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: header css
+**          Version : 7.2.0
+**          Created : 20-JUL-2007
+**      Orig Author : Mel Pemble
+**    Last Modified : 21-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+#headerRow
+{
+   width: 99%;  /* this will create a container 99% of the browser width */
+   margin: 0;   /* the auto margins (in conjunction with a width) center the page */
+   height: 65px;
+}
+#logo
+{
+   float: left;
+   height: 46px;
+   width: 33%;
+   border:none;
+}
+
+#logo img, #logo a
+{
+   border:0;
+   margin-left:auto;
+   margin-right:auto;
+   width: 193px;
+   text-decoration:none;
+}
+
+#headerTabs
+{
+   margin-left: 12em;
+   height: 65px;
+   position:relative;
+   z-index: 1;
+}
+#headerTabs .navbar
+{
+   margin-left: 7em;
+   margin-right: 10em;
+   margin:0;
+   height: 4em;
+   position:relative;
+}
+
+#patronCol
+{
+   overflow:visible;
+   float: right;
+   height: 65px;
+   position:relative;
+   z-index:2;
+}
+
+#headerPatron
+{
+   position:absolute;
+   right: 5px;
+   top:5px;
+   margin: 0px 0px 0px 0px;
+   text-align:center;
+   white-space:nowrap;
+   FONT-SIZE: 10px;
+}
+
+#headerPatron .logoutPreText
+{
+   font-weight: bold;
+}
+
+#headerHelp
+{
+   position:absolute;
+   color:#113;
+   background:url("../images/icon_help.gif") no-repeat left top;
+   padding:0px 0px 3px 20px ;
+   margin: 0px 0px 0px 75px;
+   bottom: 0px;
+   right:5px;
+   FONT-SIZE: 14px;
+
+}
+
+#headerTabs ul
+{
+   list-style:none;
+   padding:0px 0px 0px 0px ;
+   margin: 0px 0px 0px 0px;
+
+}
+
+#headerTabs li
+{
+   float:left;
+   text-align:center;
+   display:block;
+   margin-top:27px;
+   border-bottom: 0px solid #F6F6F6;
+
+}
+
+#headerTabs li a
+{
+   float:left;
+   background:url("../images/tabrB2.png") no-repeat right top;
+   padding:0px 6px 0px 0px;
+   color:#66c;
+   margin: 5px 0px -2px 11px;
+   text-decoration:none;
+   display:block;
+   color:#000;
+   font-weight:normal;
+   font-size: 17px;
+   cursor: pointer;
+}
+
+#headerTabs li a span
+{
+   float:left;
+   background:url("../images/tablB2.png") no-repeat left top;
+   padding:9px 0px 4px 6px;
+   text-align:center;
+   display:block;
+}
+
+#headerTabs li a:hover
+{
+   background:url("../images/tabrightB.png") no-repeat right top;
+   color:#774525;
+}
+
+#headerTabs li a:hover span
+{
+   background:url("../images/tableftB.png") no-repeat left top;
+}
+
+
+#headerTabs li.on a
+{
+   background:url("../images/tabrightB.png") no-repeat right top;
+   color:#774525;
+}
+
+#headerTabs li.on a span
+{
+   background:url("../images/tableftB.png") no-repeat left top;
+}
+
+
+#footerTabs
+{
+   background: #ccc;
+   height: 20px;
+}
+
+#footerTabs .navbar
+{
+   margin: 0px;
+   padding: 0px 0px;
+   display: block;
+
+}
+
+#footerTabs .navbar li
+{
+   list-style: none;
+   float: left;
+
+}
+
+#footerTabs li a
+{
+   margin: 0px;
+   margin-top: -1px;
+   display: block;
+   border-top: 1px solid #333;
+   padding: 1px 16px;
+   text-decoration: none;
+   background: #ccc;
+   font: normal 12px verdana, serif;
+   color: #000;
+}
+
+#footerTabs li a:hover, #footerTabs li.on a
+{
+   padding: 1px 15px;
+   background: #FFF;
+   border-right: 1px solid #333;
+   border-left: 1px solid #333;
+   border-top: 1px solid #FFF;
+   border-bottom: 1px solid #333;
+   color: #000;
+}
+
+#footerTabs li.on a
+{
+   background: #FFF;
+   border-top: 1px solid #FFF;
+   font-weight: bold;
+   margin-top: -1px;
+}
+
+#footerTabs li.on
+{
+   border-right: 2px solid #828282;
+   border-bottom: 2px solid #828282;
+}
+
+#libraryLink
+{
+   text-align:center;
+   font-size: 14px;
+   color: #333;
+   display: block;
+   width: 425px;
+   margin: auto;
+   margin-top: 15px;
+   white-space:nowrap;
+}
+
+#copyright
+{
+   text-align:center;
+   font-size: 9px;
+   color: #333;
+   display: block;
+   width: 425px;
+   margin: auto;
+   margin-top: 15px;
+   white-space:nowrap;
+}
+
+h2.nav,h2.navFooter
+{
+   margin:0;
+   padding:0;
+  position: absolute;
+  left: -200em;
+}
+
+

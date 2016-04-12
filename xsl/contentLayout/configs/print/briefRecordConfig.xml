@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Revision: 1.4.2.1 $ $Date: 2012/06/11 22:25:07 $ -->
+<!--
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+-->
+
+<!--
+**          Product : WebVoyage :: displaycfg
+**          Version : 7.1.0
+**          Created : 17-OCT-2007
+**      Orig Author : David Sellers
+**    Last Modified : 09-MAR-2009
+** Last Modified By : Mel Pemble
+
+-->
+
+<display>
+    <titleTags>
+        <displayTag field="130" indicator1="X" indicator2="X" subfield="aplskf"/>
+        <displayTag field="240" indicator1="X" indicator2="X" subfield="aplskf"/>
+        <displayTag field="245" indicator1="X" indicator2="X" subfield="ab"/>
+    </titleTags>
+
+
+<!--    <displayTags label="Database: " notFound="No information available">
+        <displayTag field="5000" />    </displayTags>
+-->
+    <displayTags label="Main Author:">
+        <displayTag field="100" indicator1="X" indicator2="X" subfield="aq" />
+        <displayTag field="110" indicator1="X" indicator2="X" subfield="ab" />
+    </displayTags>
+    <displayTags label="Conference:">
+        <displayTag field="111" indicator1="X" indicator2="X" subfield="acnd" />
+    </displayTags>
+    <displayTags label="Title:">
+        <displayTag field="130" indicator1="X" indicator2="X" subfield="aplskf" />
+        <displayTag field="240" indicator1="X" indicator2="X" subfield="aplskf" preText="[" postText="]" />
+        <displayTag field="245" indicator1="X" indicator2="X" subfield="ab" />
+    </displayTags>
+
+<!--
+    <displayTags label="Physical Description:">
+        <displayTag field="7107"/>
+    </displayTags>
+
+    <displayTags label="Includes:">
+        <displayTag field="7106"/>
+    </displayTags>
+-->
+    <displayTags label="Format:">
+        <displayTag field="7000"/>
+    </displayTags>
+
+    <displayTags label="Publisher:">
+        <displayTag field="260" indicator1="X" indicator2="X" subfield="abc" />
+    </displayTags>
+    <displayTags label="Link:">
+        <displayTag field="856" indicator1="4" indicator2="X" subfield="z" />
+    </displayTags>
+    <displayTags label="URL:">
+        <displayTag field="856" indicator1="4" indicator2="X" subfield="u" />
+    </displayTags>
+<!--
+    <displayTags label="Control Number:">
+        <displayTag field="001"/>
+    </displayTags>
+-->
+    <displayTags label="Holdings Information: " notFound="No Data Available--Ask at Reference">
+        <displayTag field="9000" />    </displayTags>
+</display>
+
+

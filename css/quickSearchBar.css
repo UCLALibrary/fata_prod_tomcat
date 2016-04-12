@@ -1,0 +1,105 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: quick search css
+**          Version : 7.2.0          
+**          Created : 30-JUL-2007  
+**      Orig Author : Mel Pemble   
+**    Last Modified : 29-SEP-2009 
+** Last Modified By : Mel Pemble
+*/
+
+#quickSearchBar form
+{
+   padding: 0px;
+   margin: 0px;
+}
+#quickSearchBar
+{
+	background-color: #D5D5D5; 
+	border-top: 1px solid #888888; 
+	border-bottom: 1px solid #888888; 
+	border-left: 0px none;
+	border-right: 0px none; 
+	padding: 1px;
+	margin-top: 1px;
+}
+#quickSearchArg
+{
+}
+#quickSearchArg label
+{
+   FONT-SIZE: .8em;
+   FONT-WEIGHT: normal;
+   white-space: nowrap;
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#searchButton
+{
+   padding:3px;
+   margin-left: 5px;
+}
+
+#searchHistory
+{
+   padding: 0px;
+   FONT-SIZE: 10px;
+   margin-left: 35px;
+   border:0;
+   padding-right:3px;
+}
+
+#searchHistoryIcon
+{
+   background-image: url('../images/icon_srchhistory.gif'); 
+   background-repeat:no-repeat;
+   padding: 3px 5px 0px 14px;
+}
+
+#searchHistory a
+{
+   text-decoration:none;
+}
+
+#quickSearchButton {
+   margin: 0px;
+   margin-bottom: 4px;
+ 
+   color: #fff;
+   font-size: 11px;
+   font-weight: bold;
+     
+   background-color: #369;
+   
+   border-top: 2px outset #ccc;
+   border-right: 2px outset #666;
+   border-bottom: 2px outset #666;
+   border-left: 2px outset #ccc;
+   
+   cursor: pointer;
+   
+   padding: 0px 5px;
+}
+
+#quickSearchButton:hover {
+   color: #000;
+   background-color: #afafaf;
+   border-top: 2px inset #ccc;
+   border-right: 2px inset #666;
+   border-bottom: 2px inset #666;
+   border-left: 2px inset #ccc;
+}
+
+#searchArg
+{
+   margin-top:5px;
+}
+
+

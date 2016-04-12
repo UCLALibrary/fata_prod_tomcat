@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Revision: 1.3.2.1 $ $Date: 2012/06/11 22:25:06 $ -->
+<!--
+**========================================================================
+**
+**          Copyright 2007-2012 Ex Libris (USA) Inc.
+**                          All Rights Reserved
+**
+**========================================================================
+-->
+<Config>
+
+    <!--    Should component names be displayed?
+            Valid values:    [ Y | N ] -->
+            <displayComponentName>Y</displayComponentName>
+
+    <!--    Should the next expected issue be displayed?
+            Valid values:    [ Y | N ] -->
+            <displayNextExpectedIssue>Y</displayNextExpectedIssue>
+
+    <!--    How many received issues should be displayed per component? -->
+            <numberOfIssuesToDisplayPerComponent>100</numberOfIssuesToDisplayPerComponent>
+
+    <!--    Should components be sorted by ID in ascending or descending order?
+            Valid values:    [ Ascending  |  Descending ] -->
+            <componentSortOrder>Ascending</componentSortOrder>
+
+    <!--    Should issues be sorted by date in ascending or descending order?
+            Valid values:    [ Ascending  |  Descending ] -->
+            <issueSortOrder>Ascending</issueSortOrder>
+
+    <!--    Label to precede date for next expected issue -->
+            <expectedOn>expected on </expectedOn>
+
+    <!--    The symbol that will be used to separate the months, days, and years in the date
+            of the next expected issue.  -->
+            <dateDisplaySeparator>-</dateDisplaySeparator>
+
+    <!--    To display the month before the day and year (MM/DD/YYYY) of the next expected issue,
+            set dateOrder to '0'.
+
+            To display the day before the month and year (DD/MM/YYYY) of the next expected issue,
+            set dateOrder to '1'.  -->
+            <dateOrder>0</dateOrder>
+
+    <!--    To display only the last two digits of the year (MM/DD/YY )of the next expected issue,
+            set centuryFormat to '0'.
+
+            To display all four digits of the year (MM/DD/YYYY) of the next expected issue,
+            set centuryFormat to '1'.  -->
+            <centuryFormat>0</centuryFormat>
+
+</Config>
+
+

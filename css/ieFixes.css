@@ -1,0 +1,155 @@
+/* $Revision: 1.8 $ $Date: 2013/01/10 21:45:25 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2013 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: ieFixes
+**          Version : 7.2.0
+**          Created : 10-AUG-2007
+**      Orig Author : Mel Pemble
+**    Last Modified : 21-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+
+/* Start :: For XML Debug window */
+.overlay_dialog
+{
+    filter:alpha(opacity=60);
+}
+.overlay___invisible__
+{
+    filter:alpha(opacity=10);
+}
+.overlay_alphacube
+{
+    filter:alpha(opacity=60);
+}
+.alphacube_wired_frame
+{
+    filter:alpha(opacity=90);
+}
+
+/* End :: For XML Debug window */
+
+
+form.requestForm legend
+{
+   _margin: 0 -7px;
+}
+
+#headerTabs li{
+   margin-top: 29px;
+}
+
+.oddRow .resultListCheckBox, .evenRow .resultListCheckBox {
+  margin:0px 0px 0px 3px;
+}
+
+/* Fixes cancel button anonmoly on select database page [QC # 210]*/
+#cancelBtn
+{
+   position:relative;
+   padding-top:5px;
+   padding-bottom:4px;
+   padding-left:15px;
+   padding-right:15px;
+   top:-3px;
+}
+
+#cancel
+{
+   padding-top: 4px;
+   padding-bottom: 2px;
+   padding-left: 5px;
+   padding-right: 5px;
+   text-decoration:none;
+   Position:relative;
+   top: -8px;
+   display:inline;
+}
+
+fieldset
+{
+   position: relative;
+   padding-top:20px;
+}
+
+legend
+{
+   position: absolute;
+   top: -9px;
+   left: 5px;
+}
+
+.requestForm
+{
+   padding-top:25px;
+}
+
+.jumpBarLeft, .jumpBarRight
+{
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   height: 22px;
+   width: 4px;
+}
+
+.actionBox
+{
+   margin:0px;
+   width: 19%;
+   float: right;
+}
+
+.bibliographicData, .marcData
+{
+   float: left;
+   width:79%;
+}
+/*
+.bibTags
+{
+   margin:0px 0px 0px 0px;
+   padding:0px 0px 0px 0px;
+   float: left;
+   width:auto;
+}
+
+
+.bibCover
+{
+   float: right;
+   width: auto;
+   margin:0px 0px 0px 0px;
+   padding:0px 0px 0px 0px;
+}
+*/
+
+.subfieldData
+{
+   display:block;   
+   margin-left: 150px;
+/*   display:inline-block; */
+}
+
+.recordCoverImage
+{
+   margin: 0px 0px 0px 0px;
+   border: 1px;
+}
+
+.recordContent
+{
+   overflow:visible;
+}
+
+.resultListRow .checkbox,.resultListRowHighlight .checkbox {
+   padding-left : 17px;
+}
+
+

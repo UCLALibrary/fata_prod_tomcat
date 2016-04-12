@@ -1,0 +1,2216 @@
+#   $Revision: 1.23.2.3 $ $Date: 2012/10/04 17:45:29 $
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris Group
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+###########################################################################
+#
+# Custom Property File
+# ====================
+# This file contains customizable properties, which will control displayed
+# text and behavior.
+#
+# The properties are name/value pairs.
+#
+# The name is unique and it is all characters delimited by dot (".").
+# Each section is a part of the property hierarchy similar to the ini
+# file, but the ini file describes the hierarchy in many text blocks instead of
+# combining them on a single line.
+#
+# This file is organized in sections.
+# Options
+#     These properties will control system behavior.
+# Connections
+#      These properties customize database connections
+#
+# Page Customizations
+#     These properties will customize individual pages.
+#       Page Header
+#       Page Footer
+#       Quick Search Bar
+#       Log In
+#       Searching attributes
+#       Search Pages
+#         Basic
+#         Advanced
+#         Subject
+#         Author
+#         Course Reserve
+#         Geospatial add-on inserted here.
+#       Search Results pages
+#       common results elements
+#       jump bar
+#       save selected messages
+#       Search Status
+#       Search History
+#       Select Database
+#       My Account Pages
+#         My Account
+#         Edit preferences
+#         Personal info
+#         Change Pin
+#         My Searches pages
+#         My List Pages
+#       Patron Requests Pages
+#       Email
+#==============================================================================#
+
+#==============================================================================#
+#
+# Options
+# ========
+# This section contains options that may be set to configure the behavior
+# of the WebVoyage system.
+#==============================================================================#
+#==============================================================================#
+# Which page should the system return to on logout?
+#==============================================================================#
+option.startPage=searchBasic
+#==============================================================================#
+# What page or URL should the system go to in response to the exit.do action?
+# This can be a WebVoyage page, such as searchBasic, or an external URL
+#==============================================================================#
+option.exitURL=/index.html
+#==============================================================================#
+# Should WebVoyage display a quick search page element?
+# If Y, WebVoyage displays a quick search page element
+# If N, WebVoyage doesn't display a quick search page element
+#==============================================================================#
+option.useQuickSearch=Y
+#==============================================================================#
+# Should WebVoyage display a geospatial search tab,
+# and are geospatial indexes permitted in advanced search?
+# If Y, WebVoyage permits geospatial searches
+# If N, WebVoyage doesn't permit geospatial searches
+# NOTE: Geospatial Searching is an add-on product that must be enabled in the  \
+#       database.
+#==============================================================================#
+option.geospatialSearch=N
+
+#==============================================================================#
+# Should WebVoyage users enter a PIN when logging in?
+# If Y, supply a default PIN for patrons that do not yet have PINs in their    \
+#  records. PINs can be 4 - 12 characters, and are case sensitive.
+#==============================================================================#
+option.usePIN=N
+option.defaultPIN=
+#==============================================================================#
+# Should WebVoyage users be presented the "brief" logon form when logging in?
+# The brief login page is primarily applicable to UB and/or clustered          \
+#  environments.
+# If Y, WebVoyage displays the brief logon form
+# If N, WebVoyage displays the standard logon form
+#==============================================================================#
+option.useBriefLogon=N
+#==============================================================================#
+# Should WebVoyage users use an external authentication system when logging in?
+# If Y, WebVoyage uses the external authentication system as configured below
+# If N, WebVoyage displays the native logon form
+#==============================================================================#
+option.extAuthSystemEnabled=N
+#==============================================================================#
+# URL to the external authentication system
+#==============================================================================#
+option.extAuthSystemURL=
+#==============================================================================#
+# Should WebVoyage bypass the logon form if using an external authentication   \
+#  system?
+#==============================================================================#
+option.extAuthBypassLoginScreen=Y
+#==============================================================================#
+# Option to display the "Save Search" link
+#==============================================================================#
+option.saveSearch=Y
+#==============================================================================#
+# Option to display the "Save Search as Alert" link
+# NOTE: "Save Search" functionality must be enabled for "Save Search as Alert" \
+#  to work.
+#==============================================================================#
+option.SDI=N
+#==============================================================================#
+# Option to enable "My List" functionality
+#==============================================================================#
+option.saveRecords=Y
+#==============================================================================#
+# Option to enable bibliographic record linking on holdings page
+# when the related record is available for the bib ID
+#==============================================================================#
+option.loadRelatedRecords=Y
+#==============================================================================#
+# Option to display paired bib tags (880 tags) on holdings page
+#==============================================================================#
+option.link880s=N
+#==============================================================================#
+# Option to display request groups ("Any copy at")on hold and recall request forms
+#==============================================================================#
+option.displayRequestGroups=Y
+#==============================================================================#
+# Option to retain last used basic search code
+#==============================================================================#
+option.retainLastSearchCode=Y
+
+#==========================================
+# Option to activate (True) or deactivate (False) thumbnail
+# Default is deactivate thumbnail
+#==========================================
+option.thumbnail.activate=False
+
+#==========================================
+# Option to activate (True) or deactivate (False) elink thumbnails
+# Default is deactivate elink thumbnail
+#==========================================
+option.elink.activate=False
+
+
+#==========================================
+# SMS number
+# Change the Option.SMS to Y to allow patrons to enter an SMS (cell phone) number through
+# WebVoyage. Patrons who provide an SMS number are allowing the library to send selected
+# circ and media notices via SMS message (text message), as long as the library has configured
+# such messages to be sent
+#==========================================
+option.SMS=N
+
+#==============================
+# Date time conversion format -- the format must be Java program recognizable
+# Authoritative resource:                                                      \
+#  http://java.sun.com/j2se/1.5.0/docs/api/java/text/SimpleDateFormat.html
+# The month is MM, the minute is mm
+#==============================================================================#
+date.format.short=MM-dd-yyyy
+date.format.long=MM-dd-yyyy hh:mm:ss
+# date.format.short=dd-MM-yyyy
+# date.format.long=dd-MM-yyyy hh:mm:ss
+time.format=HH:mm:ss
+#==============================================================================#
+# Money conversion format - scale is the # of digits after the decimal point
+#==============================================================================#
+money.format.scale=2
+#==============================================================================#
+# Timeout configuration.
+#==============================================================================#
+# How many minutes before an idle WebVoyage session times out?
+# Must be less than Tomcat's session timeout, defined in web.xml.
+timeout.time=10
+# How many minutes before timeout should the user be warned? Should be less    \
+#  than the timeout.time value.
+timeout.grace=2
+# Where do we go when a session times out?
+timeout.page=exit.do
+#==============================================================================#
+#
+# End of Options
+# ==============
+#==============================================================================#
+
+#==============================================================================#
+#
+# Connections
+# ===========
+# This section contains customizations for remote database connections.
+#==============================================================================#
+#
+# To create one or more groups of remote database connections, do the following:
+# 1. Create an empty numbered group variable.
+# 2. Provide a name for the group.
+# 3. Add the database code (from Sysadmin) of a database to be included in the \
+#     group.
+# NOTE: the database code must be included in the variable name, on the left   \
+#        side of the equals sign, as well as the right.
+# 4. Add the database name that will display in WebVoyage.
+# 5. Add the config properties file name that will control how record details  \
+#     from this database are displayed.
+#      Voyager bibliographic databases (vbib)
+#      Voyager citation databases (vcit)
+#      Z39.50 bibliographic databases (zbib)
+#      Z39.50 citation databases j(zcit)
+# 6. Specify the order in which the database appears within the group.
+# 7. Repeat steps 3 - 6 for each database that belongs to the group.
+#
+# NOTE: If you define the same database in multiple groups then use the same   \
+#        database name in each group.
+#
+# Example:
+# connect.db.group1=
+# connect.db.group1.name=Academic Libraries
+# connect.db.group1.VOY.dbCode=VOY
+# connect.db.group1.VOY.name=Voyager University
+# connect.db.group1.VOY.config=holdingsInfo.vbib.properties
+# connect.db.group1.VOY.order=1
+# connect.db.group1.APH.dbCode=APH
+# connect.db.group1.APH.name=Aleph University
+# connect.db.group1.APH.config=holdingsInfo.zbib.properties
+# connect.db.group1.APH.order=2
+#
+#==============================================================================#
+# The following lines are required to give the local database a name
+# before any other database may be selected.
+# Note that LOCAL database code "LOCAL" must be in capital letters.
+#==============================================================================#
+connect.db.LOCAL.dbCode=LOCAL
+connect.db.LOCAL.name=My Library Catalog
+connect.db.LOCAL.config=holdingsInfo.vbib.properties
+#==============================================================================#
+# This option controls whether users may set preferred
+# database connections on their preferences page.
+#==============================================================================#
+connect.db.preference=N
+# connect.db.group1=
+# connect.db.group1.name=Local Libraries
+# connect.db.group1.order=1
+# connect.db.group1.XXX.dbCode=
+# connect.db.group1.XXX.name=
+# connect.db.group1.XXX.config=holdingsInfo.vbib.properties
+# connect.db.group1.XXX.order=1
+# connect.db.group1.YYY.dbCode=YYY
+# connect.db.group1.YYY.name=
+# connect.db.group1.YYY.config=holdingsInfo.vbib.properties
+# connect.db.group1.YYY.order=3
+# connect.db.group1.ZZZ.dbCode=ZZZ
+# connect.db.group1.ZZZ.name=
+# connect.db.group1.ZZZ.config=holdingsInfo.vbib.properties
+# connect.db.group1.KZZZ.order=4
+# connect.db.group1.LOCAL.dbCode=LOCAL
+# connect.db.group1.LOCAL.name=My Library Catalog
+# connect.db.group1.LOCAL.config=holdingsInfo.vbib.properties
+# connect.db.group1.LOCAL.order=1
+#
+# connect.db.group2=
+# connect.db.group2.name=Academic Libraries
+# connect.db.group2.order=2
+# connect.db.group2.XYZ.dbCodeXYZ
+# connect.db.group2.XYZ.name
+# connect.db.group2.XYZ.config=holdingsInfo.vbib.properties
+# connect.db.group2.XYZ.order=1
+#
+# connect.db.group3=
+# connect.db.group3.name=Economics Libraries
+# connect.db.group3.order=3
+# connect.db.group3.ECON.dbCode=ECON
+# connect.db.group3.ECON.name=
+# connect.db.group3.ECON.config=holdingsInfo.vbib.properties
+# connect.db.group3.ECON.order=1
+# connect.db.group3.LOCAL.dbCode=LOCAL
+# connect.db.group3.LOCAL.name=My Library Catalog
+# connect.db.group3.LOCAL.config=holdingsInfo.vbib.properties
+# connect.db.group3.LOCAL.order=2
+#==============================================================================#
+#
+# End of Connections
+# ==================
+#==============================================================================#
+
+#==============================================================================#
+#
+# Header
+# ======
+#==============================================================================#
+page.header.login.linkText=Log in
+page.header.login.link.pretext=
+page.header.login.link.posttext= to your account
+page.header.logout.linkText=Logout
+# the username from patron record will be inserted as the first pretext element
+page.header.logout.link.pretext= is logged in
+page.header.logout.link.posttext=
+page.header.logo.image=ui/en_US/images/webVoyageLogo.jpg
+page.header.logo.link=exit.do
+page.header.logo.linkText=WebVoy\u00E1ge
+page.header.buttons.search.button=Search
+page.header.buttons.search.message=Search the library
+page.header.buttons.search.start=
+page.header.buttons.myList.button=My List
+page.header.buttons.myList.message=My book list
+page.header.buttons.mySearches.button=My Searches
+page.header.buttons.mySearches.message=My search list
+page.header.buttons.myAccount.button=My Account
+page.header.buttons.myAccount.message=My account information
+page.header.help.linktext=Help
+page.header.help.link.pretext=
+page.header.help.link.posttext=
+#==============================================================================#
+#
+# End of Header
+# =============
+#==============================================================================#
+
+#==============================================================================#
+#
+# Footer
+# ======
+#==============================================================================#
+page.footer.buttons.help.message=Help on searching the library catalog
+page.footer.buttons.search.button=Search
+page.footer.buttons.search.message=Search the library
+page.footer.buttons.search.start=
+page.footer.buttons.myList.button=My List
+page.footer.buttons.myList.message=My book list
+page.footer.buttons.mySearches.button=My Searches
+page.footer.buttons.mySearches.message=My search list
+page.footer.buttons.myAccount.button=My Account
+page.footer.buttons.myAccount.message=My account information
+page.footer.buttons.help.button=Help
+page.footer.library.linktext=Your Library Name Here
+page.footer.library.link=http://your.librarylink.here
+page.footer.copyright.message=\u00A9 2011 Ex Libris Group. All rights reserved.
+#==============================================================================#
+#
+# End of Footer
+# =============
+#==============================================================================#
+
+#==============================================================================#
+#
+# Quick Search
+# ============
+# NOTE: option.useQuickSearch must be Y in the Options section of this file.
+#==============================================================================#
+page.searchQuick.argument.label=New Search :
+page.search.quick.search.code=GKEY^*
+page.searchQuick.go.button=Go
+page.searchQuick.go.button.message=Submit search the library
+page.searchQuick.searchHistory.linkText=Search History
+page.searchQuick.searchHistory.link.pretext=
+page.searchQuick.searchHistory.link.posttext=
+#==============================================================================#
+#
+# End of Quick Search
+# ===================
+#==============================================================================#
+
+#==============================================================================#
+#
+# Login Page
+# ==========
+#==============================================================================#
+page.logIn.title=WebVoy\u00E1ge Log In
+page.logIn.heading=Log In
+page.logIn.message="You must log in to access this feature"
+page.logIn.logIn.button=Log in
+page.logIn.logIn.button.message=Log in to access library feature
+#==============================================================================#
+# At least one loginType must be defined, the others are optional and
+# may be commented out.
+#==============================================================================#
+page.logIn.loginType.barcode.order=1
+page.logIn.loginType.barcode.text=Barcode
+page.logIn.loginType.instId.order=2
+page.logIn.loginType.instId.text=Institution Id
+page.logIn.loginType.ssn.order=3
+page.logIn.loginType.ssn.text=Social Security Number
+page.logIn.lastName=Last Name:
+page.logIn.logIn.label=Log in
+page.logIn.homeLibrary.label=Home Library
+page.logIn.defaultCluster=
+page.logIn.briefId.label=ID Number
+#==============================================================================#
+# use of the PIN is optional, this line will have no effect if option.usePIN=N
+#==============================================================================#
+page.logIn.pin=Personal Identification Number
+#==============================================================================#
+# use of the external authentication link is optional,
+# this line will have no effect if option.extAuthSystemEnabled=N
+#==============================================================================#
+page.logIn.extAuth.linkText=Go to External Patron Login System
+#==============================================================================#
+#
+# End of Login Page
+# =================
+#==============================================================================#
+
+#==============================================================================#
+#
+# Searching attributes
+# ====================
+#==============================================================================#
+#==============================================================================#
+#
+# Number of record display per page
+#
+#==============================================================================#
+page.record.display.label=Records per page:
+page.record.display.record.10=10 records per page
+page.record.display.record.20=20 records per page
+page.record.display.record.25=25 records per page
+page.record.display.record.50=50 records per page
+page.record.display.record.10=
+page.record.display.record.10.name=10 records per page
+page.record.display.record.10.order=1
+page.record.display.record.20=
+page.record.display.record.20.name=20 records per page
+page.record.display.record.20.order=2
+page.record.display.record.25=
+page.record.display.record.25.name=25 records per page
+page.record.display.record.25.order=3
+page.record.display.record.50=
+page.record.display.record.50.name=50 records per page
+page.record.display.record.50.order=4
+# default value
+page.record.display.record=10
+#==============================================================================#
+# The following properties configure the "No Hits Redirect" feature when
+# redirectEnabled=Y. The specified database code (dbCode) must be unique and
+# defined in System Administration for this feature to work.  If enabled, this
+# feature will create an extra search button, whose text is defined below, when
+# a search returns no hits. When a user clicks this button, it will connect to
+# the desired database and search that database.  The original connection to the
+# current database will be dropped.
+#==============================================================================#
+page.search.redirectEnabled=N
+page.search.reSearch.button=Search Another Database
+page.search.reSearch.message=Search Another Database
+page.search.reSearch.database.dbCode=CODE
+#==============================================================================#
+#
+# Search Index Definitions
+# ========================
+# Search Index definitions are used on the Advanced search page. This section
+# allows the name of the index to be changed from what is defined in Sysadmin.
+# The order of these entries is controlled by the database.
+#==============================================================================#
+search.index.GKEY=
+search.index.GKEY.display=Keyword Anywhere
+search.index.TKEY=
+search.index.TKEY.display=Title
+search.index.SKEY=
+search.index.SKEY.display=Subject
+search.index.NKEY=
+search.index.NKEY.display=Author Name
+search.index.100A=
+search.index.100A.display=Personal Name
+search.index.260B=
+search.index.260B.display=Publisher: Name
+search.index.NAUT=
+search.index.NAUT.display=Name/Uniform Title
+search.index.260C=
+search.index.260C.display=Publisher: Date
+search.index.ISSN=
+search.index.ISSN.display=ISSN
+search.index.DEWD=
+search.index.DEWD.display=Dewey Call Number
+search.index.ISBN=
+search.index.ISBN.display=ISBN
+search.index.SERI=
+search.index.SERI.display=Series
+search.index.AUTI=
+search.index.AUTI.display=Author/Title
+#==============================================================================#
+#
+# End of Search Index Definitions
+# ===============================
+#==============================================================================#
+
+#==============================================================================#
+# Heading for holding records on item location, call number, and status
+#==============================================================================#
+search.item.location=Location
+search.item.callNumber=Call Number
+search.item.status=Status
+
+#==============================================================================#
+#
+# Limit To
+# ========
+#==============================================================================#
+# To specify a default quick limit on the Basic Search page, list its name in  \
+#  the page.search.limitTo option.
+# If there is no default quick limit on the Basic Search page, type "none."
+# NOTE: these limits are used in the post search Filter functionality as well.
+#
+# Valid Limit Types:
+#  LANG   Language
+#  MEDI   Medium (or Format)
+#  PLAC   Place
+#  STAT   Status
+#  TYPE   Item Type
+#  DATE   Date
+#  LOCA   Location
+#  CONT   Content
+#  MEDA   Media
+#  CARR   Carrier
+#
+# The possible values for LANG, MEDI, PLAC, STAT, TYPE, CONT, MEDA and CARR  are listed in
+#  limits.xml. ("MEDI" is called "Format" in limits.xml.) The list of Location
+#  limits (LOCA) is set up in the System Administration module through Location
+#  Limit Groups.  For DATE values, enter the years between which to search,
+#  separated by a hyphen. To indicate a date before or after which you want
+#  results, enter -<date> or <date>- to specify "up to" or "after." The <date>
+#  must be in four-digit format: <YYYY>.
+#
+# For example:
+# 1=DATE=1990-2000
+# (between 1990 and 2000)
+# or
+# 1=DATE=-1990
+# (before 1990)
+#
+# To add a quick limit/post-search filter, do the following:
+#  1. create a key that defines the index variable for the subsequent steps (e.g. page.search.limitTo.2006AndAfter= )
+#  2. create a .limit key, using the index variable from #1, whose value is the limit type and limit
+#     value (see below).
+#  3. create a .order key, using the index variable from #1, whose value determines in what order the
+#     index displays in the selection list and filter list.
+#  4. create a .text key, using the index variable from #1, whose value determines the display text for the selection option and filter box.
+#
+# To set up multiple limits to be associated with one quick limit drop-down option, use a vertical bar between the valid limit types.
+# For example:
+# page.search.limitTo.text.limit=LANG=ENG|MEDI=v
+#
+#===============================================
+page.search.limitTo.selected=none
+page.search.limitTo.none=
+page.search.limitTo.none.limit=none
+page.search.limitTo.none.order=1
+page.search.limitTo.none.text=All Material
+page.search.limitTo.2006AndAfter=
+page.search.limitTo.2006AndAfter.limit=Date=2006-
+page.search.limitTo.2006AndAfter.order=2
+page.search.limitTo.2006AndAfter.text=2006 And After
+page.search.limitTo.English=
+page.search.limitTo.English.limit=LANG=ENG
+page.search.limitTo.English.order=3
+page.search.limitTo.English.text=English language materials
+page.search.limitTo.Videos=
+page.search.limitTo.Videos.limit=MEDI=v
+page.search.limitTo.Videos.order=4
+page.search.limitTo.Videos.text=Videos
+#==============================================================================#
+#
+# End of Limit To
+# ===============
+#==============================================================================#
+
+#==============================================================================#
+#
+# Select location
+# ===============
+# These variables are used for course reserve searches in multi-cluster dbs.
+#==============================================================================#
+page.search.selectLocation.page.title=WebVoy\u00E1ge Select Locations
+page.search.selectLocation.page.heading=Select Locations
+page.search.selectLocation.page.label=Select Locations:
+page.search.selectLocation.submit.button=Submit
+page.search.selectLocation.submit.button.message=Submit location
+page.search.selectLocation.cancel.button=Cancel
+page.search.selectLocation.cancel.button.message=Cancel selection of locations
+page.search.selectLocation.label=Select Locations:
+page.search.selectLocation.linkText=Change Location
+page.search.selectLocation.link.pretext=
+page.search.selectLocation.link.posttext=
+page.search.selectLocation.allClusters=All Clusters
+page.search.selectLocation.allLocations=All Locations
+page.search.selectLocation.defaultCluster=Default Cluster
+page.search.selectLocation.defaultLocation=Default Location
+#==============================================================================#
+#
+# End of Select location
+# ======================
+#==============================================================================#
+
+#==============================================================================#
+#
+# Search Pages
+# ============
+#==============================================================================#
+page.search.argument.label=Search:
+page.search.database.label=Database:
+page.search.buttons.quick.button=Quick
+page.search.buttons.basic.button=Basic
+page.search.buttons.basic.message=Basic search
+page.search.buttons.advanced.button=Advanced
+page.search.buttons.advanced.message=Advanced search
+page.search.buttons.subjectHeading.button=Subject
+page.search.buttons.subjectHeading.message=Search by subject
+page.search.buttons.author.button=Author
+page.search.buttons.author.message=Search by author
+page.search.buttons.courseReserve.button=Course Reserve
+page.search.buttons.courseReserve.message=Search by course reserve
+page.search.search.label=Search:
+page.search.change.linkText=Change
+page.search.change.link.pretext=
+page.search.change.link.posttext=
+page.search.within.label=within
+page.search.limitTo.label=Limit To:
+page.search.searchHistory.linkText=Search History
+page.search.searchHistory.link.pretext=
+page.search.searchHistory.link.posttext=
+page.search.search.button=Search
+page.search.search.button.message=Search the library
+page.search.clear.button=Reset
+page.search.clear.button.message=Reset dropdown menus
+#==============================================================================#
+#
+#   Search Basic
+#
+#==============================================================================#
+page.search.basic.title=WebVoy\u00E1ge Basic Search
+page.search.basic.heading=Basic Search
+#
+# The Search Code must be one of the codes listed on either the Search
+#  Definitions, Composite Definitions, or Keyword Searches dialogs (in the
+#  Voyager System Administration module). In addition to the search codes on
+#  those dialogs, you may use the codes FT (Full-Text Keyword Search) and CMD
+#  or BT (Command Search.)
+#
+# To add a search code, do the following:
+# 1. create a key that defines the index variable for the subsequent steps (e.g.
+#     page.search.basic.search.titleKeyAnd= )
+# 2. create a .code key, using the index variable from #1, whose value is the
+#     search index code from Sysadmin.
+# 3. create a .order key, using the index variable from #1, whose value
+#     determines in what order the index displays in the selection list.
+# 4. create a .display key, using the index variable from #1, whose value
+#     determines the display text.
+#
+# To modify search codes, you may use the following:
+#
+# ? Enter a plus (+) sign after the Search Code. This will turn that particular
+# search into a Browse search. For example, entering AUTH+ would specify
+# an Author Browse search type.
+#
+# ? Enter an asterisk (*) after the Search Code. This will cause that search to
+# be performed with Relevance. For example, entering CMD* will indicate a
+# Command Search with Relevance search type.
+#
+# ? Enter a caret (^) after an index code (such as GKEY, SKEY, TKEY, JKEY,
+# etc.) to insert an AND operator between the strings in a search. An asterisk
+# may be placed after this symbol to add relevance to the search.
+#
+# ? Enter a pipe (|) after an index code (such as GKEY, SKEY, TKEY, JKEY,
+# etc.) to insert an OR operator between the strings in a search. An asterisk
+# may be placed after this symbol to add relevance to the search.
+#
+# ? Enter an at (@) sign following a headings search code (such as SUBJ) to
+#  make the headings search a headings keyword search. Do not combine other
+#  search type modifiers (+ or *) with the Headings Keyword modifier (@).
+# Headings keyword searches use an implied AND operator unless quotation
+#  marks specify a phrase, or other Boolean operators are supplied by the searcher.
+#
+#==============================================================================#
+# Basic search codes
+#==============================================================================#
+# The default index in the drop down
+page.search.basic.search.code.selected=GKEY|*
+page.search.basic.search.code.keyAnyAndWith=
+page.search.basic.search.code.keyAnyAndWith.code=GKEY^*
+page.search.basic.search.code.keyAnyAndWith.order=1
+page.search.basic.search.code.keyAnyAndWith.display=All Fields
+# page.search.basic.search.code.keyAnyOrWith=
+# page.search.basic.search.code.keyAnyOrWith.code=GKEY|*
+# page.search.basic.search.code.keyAnyOrWith.order=2
+# page.search.basic.search.code.keyAnyOrWith.display=Keyword Anywhere OR with Relevance
+page.search.basic.search.code.titleKeyAnd=
+page.search.basic.search.code.titleKeyAnd.code=TKEY^
+page.search.basic.search.code.titleKeyAnd.order=3
+page.search.basic.search.code.titleKeyAnd.display=Title
+page.search.basic.search.code.subjectKeyAnd=
+page.search.basic.search.code.subjectKeyAnd.code=SKEY^
+page.search.basic.search.code.subjectKeyAnd.order=4
+page.search.basic.search.code.subjectKeyAnd.display=Subject
+page.search.basic.search.code.journalTitleKeyAnd=
+page.search.basic.search.code.journalTitleKeyAnd.code=JKEY^
+page.search.basic.search.code.journalTitleKeyAnd.order=5
+page.search.basic.search.code.journalTitleKeyAnd.display=Journal Title
+# page.search.basic.search.code.keyRelSearch=
+# page.search.basic.search.code.keyRelSearch.code=FT*
+# page.search.basic.search.code.keyRelSearch.order=6
+# page.search.basic.search.code.keyRelSearch.display=Keyword Relevance Search
+page.search.basic.search.code.authorKey=
+page.search.basic.search.code.authorKey.code=NKEY*
+page.search.basic.search.code.authorKey.order=7
+page.search.basic.search.code.authorKey.display=Author
+# page.search.basic.search.code.leftAnchorTitle=
+# page.search.basic.search.code.leftAnchorTitle.code=TALL
+# page.search.basic.search.code.leftAnchorTitle.order=8
+# page.search.basic.search.code.leftAnchorTitle.display=Left Anchored Title
+page.search.basic.search.code.callNumberBrowse=
+page.search.basic.search.code.callNumberBrowse.code=CALL+
+page.search.basic.search.code.callNumberBrowse.order=9
+page.search.basic.search.code.callNumberBrowse.display=Call Number
+# page.search.basic.search.code.subjectBrowse=
+# page.search.basic.search.code.subjectBrowse.code=SUBJ+
+# page.search.basic.search.code.subjectBrowse.order=10
+# page.search.basic.search.code.subjectBrowse.display=Subject Browse
+# page.search.basic.search.code.commSearchWithRel=
+# page.search.basic.search.code.commSearchWithRel.code=CMD*
+# page.search.basic.search.code.commSearchWithRel.order=11
+# page.search.basic.search.code.commSearchWithRel.display=Command Search with Relevance
+# page.search.basic.search.code.dateSearch=
+# page.search.basic.search.code.dateSearch.code=008D
+# page.search.basic.search.code.dateSearch.order=12
+# page.search.basic.search.code.dateSearch.display=Date Search (Left Anchored)
+# page.search.basic.search.code.nameTitleBrowse=
+# page.search.basic.search.code.nameTitleBrowse.code=AUTH+
+# page.search.basic.search.code.nameTitleBrowse.order=13
+# page.search.basic.search.code.nameTitleBrowse.display=Name Title Browse
+# page.search.basic.search.code.fullTextKeySearch=
+# page.search.basic.search.code.fullTextKeySearch.code=FT
+# page.search.basic.search.code.fullTextKeySearch.order=14
+# page.search.basic.search.code.fullTextKeySearch.display=Full Text Keyword Search
+# page.search.basic.search.code.commandSearch=
+# page.search.basic.search.code.commandSearch.code=CMD
+# page.search.basic.search.code.commandSearch.order=14
+# page.search.basic.search.code.commandSearch.display=Command Search
+# page.search.basic.search.code.subjectHeadingsKeyword=
+# page.search.basic.search.code.subjectHeadingsKeyword.code=SUBJ@
+# page.search.basic.search.code.subjectHeadingsKeyword.order=15
+# page.search.basic.search.code.subjectHeadingsKeyword.display=Subject Headings Keyword
+
+
+
+
+#==============================================================================#
+#
+#   Search Advanced
+#
+#==============================================================================#
+page.search.advanced.title=WebVoy\u00E1ge Advanced Search
+page.search.advanced.heading=Advanced Search
+page.search.advanced.label=Advanced Search
+#==============================================================================#
+# The number of search arguments and it must be a positive value.
+# The default is 3
+#==============================================================================#
+page.search.advanced.numsets=3
+page.search.advanced.arg.label=Search Argument
+page.search.advanced.selection.argType.label=Search Argument Type
+page.search.advanced.argType.any.order=1
+page.search.advanced.argType.any.text=any of these
+page.search.advanced.argType.all.order=2
+page.search.advanced.argType.all.text=all of these
+page.search.advanced.argType.phrase.order=3
+page.search.advanced.argType.phrase.text=as a phrase
+page.search.advanced.selection.combine.label=Combine With
+page.search.advanced.combine.and.order=1
+page.search.advanced.combine.and.text=AND
+page.search.advanced.combine.or.order=2
+page.search.advanced.combine.or.text=OR
+page.search.advanced.combine.not.order=3
+page.search.advanced.combine.not.text=NOT
+page.search.advanced.search.label=Search:
+page.search.advanced.year.selection.label=Year:
+page.search.advanced.location.label=Location:
+#==============================================================================#
+# The name of the default location, if any.
+# This option may be left blank or commented out.
+#==============================================================================#
+page.search.advanced.location.default=
+#==============================================================================#
+# the text used to indicate all locations should be included
+#==============================================================================#
+page.search.advanced.location.all=All Locations
+page.search.advanced.materialType.label=Material Type:
+page.search.advanced.format.label=Format:
+page.search.advanced.language.label=Language:
+page.search.advanced.yearOption.defined=select
+page.search.advanced.yearOption.range=range
+page.search.advanced.fromYear.label=From
+page.search.advanced.toYear.label=To
+
+page.search.advanced.content.label=Content:
+page.search.advanced.media.label=Media:
+page.search.advanced.carrier.label=Carrier:
+
+#==============================================================================#
+# YYYY in the lines below is a token meaning the current year.
+# It is used to enable relative ranges to be defined.  For example,
+#  YYYY-1
+# will be interpreted as a range beginning at the year before the
+# current year.
+#==============================================================================#
+page.search.advanced.year.limit.current=
+page.search.advanced.year.limit.current.name=Current Material
+page.search.advanced.year.limit.current.def=YYYY-1
+page.search.advanced.year.limit.current.order=1
+page.search.advanced.year.limit.prev5=
+page.search.advanced.year.limit.prev5.name=Last 5 Years
+page.search.advanced.year.limit.prev5.def=YYYY-5
+page.search.advanced.year.limit.prev5.order=2
+page.search.advanced.year.limit.prev10=
+page.search.advanced.year.limit.prev10.name=Last 10 Years
+page.search.advanced.year.limit.prev10.def=YYYY-10
+page.search.advanced.year.limit.prev10.order=3
+
+page.search.advanced.place.label=Place
+page.search.advanced.status.selection.label=Status:
+page.search.advanced.within.label=within
+
+#==============================================================================#
+# Sort By option for Advanced searches -
+#  If Y, displays relevance sort option for the Advanced search
+#  If N, doesn't display relevance sort option for the Advanced search
+#==============================================================================#
+page.search.advanced.relevance=N
+
+#==============================================================================#
+#
+#   Search Subject
+#
+#==============================================================================#
+page.search.subject.title=WebVoy\u00E1ge Subject Search
+page.search.subject.heading=Subject Search
+page.search.subjectPage.label=Subject Search
+page.search.subject.message=Enter a subject to search the Subject Headings Index
+page.search.subject.argument.label=Subject:
+#==============================================================================#
+# page.search.subject.search.code defines the index to be used
+# for searches initiated from the subject search page.
+#==============================================================================#
+page.search.subject.search.code=SUBJ@
+page.search.subject.search.display=Subject
+#==============================================================================#
+#
+#   Search Author
+#
+#==============================================================================#
+page.search.author.title=WebVoy\u00E1ge Author Search
+page.search.author.heading=Author Search
+page.search.authorPage.label=Author Search
+page.search.author.label=Author:
+page.search.author.message=Enter an author's name to search the Author Index
+page.search.author.lastName.argument.label=Last Name
+page.search.author.firstName.argument.label=Initials or First Name
+#==============================================================================#
+# page.search.author.search.code defines the index to be used
+# for searches initiated from the author search page.
+# Only one search index may be specified for use by this the author search page
+#==============================================================================#
+page.search.author.search.code=NAME+
+page.search.author.search.display=Author
+#==============================================================================#
+#
+#   Search Course Reserve
+#
+#==============================================================================#
+page.search.courseReserve.data.page.title=WebVoy\u00E1ge Course Reserve Data Page
+page.search.courseReserve.data.page.heading=Course Reserve Data Page
+page.search.courseReserve.alpha.page.title=WebVoy\u00E1ge Course Reserve Browse
+page.search.courseReserve.alpha.page.heading=Course Reserve Browse Page
+page.search.courseReserve.instructor.page.label=Instructor
+page.search.courseReserve.instructor.page.title=WebVoy\u00E1ge Course Reserve Instructor Page
+page.search.courseReserve.instructor.page.heading=Course Reserve Instructor Page
+page.search.courseReserve.department.page.label=Department
+page.search.courseReserve.department.page.title=WebVoy\u00E1ge Course Reserve Department Page
+page.search.courseReserve.department.page.heading=Course Reserve Department Page
+page.search.courseReserve.course.page.title=WebVoy\u00E1ge Course Reserve Course Page
+page.search.courseReserve.course.page.heading=Course Reserve Course Page
+page.search.courseReserve.course.page.label=Course
+page.search.courseReserve.page.label=Course Reserve Search
+page.search.courseReserve.label=Course Reserve Search:
+#==============================================================================#
+# Browse option -
+#   "Y" for course reserve alpha list for instructor, department, and course
+#   "N" (default) for course reserve dropdown instructor, department, course,
+#     and section
+#   Check htdocs/help/index.html for link to different version of help for alpha
+#    list
+#==============================================================================#
+page.search.courseReserve.browse=N
+page.search.courseReserve.instructor=Instructor:
+page.search.courseReserve.department=Department:
+page.search.courseReserve.course=Course:
+page.search.courseReserve.section=Section:
+#==============================================================================#
+# the literal text for the word "Any" from the course reserve drop down links
+#==============================================================================#
+page.search.courseReserve.term.any=Any
+#==============================================================================#
+#
+# End of Search Pages
+# ===================
+#==============================================================================#
+
+#==============================================================================#
+#
+# Holdings Information Section
+# ============================
+#==============================================================================#
+holdingsInfo.page.title=WebVoy\u00E1ge Holdings Information
+holdingsInfo.page.heading=Holdings Information
+holdingsInfo.page.label=Bibliographic Details
+#==============================================================================#
+# Action box on the holding information page
+#==============================================================================#
+actionBox.thisItem=This item
+actionBox.recordView.linkText=Record View
+actionBox.staffView.linkText=Staff View
+actionBox.actions=Actions
+actionBox.actions.makeRequest.order=1
+actionBox.actions.makeRequest.linkText=Make a Request
+actionBox.actions.makeRequest.link.posttext=(e.g. Hold, Recall, Photocopy)
+actionBox.actions.print.order=2
+actionBox.actions.print.linkText=Print
+actionBox.actions.export.order=3
+actionBox.actions.export.linkText=Export
+actionBox.actions.email.order=4
+actionBox.actions.email.linkText=E-mail
+# NOTE the option.email variable must be Y in order for email link to appear.
+actionBox.actions.addToList.order=5
+actionBox.actions.addToList.linkText=Add to My List
+actionBox.moreAboutThisItem=More About This Item From
+# actionBox.openURL properties in holdingsInfo.X.properties
+# actionBox.requestURI properties in holdingsInfo.X.properties
+#==============================================================================#
+# Holdings info text to display when bibliographic record linking feature is
+#  turned on.
+# NOTE option.loadRelatedRecords must be Y
+# NOTE the pretext, linktext, and posttext are used to display the text
+# for the related items link.
+# The default is "Click (pretext) here (linktext has underlining URL to the
+# related items link) for related items" (posttext).
+# One link may be defined per bibliographic record linking profile, as defined
+#  in Sysadmin.
+#==============================================================================#
+holdingsInfo.relatedRecords=Related Records
+holdingsInfo.relatedRecords.maxPerPage=10
+holdingsInfo.relatedRecords.profile.ISSNPREC=
+holdingsInfo.relatedRecords.profile.ISSNPREC.link.pretext=Click
+holdingsInfo.relatedRecords.profile.ISSNPREC.link.text=here
+holdingsInfo.relatedRecords.profile.ISSNPREC.link.posttext=for related items
+holdingsInfo.relatedRecords.profile.ISSNSUCC=
+holdingsInfo.relatedRecords.profile.ISSNSUCC.link.pretext=Click
+holdingsInfo.relatedRecords.profile.ISSNSUCC.link.text=here
+holdingsInfo.relatedRecords.profile.ISSNSUCC.link.posttext=for related items
+holdingsInfo.relatedRecords.profile.ISSNCOMP=
+holdingsInfo.relatedRecords.profile.ISSNCOMP.link.pretext=Click
+holdingsInfo.relatedRecords.profile.ISSNCOMP.link.text=here
+holdingsInfo.relatedRecords.profile.ISSNCOMP.link.posttext=for related items
+#==============================================================================#
+# Label for displaying source record link in the holdings record page
+# NOTE option.loadRelatedRecords must be Y
+#==============================================================================#
+holdingsInfo.sourceRecord=Source Record
+#==============================================================================#
+# Preservation related object link definition
+# This includes the label for the URL link, the URL link, and parameter name.
+# The only supported dynamic parameter at this time is cmsID (i.e. bib id).
+# The param is passed to the 3rd-party application that processes & retrieves
+# intellectual entities from the Preservation repository.
+#==============================================================================#
+holdingsInfo.DPSLinkLabel=Preservation Object:
+holdingsInfo.DPSLinkText=Preservation related item
+holdingsInfo.DPSLinkAddress=http://www.dps.com/getRecord?
+holdingsInfo.DPSLinkParam=cmsId
+#==============================================================================#
+# Display temporary location for an item either shelved at
+# or temporary shelved at
+#==============================================================================#
+holdingsInfo.tempLoc.shelvedAt.label=Shelved at
+holdingsInfo.tempLoc.tempShelvedAt.label=Temporarily shelved at
+#==============================================================================#
+# Order status for the holdings record. The status is from the line
+# item status defined in the database.
+# The "+" indicates status for multiple holdings records.
+# Substitution characters:
+# c -- number of copies
+# d -- date
+#==============================================================================#
+holdingsInfo.orderStatus.Pending=In the Pre-Order Process
+holdingsInfo.orderStatus.Pending+=In the Pre-Order Process
+holdingsInfo.orderStatus.Approved=\\c Copy Ordered as of \\d
+holdingsInfo.orderStatus.Approved+=\\c Copies Ordered as of \\d
+holdingsInfo.orderStatus.Claimed=\\c Copy Claimed as of \\d
+holdingsInfo.orderStatus.Claimed+=\\c Copies Claimed as of \\d
+holdingsInfo.orderStatus.ReceivedComplete=\\c Copy Received as of \\d
+holdingsInfo.orderStatus.ReceivedComplete+=\\c Copies Received as of \\d
+#==============================================================================#
+# Holdings item status. Note that the status code is exactly the same as the
+#  request status
+#==============================================================================#
+holdings.item.status.1=Not Charged
+holdings.item.status.2=\\i Charged - Due on \\d \\u
+holdings.item.status.3=\\i Renewed - Due on \\d \\u
+holdings.item.status.4=\\i Overdue - Due on \\d \\u
+holdings.item.status.5=\\i Requests: \\c
+holdings.item.status.6=\\i Requests: \\c
+holdings.item.status.7=\\i On hold at \\l
+holdings.item.status.8=\\i In transit \\d
+holdings.item.status.9=\\i In transit to \\l \\d
+holdings.item.status.10=\\i In transit to \\l \\d
+holdings.item.status.11=\\i Discharged - \\d \\u
+holdings.item.status.12=\\i Missing - \\d
+holdings.item.status.13=\\i Lost - \\d
+holdings.item.status.14=\\i Lost - \\d
+holdings.item.status.18=\\i At Bindery - \\d
+holdings.item.status.21=\\i Scheduled
+holdings.item.status.22=\\i In Process \\d
+holdings.item.status.23=\\i Requested
+holdings.item.status.24=\\i Requested
+holdings.item.status.25=\\i Requested
+#==============================================================================#
+#  Constant string for display label for holdings copy number
+#==============================================================================#
+holdings.item.copynumber.label=c.
+#==============================================================================#
+# Holdings item request status code and display text. Note that the status code
+# is exactly as the status code for item status
+#==============================================================================#
+holdings.item.request.status.1=\\i has \\c requests
+holdings.item.request.status.2=\\i Charged (Requests: \\c) - Due on \\d \\u
+holdings.item.request.status.3=\\i Renewed (Requests: \\c) - Due on \\d \\u
+holdings.item.request.status.4=\\i Overdue (Requests: \\c) - Due on \\d \\u
+holdings.item.request.status.5=\\i Requests: \\c
+holdings.item.request.status.6=\\i Requests: \\c
+holdings.item.request.status.7=\\i On hold at \\l (Requests: \\c)
+holdings.item.request.status.8=\\i In transit \\d (Requests: \\c)
+holdings.item.request.status.9=\\i In transit to \\l \\d (Requests: \\c)
+holdings.item.request.status.10=\\i In transit to \\l \\d (Requests: \\c)
+holdings.item.request.status.11=\\i Discharged - \\d \\u (Requests: \\c)
+holdings.item.request.status.12=\\i Missing - \\d (Requests: \\c)
+holdings.item.request.status.13=\\i Lost - \\d (Requests: \\c)
+holdings.item.request.status.14=\\i Lost - \\d (Requests: \\c)
+holdings.item.request.status.18=\\i At Bindery - \\d (Requests: \\c)
+holdings.item.request.status.21=\\i Scheduled (Requests: \\c)
+holdings.item.request.status.22=\\i In Process \\d (Requests: \\c)
+holdings.item.request.status.23=\\i Requests: \\c
+holdings.item.request.status.24=\\i Requests: \\c
+holdings.item.request.status.25=\\i Requests: \\c
+
+#==============================================================================#
+# Set the search code for redirect on record detail page
+#==============================================================================#
+holdings.redirect.author.search.code=NAME
+holdings.redirect.title.search.code=TALL
+holdings.redirect.subject.search.code=SUBJ
+holdings.redirect.callNumber.search.code=CALL
+
+#==============================================================================#
+# Links to holdings that allow users to navigate to the desired database display
+#  when multiple databases possess holdings
+#==============================================================================#
+db.holdings.jumpBar=Y
+db.holdings.jumpBar.text=Held at:
+db.holdings.jumpBar.back=Back to library list
+
+#==============================================================================#
+#
+# Search Results Section
+# ======================
+#==============================================================================#
+#==============================================================================#
+#
+# "Add to list" messages
+#
+#==============================================================================#
+searchResults.saveSelected.errMsg=Selection(s) could not be saved.
+searchResults.saveSelected.successMsg=Selection(s) added to your list.
+#==============================================================================#
+#
+# Call number search results page
+#
+#==============================================================================#
+page.searchResults.callNumbers.page.title=WebVoy\u00E1ge Call Number
+page.searchResults.callNumbers.page.heading=Call Number
+page.searchResults.callNumbers.page.label=Call Number
+#==============================================================================#
+#
+# Headings search results page
+#
+#==============================================================================#
+page.searchResults.headings.page.title=WebVoy\u00E1ge Subjects
+page.searchResults.headings.page.heading=Subjects
+#==============================================================================#
+#
+# Authors search results page
+#
+#==============================================================================#
+page.searchResults.authors.page.title=WebVoy\u00E1ge Authors
+#==============================================================================#
+# The following headings are also used in jump bar and titles for headings page
+#==============================================================================#
+headings.authors=Authors
+headings.subjects=Subjects
+headings.titles=Titles
+headings.namesTitles=Name/Titles
+headings.callNumbers=Call Numbers
+
+#==============================================================================#
+#  Reference code for display label for related topic from the heading search
+#==============================================================================#
+headings.reference.code.Authorized=Authorized:
+headings.reference.code.Non-authorized=Non-authorized:
+headings.reference.code.SeeReference=See:
+headings.reference.code.SeeAlsoReference=See Also:
+headings.reference.code.EarlierHeading=Earlier Heading:
+headings.reference.code.LaterHeading=Later Heading:
+headings.reference.code.Acronym=Acronym:
+headings.reference.code.MusicalComposition=Musical Composition:
+headings.reference.code.BroaderTerm=Broader Term:
+headings.reference.code.NarrowerTerm=Narrower Term:
+headings.reference.code.UntracedReference=Untraced Reference:
+headings.reference.code.TracedReference=Traced Reference:
+#==============================================================================#
+#  Scope notes code for displaying the label text for the topic from search
+#   result headings page
+#==============================================================================#
+headings.scopeNote.code.260=Search Under:
+headings.scopeNote.code.360=Search Also Under:
+headings.scopeNote.code.663=Search Also Under:
+headings.scopeNote.code.664=Search Under:
+headings.scopeNote.code.665=History:
+headings.scopeNote.code.666=Note:
+headings.scopeNote.code.680=Note:
+#==============================================================================#
+#
+# Search titles
+#
+#==============================================================================#
+page.searchResults.titles.page.title=WebVoy\u00E1ge Titles
+page.searchResults.titles.page.heading=Titles
+page.searchResults.titles.page.label=Titles
+#==============================================================================#
+#
+# Simultaneous search status
+#
+#==============================================================================#
+page.searchStatus.page.title=WebVoy\u00E1ge Search Status
+page.searchStatus.page.heading=Search Status
+page.searchStatus.page.label=Search Status
+search.status.id=VWEBV en_US
+#==============================================================================#
+# search status page refresh time in sec
+#==============================================================================#
+page.searchStatus.refresh=5
+page.search.stop.button=Stop
+page.search.stop.button.message=Stop the search
+page.searchStatus.show.button=Show
+page.searchStatus.show.button.message=Show search status
+page.searchStatus.status=Search Status
+page.searchStatus.database=Database Name
+#==============================================================================#
+# search status code
+#==============================================================================#
+page.searchStatus.Status_Searching=Searching...
+page.searchStatus.Status_Receiving=Receiving: %s%s of %s
+page.searchStatus.Status_DBFail=Database Failure
+page.searchStatus.Status_SearchFail=Search Failed
+page.searchStatus.Status_SearchIncompatible=Search Incompatible
+page.searchStatus.Status_SearchDone=Done %s Records
+page.searchStatus.Status_DBReset=Database Resetting
+page.searchStatus.Status_DBVersion=Database Version Incompatible
+page.searchStatus.Status_DBLicense=Database License Block
+#==============================================================================#
+# New search results item status
+#==============================================================================#
+page.searchResults.item.status.noHoldingsAvailable=no holdings available
+page.searchResults.item.status.noItemInfo=no item information
+page.searchResults.item.status.available=available
+page.searchResults.item.status.unavailable=not available
+page.searchResults.item.status.multipleItemsAvailable=multiple items available
+page.searchResults.item.status.multipleHoldingsAvailable=multiple holdings available
+page.searchResults.item.status.noCallNumber=No call number
+#==============================================================================#
+#
+# Search results, titles page header label, link configuration
+#
+#==============================================================================#
+page.searchResults.recordsFound.label=results found
+page.searchResults.saveSearch.linkText=Save Search
+page.searchResults.saveSearch.link.pretext=
+page.searchResults.saveSearch.link.posttext=
+page.searchResults.editSearch.linkText=Edit Search
+page.searchResults.editSearch.link.pretext=
+page.searchResults.editSearch.link.posttext=
+page.searchResults.saveSearchAsAlert.linkText=Save Search as Alert
+page.searchResults.saveSearchAsAlert.link.pretext=
+page.searchResults.saveSearchAsAlert.link.posttext=
+
+#==============================================================================#
+#
+# Search results, browse bar (print, export buttons, selection of all or page
+# record per page, post sort menu
+#
+#==============================================================================#
+page.searchResults.browseBar.makeRequest.message=Make a Request
+page.searchResults.browseBar.print.button=Print
+page.searchResults.browseBar.print.button.message=Print the search results
+page.searchResults.browseBar.export.button=Export
+page.searchResults.browseBar.export.button.message=Export the search results
+page.searchResults.browseBar.email.button=E-mail
+page.searchResults.browseBar.email.button.message=E-mail the search results
+page.searchResults.browseBar.addToList.button=Add to List
+page.searchResults.browseBar.addToList.button.message=Add to the list of my search results
+page.searchResults.browseBar.update.button=Update
+page.searchResults.browseBar.update.button.message=Update current page
+page.searchResults.browseBar.delete.button=Delete
+page.searchResults.browseBar.delete.button.message=Delete selected or all items
+#==============================================================================#
+# Select display of the results -- all or page
+# Note: page.searchResults.selectPage.type.all=All  -- has been changed as follows
+#       page.searchResults.selectPage.type.cbxAll=All
+#==============================================================================#
+page.searchResults.selectPage.label=Select
+page.searchResults.selectPage.type.cbxAll=All
+page.searchResults.selectPage.type.page=Page
+
+#==============================================================================#
+# Post sort menu to provide additional filtering on the search results
+#==============================================================================#
+page.searchResults.postSortDisplay=Y
+page.searchResults.sort.label=Sort By:
+page.searchResults.sort.AUTHOR=
+page.searchResults.sort.AUTHOR.text=Author
+page.searchResults.sort.AUTHOR.order=1
+page.searchResults.sort.TITLE=
+page.searchResults.sort.TITLE.text=Title
+page.searchResults.sort.TITLE.order=2
+page.searchResults.sort.PUB_DATE=
+page.searchResults.sort.PUB_DATE.text=Publication Date
+page.searchResults.sort.PUB_DATE.order=3
+page.searchResults.sort.PUB_DATE_DESC=
+page.searchResults.sort.PUB_DATE_DESC.text=Publication Date Descending
+page.searchResults.sort.PUB_DATE_DESC.order=4
+page.searchResults.sort.RELEVANCE=
+page.searchResults.sort.RELEVANCE.text=Relevance
+page.searchResults.sort.RELEVANCE.order=5
+
+
+page.searchResults.filtersBlock.label=Filter Your Search:
+page.searchResults.filtersBlock.remove.linkText=remove filter
+# this property controls the text used to indicate a search has been filtered
+page.searchResults.filtered=Filtered
+
+page.searchResults.saveSearchAddSuccess=Successfully saved your search.
+page.searchResults.saveSearchAddFailure=Failed to save your search.
+page.searchResults.saveSearchAddFailureNotLocalPatron=You must be registered at this institution to save your searches.
+#==============================================================================#
+#
+# Export search results labels, buttons. Export uses the same format as print.
+#
+#==============================================================================#
+page.exportDialog.page.title=WebVoy\u00E1ge Export Results
+page.exportDialog.page.heading=Export Results
+page.exportDialog.page.label=Export
+page.exportDialog.export.button=Click to Export
+page.exportDialog.export.moreRecords= more bibliographic records...
+page.exportDialog.export.button.action=
+page.exportDialog.export.button.message=Export search results
+page.exportDialog.export.instructions=To export this result, choose the desired format and click Export
+
+#==============================================================================#
+#
+# Print search results labels, buttons, and format selections
+#
+#==============================================================================#
+page.printDialog.page.title=WebVoy\u00E1ge Print Titles
+page.printDialog.page.heading=Print Titles
+page.printDialog.page.label=Print Titles
+page.printDialog.format.label=Format:
+page.return.button=Return
+page.return.button.message=Return to previous page
+page.printDialog.print.moreRecords= more bibliographic records...
+page.printDialog.print.button=Click to Print
+page.printDialog.print.button.message=Print the selected page(s)
+#==============================================================================#
+# Print and Export format selection. The default format is marked "selected".
+# Each format has a display name for the drop down.
+# The xsl stylesheet used for each format is defined in the record display
+# configuration file, holdingsInfo.X.properties by default.  The format
+# names (X in page.printDialog.format.X) must match exactly the names
+# of the print formats in the record display configuration file.
+# Also, each format defined here must have a stylesheet associated with it
+# in each of the record display configuration files, including any that
+# are customer defined.
+#==============================================================================#
+page.printDialog.format.selected=brief
+page.printDialog.format.full=
+page.printDialog.format.full.label=Full Record (All Fields)
+page.printDialog.format.full.order=1
+page.printDialog.format.brief=
+page.printDialog.format.brief.label=Brief Record (Title, Author, Location & Call Number)
+page.printDialog.format.brief.order=2
+page.printDialog.format.label=Print Format:
+page.printDialog.error.noSelectedRecords=No records were selected.
+
+#==============================================================================#
+#
+# Print results results labels, buttons, and format selections
+#
+#==============================================================================#
+page.printResults.page.title=WebVoy\u00E1ge Printable Record Page
+page.printResults.page.heading=Printable View
+
+#==============================================================================#
+# Note for the export formats Latin1, Raw and UTF-8 there is no xsl file
+#==============================================================================#
+page.exportDialog.format.selected=endNote
+page.exportDialog.format.endNote=
+page.exportDialog.format.endNote.label=EndNote Citation
+page.exportDialog.format.endNote.order=1
+page.exportDialog.format.latin1=
+page.exportDialog.format.latin1.label=Latin1 MARC
+page.exportDialog.format.latin1.order=2
+page.exportDialog.format.raw=
+page.exportDialog.format.raw.label=Raw MARC
+page.exportDialog.format.raw.order=3
+page.exportDialog.format.utf-8=
+page.exportDialog.format.utf-8.label=UTF-8 MARC
+page.exportDialog.format.utf-8.order=4
+page.exportDialog.format.label=Export Format:
+page.exportAuthDialog.format.selected=latin1
+page.exportAuthDialog.format.latin1=
+page.exportAuthDialog.format.latin1.label=Latin1 MARC
+page.exportAuthDialog.format.latin1.order=1
+page.exportAuthDialog.format.raw=
+page.exportAuthDialog.format.raw.label=Raw MARC
+page.exportAuthDialog.format.raw.order=2
+page.exportAuthDialog.format.utf-8=
+page.exportAuthDialog.format.utf-8.label=UTF-8 MARC
+page.exportAuthDialog.format.utf-8.order=3
+page.exportAuthDialog.format.label=Export Format:
+page.exportDialog.error.noSelectedRecords=No records were selected.
+
+#==============================================================================#
+# Print property DOI and URN URL to convert the DOI and URN to the physical location
+# of the digital item
+#==============================================================================#
+property.DOI=http://hdl.handle.net/
+property.URN=http://hdl.handle.net/
+#==============================================================================#
+#
+# End of Search Results Section
+# ======================
+#==============================================================================#
+
+#==============================================================================#
+#
+# "Jump Bar" configuration (prev/next)
+# ====================================
+#==============================================================================#
+jumpBar.next=Next
+jumpBar.prev=Prev
+# separator between first/last page and the rest of the short list
+jumpBar.discontinuity=...
+# how many pages to show left and right of the current page
+jumpBar.viewWindow=2
+# text separating page X_of_Y in record view results
+jumpBar.recsOf.separator=of
+#==============================================================================#
+#
+# End of "Jump Bar" configuration (prev/next)
+# ===========================================
+#==============================================================================#
+
+#==============================================================================#
+#
+# Search History
+#
+#==============================================================================#
+page.searchHistory.page.title=WebVoy\u00E1ge Search History
+page.searchHistory.page.heading=Search History
+page.searchHistory.page.label=Search History
+page.searchHistory.heading.combine=Combine
+page.searchHistory.heading.search=Search
+page.searchHistory.heading.searchType=Search Type
+page.searchHistory.heading.results=Results
+page.searchHistory.heading.action=Action
+page.searchHistory.data.action.rerun.linkText=Re-run
+page.searchHistory.data.action.edit.linkText=Edit
+page.searchHistory.data.action.save.linkText=Save
+page.searchHistory.button.combine=Search
+#==============================================================================#
+# Display this string in the "Hits" column if the search is browse or simultaneous search
+# or the number of hits is unknown
+#==============================================================================#
+page.searchHistory.browse_simul=Browse
+
+#==============================================================================#
+#
+# My Searches
+#
+#==============================================================================#
+page.searchMySearches.page.title=WebVoy\u00E1ge My Searches
+page.searchMySearches.page.heading=My Searches
+page.searchMySearches.heading.combine=Combine
+page.searchMySearches.heading.search=Search
+page.searchMySearches.heading.newhits=Results
+page.searchMySearches.heading.searchType=Search Type
+page.searchMySearches.heading.date=Date
+page.searchMySearches.heading.alertfrequency=Alert Frequency
+page.searchMySearches.heading.action=Actions
+page.searchMySearches.heading.summary=This table displays the search history.
+page.searchMySearches.data.action.rerun.linkText=Re-Run
+page.searchMySearches.data.action.edit.linkText=Edit
+page.searchMySearches.data.action.delete.linkText=Delete
+page.searchMySearches.data.newhits.yes=Y
+page.searchMySearches.data.newhits.no=N
+page.searchMySearches.data.alertfrequency.default=1
+page.searchMySearches.data.alertfrequency.1=None
+page.searchMySearches.data.alertfrequency.2=Daily
+page.searchMySearches.data.alertfrequency.3=Weekly
+page.searchMySearches.data.alertfrequency.4=Bi-Monthly
+page.searchMySearches.data.alertfrequency.5=Monthly
+page.searchMySearches.save.button=Save Changes
+page.searchMySearches.combineSearches.button=Search
+
+#==============================================================================#
+#
+# Select Database
+#
+#==============================================================================#
+page.selectDatabase.title=WebVoy\u00E1ge Select Database
+page.selectDatabase.heading=Select Database
+page.selectDatabase.selectDatabase.label=Select Databases:
+page.selectDatabase.selectDatabase.message=Select database(s) to search:
+page.selectDatabase.select.button=Select
+page.selectDatabase.select.button.message=Select libraries to search
+page.selectDatabase.cancel.button=Reset
+page.selectDatabase.cancel.button.message=Reset selection
+
+#==============================================================================#
+#
+# My Account
+# ==========
+#==============================================================================#
+page.myAccount.myAccount.title=WebVoy\u00E1ge My Account
+page.myAccount.myAccount.heading=My Account
+page.myAccount.myAccount.linkText=My Account
+page.myAccount.myAccount.link.pretext=
+page.myAccount.myAccount.link.posttext=
+page.myAccount.changePin.linkText=Change PIN
+page.myAccount.changePin.link.pretext=
+page.myAccount.changePin.link.posttext=
+page.myAccount.editPreferences.linkText=Edit Preferences
+page.myAccount.editPreferences.link.pretext=
+page.myAccount.editPreferences.link.posttext=
+page.myAccount.viewPersonalInfo.linkText=View Personal Information
+page.myAccount.viewPersonalInfo.link.pretext=
+page.myAccount.viewPersonalInfo.link.posttext=
+page.myAccount.page.label=My Account
+page.myAccount.yourItems.label=Your Items
+page.myAccount.yourItems.itemAvail.linkText=Items available
+page.myAccount.yourItems.reqPending.linkText=Requests Pending
+page.myAccount.yourItems.chargedItem.linkText=Charged Items
+page.myAccount.yourItems.borrowingBlocks.linkText=Borrowing Blocks
+page.myAccount.yourItems.finesAndFees.linkText=Fines and Fees
+page.myAccount.yourItems.demerits.linkText=Demerits
+page.myAccount.borrowingBlocks.label=Borrowing Blocks
+page.myAccount.borrowingBlocks.item.heading.allPatronGroups=All Patron Groups
+page.myAccount.borrowingBlocks.item.heading.reason=Reason
+page.myAccount.borrowingBlocks.total.label=Total
+page.myAccount.borrowingBlocks.cluster.label=Database:
+page.myAccount.finesAndFees.label=Fines and Fees
+page.myAccount.finesAndFees.item.heading.date=Date
+page.myAccount.finesAndFees.item.heading.item=Item
+page.myAccount.finesAndFees.item.heading.fee=Fee
+page.myAccount.finesAndFees.item.heading.payment=Payment
+page.myAccount.finesAndFees.item.heading.balance=Balance
+page.myAccount.finesAndFees.item.heading.type=Fee/PostingType
+page.myAccount.finesAndFees.item.heading.total=Fee Amount
+page.myAccount.finesAndFees.total.label=Fee Amount
+page.myAccount.finesAndFees.amountDue.label=Total Amount Due:
+page.myAccount.finesAndFees.cluster.label=Database:
+page.myAccount.demerits.label=Demerits
+page.myAccount.demerits.item.heading.date=Date
+page.myAccount.demerits.item.heading.location=Location
+page.myAccount.demerits.item.heading.item=Item
+page.myAccount.demerits.item.heading.demerits=Demerits
+page.myAccount.demerits.item.heading.posting=Posting
+page.myAccount.demerits.item.heading.balance=Balance
+page.myAccount.demerits.item.heading.type=Demerit/PostingType
+page.myAccount.demerits.total.label=Total
+page.myAccount.itemAvailable.label=Items Available
+page.myAccount.itemAvailable.cancel.preference=Y
+page.myAccount.itemAvailable.cancel.button.name=Cancel Request
+page.myAccount.itemAvailable.cancel.button.message=Cancel request to the selection of item available
+page.myAccount.itemAvailable.select.label=Select All:
+page.myAccount.itemAvailable.select.option.all=All
+page.myAccount.itemAvailable.item.heading.item=Item
+page.myAccount.itemAvailable.item.heading.database=Database
+page.myAccount.itemAvailable.item.heading.expires=Expires
+page.myAccount.itemAvailable.item.heading.pickupLocation=Pickup Location
+page.myAccount.reqPending.label=Requests Pending
+page.myAccount.reqPending.cancel.preference=Y
+page.myAccount.reqPending.cancel.button.name=Cancel Request
+page.myAccount.reqPending.cancel.button.message=Cancel request to the selection of requests pending
+#the next two are for the benefit of vxws OPAC via Primo
+page.myAccount.reqPending.cancel.success=Request cancelled.
+page.myAccount.reqPending.cancel.failure=Failed to cancel request.
+page.myAccount.reqPending.select.label=Select All:
+page.myAccount.reqPending.select.option.all=All
+page.myAccount.reqPending.item.heading.item=Item
+page.myAccount.reqPending.item.heading.database=Database
+page.myAccount.reqPending.item.heading.status=Status
+# page.myAccount.reqPending.item.heading.holdExpires=Hold Expires
+page.myAccount.reqPending.item.heading.pickupLocation=Pickup Location
+page.myAccount.chargedItem.label=Charged Items
+page.myAccount.chargedItem.cancel.preference=Y
+page.myAccount.chargedItem.cancel.button.name=Cancel Request
+page.myAccount.chargedItem.cancel.button.message=Cancel request to the selection of charged item
+page.myAccount.chargedItem.renew.single=Y
+page.myAccount.chargedItem.renew.all=Y
+page.myAccount.chargedItem.renew.button.name=Request Renewal
+page.myAccount.chargedItem.renew.button.message=Renew single item
+page.myAccount.chargedItem.select.label=Select All:
+page.myAccount.chargedItem.select.option.all=All
+page.myAccount.chargedItem.item.heading.item=Item
+page.myAccount.chargedItem.item.heading.type=Item Type
+page.myAccount.chargedItem.item.heading.status=Status
+page.myAccount.chargedItem.item.heading.dueDate=Due Date
+page.myAccount.chargedItem.cluster.label=Database:
+#==============================================================================#
+# Item information substitution tokens to display the codes' corresponding
+# information in the Item column on the Charged Item section of My Account page
+# \\t -> the item's title
+# \\i -> the items's enumeration, chronology and year
+# \\n -> the item's copy number
+# \\c -> the item's call number
+# \\b -> the item's barcode
+# \\l -> the item's location
+# \\a -> the item's author
+#==============================================================================#
+page.myAccount.chargedItem.itemInfo=\\t
+#==============================================================================#
+# Item due date substitution tokens to display the codes' corresponding
+# information in the Due Date column on the Charged Item section of My Account page
+# \\d -> the item's due date
+# \\e -> the items's due date, if the due date is not today
+# \\t -> the item's due time
+# \\u -> the item's due time, if the due date is today
+#==============================================================================#
+page.myAccount.chargedItem.dueDate=\\d \\t
+page.myAccount.update.button=Update
+page.myAccount.update.button.message=Refresh the data
+# Option to turn on or off Media Bookings on My Account page
+option.mediaBookings.patronInfoDisplay=Y
+
+# Option to display cancel booking individual check box, cancel all button, and reset button
+page.myAccount.mediaBookings.cancelAllowed=Y
+
+page.myAccount.mediaBookings.upcomingBookings=Upcoming Bookings
+page.myAccount.mediaBookings.chargedBookings=Charged Bookings
+
+page.myAccount.mediaBookings.select.label=Select All:
+page.myAccount.mediaBookings.select.option.all=All
+page.myAccount.mediaBookings.cancel.all=Y
+page.myAccount.mediaBookings.cancel.button=Cancel Selected Bookings
+page.myAccount.mediaBookings.cancel.button.message=Cancel Selected Bookings
+page.myAccount.mediaBookings.cancelBooking=Cancel Booking
+page.myAccount.mediaBookings.startTime=Start Time
+page.myAccount.mediaBookings.endTime=End Time
+page.myAccount.mediaBookings.confirmationNumber=Confirmation Number
+page.myAccount.mediaBookings.bookingType=Booking Type
+page.myAccount.mediaBookings.room=Room
+page.myAccount.mediaBookings.equipmentCount=Equipment Count
+page.myAccount.mediaBookings.itemCount=Item Count
+page.myAccount.mediaBookings.bookingType.pickup=Pickup
+page.myAccount.mediaBookings.bookingType.delivery=Delivery
+page.myAccount.mediaBookings.equipment=Equipment
+page.myAccount.mediaBookings.items=Items
+page.myAccount.mediaBookings.itemInfo =\\t
+###############################################################################
+#
+# Block reason code
+#
+#==============================================================================#
+page.myAccount.borrowingBlocks.item.reason.expired_patron=Your patron record expired on \\d.
+page.myAccount.borrowingBlocks.item.reason.Address_expired_patron=The address in your patron record expired on \\d.
+page.myAccount.borrowingBlocks.item.reason.address_invalid_patron=The address in your patron record is invalid.
+page.myAccount.borrowingBlocks.item.reason.charge_limit_patron=You have \\p items charged. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.fine_limit_patron=You have \\p in fines and fees. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.odue_limit_patron=You have \\p overdue items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.odue_recall_limit_patron=You have \\p overdue recalled items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.recall_limit_patron=You have recalled \\p items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.claims_ret_limit_patron=You have claimed to have returned \\p items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.lost_limit_patron=You have lost \\p items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.sshelved_limit_patron=You have \\p self-shelved items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.short_loan_limit_patron=You have \\p pending Short Loan requests. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.call_slip_limit_patron=You have \\p pending Call Slip requests. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.suspension_patron=Your borrowing privileges are suspended until \\d.
+page.myAccount.borrowingBlocks.item.reason.demerits_limit_patron=You have \\p demerits. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.ub_ineligible_patron=You are not eligible to use Universal Borrowing.
+page.myAccount.borrowingBlocks.item.reason.charge_limit_ub_patron=You have \\p Universal Borrowing items charged. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.fine_limit_ub_patron=You have \\p in Universal Borrowing fines. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.odue_limit_ub_patron= You have \\p Universal Borrowing overdue items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.odrecall_limit_ub_patron=You have \\p Universal Borrowing recalled items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.claims_ret_limit_ub_patron=You have \\p Universal Borrowing claims returned items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.lost_limit_ub_patron=You have \\p Universal Borrowing lost items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.sshelved_limit_ub_patron= You have \\p Universal Borrowing self-shelved items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.charge_limit_item_policy=You have \\p items charged. The limit for your patron group in this item's policy is \\b.
+page.myAccount.borrowingBlocks.item.reason.charge_limit_item_type=You have \\p items charged that have the item type \\i. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.charge_limit_item_policy_type=You have \\p items charged that have the item type \\i. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.demerits_limit_ub_patron=You have \\p ub demerits. The limit for your ub demerits is \\b.
+page.myAccount.borrowingBlocks.item.reason.renew_limit_item=Your item has been renewed \\p times. The limit for your number of renewal for an item is \\b.
+
+#==============================================================================#
+#
+# Charged Item Status Code -- from OPAC.INI
+#         NOTCHARGED                1
+#         CHARGED                   2
+#         RENEWED                   3
+#         OVERDUE                   4
+#         RECALLREQUEST             5
+#         HOLDREQUEST               6
+#         ONHOLD                    7
+#         INTRANSIT                 8
+#         INTRANSIT_DISCHARGED      9  (No longer in use - please do not remove)
+#         INTRANSIT_ONHOLD          10 (No longer in use - please do not remove)
+#         DISCHARGED                11
+#         MISSING                   12
+#         LOSTLIBRARYAPPLIED        13
+#         LOSTSYSTEMAPPLIED         14
+#         CLAIMSRETURNED            15
+#         DAMAGED                   16
+#         WITHDRAWN                 17
+#         ATBINDERY                 18
+#         CATALOGINGREVIEW          19
+#         CIRCULATIONREVIEW         20
+#         SCHEDULED                 21
+#         INPROCESS                 22
+#         CALLSLIPREQUEST           23
+#         SHORTLOANREQUEST          24
+#         REMOTESTORAGEREQUEST      25
+#
+#==============================================================================#
+page.myAccount.chargedItem.item.status.1=Not Charged
+page.myAccount.chargedItem.item.status.2=Charged (Requests: \\c)
+page.myAccount.chargedItem.item.status.3=Renewed (Requests: \\c)
+page.myAccount.chargedItem.item.status.4=Overdue (Requests: \\c)
+page.myAccount.chargedItem.item.status.5=Recall Request
+page.myAccount.chargedItem.item.status.6=Hold Request
+page.myAccount.chargedItem.item.status.7=On Hold
+page.myAccount.chargedItem.item.status.8=Routed from \\rsloc in \\rslib to \\rtloc in \\rtlib on \\rd
+page.myAccount.chargedItem.item.status.9=In Transit Discharged
+page.myAccount.chargedItem.item.status.10=In Transit On Hold
+page.myAccount.chargedItem.item.status.11=Discharged
+page.myAccount.chargedItem.item.status.12=Missing
+page.myAccount.chargedItem.item.status.13=Lost--Library Applied
+page.myAccount.chargedItem.item.status.14=Lost--System Applied
+page.myAccount.chargedItem.item.status.15=Claims Returned
+page.myAccount.chargedItem.item.status.16=Damaged
+page.myAccount.chargedItem.item.status.17=Withdrawn
+page.myAccount.chargedItem.item.status.18=At Bindery
+page.myAccount.chargedItem.item.status.19=Cataloging Review
+page.myAccount.chargedItem.item.status.20=Circulation Review
+page.myAccount.chargedItem.item.status.21=Scheduled
+page.myAccount.chargedItem.item.status.22=In Process
+page.myAccount.chargedItem.item.status.23=Call Slip Request
+page.myAccount.chargedItem.item.status.24=Short Loan Request
+page.myAccount.chargedItem.item.status.25=Remote Storage Request
+#==============================================================================#
+# MyAccount page charged item renewal status.
+# This status is displayed only after the renewal of item or items is performed
+#==============================================================================#
+page.myAccount.chargedItem.item.renewStatus.renewed=Renewed
+page.myAccount.chargedItem.item.renewStatus.notRenewed=Not Renewed
+
+#==============================================================================#
+# MyAccount page charged item renewal message.
+# This message is displayed only after the renewal of item or items is performed
+#==============================================================================#
+page.myAccount.chargedItem.item.renewMsg.success=All items are renewed successfully
+page.myAccount.chargedItem.item.renewMsg.fail=One or more items failed to renew (Please see status below for detail)
+page.myAccount.chargedItem.item.renewMsg.noItemsSelected=No items are selected for renewal.
+
+#==============================================================================#
+#
+#  Variables used to substitute for the in transit status:
+#   rsloc, rslib, rtloc, rtlib, rd.
+#  rsloc: RoutingSourceLocationUnknown=unknown location
+#  rslib: RoutingSourceLibraryUnknown=unknown location
+#  rtloc: RoutingTargetLocationUnknown=unknown location
+#  rtlib: RoutingTargetLibraryUnknown=unknown location
+#  rd:    RoutingDateUnknown=unknown date
+#
+#==============================================================================#
+page.myAccount.chargedItem.item.status.variable.rsloc=unknown location
+page.myAccount.chargedItem.item.status.variable.rslib=unknown location
+page.myAccount.chargedItem.item.status.variable.rtloc=unknown location
+page.myAccount.chargedItem.item.status.variable.rtlib=unknown location
+page.myAccount.chargedItem.item.status.variable.rd=unknown date
+#==============================================================================#
+#
+#   My Account - Requests/Callslip Status
+#   1=Accepted
+#   2=Printed
+#   3=Reassigned
+#   4=Filled
+#   5=Not Filled
+#   6=Expired
+#   7=Canceled
+#   8=Error
+#   9=Promoted
+#==============================================================================#
+page.myAccount.reqPending.item.status.1=Accepted
+page.myAccount.reqPending.item.status.2=Printed
+page.myAccount.reqPending.item.status.3=Reassigned
+page.myAccount.reqPending.item.status.4=Filled
+page.myAccount.reqPending.item.status.5=Not Filled
+page.myAccount.reqPending.item.status.6=Expired
+page.myAccount.reqPending.item.status.7=Canceled
+page.myAccount.reqPending.item.status.8=Error
+page.myAccount.reqPending.item.status.9=Promoted
+
+###############################################################################
+#
+#  Status Patron Groups messages for display on title and holdings pages
+#
+###############################################################################
+page.searchResults.titles.statusPatronGroup.GROUPCODE=Message for title page
+page.myAccount.chargedItem.item.statusPatronGroup.GROUPCODE=Message for holdings charged item
+page.myAccount.reqPending.item.statusPatronGroup.GROUPCODE=Message for holdings with request pending
+
+#==============================================================================#
+# Following is the label for concatenating with the above request status code
+# to produce the display status
+#==============================================================================#
+page.myAccount.reqPending.position=Position
+page.myAccount.reqPending.expires=Expires
+page.myAccount.reqPending.pickup=Pick up at
+page.myAccount.reqPending.inTransit=In transit to
+item.status.unknown.location=Unknown Location
+item.status.unknown.date=Unknown Date
+#==============================================================================#
+#
+# My Account Preferences used for Edit Preferences Page
+# =====================================================
+#==============================================================================#
+page.myAccount.editPreferences.title=WebVoy\u00E1ge My Account Edit Preferences
+page.myAccount.editPreferences.heading=Edit Preferences
+page.myAccount.editPreferences.label=Edit Preferences
+page.myAccount.editPreferences.searchOptions.label=Search options
+page.myAccount.editPreferences.database.label=Databases
+page.myAccount.editPreferences.displayOptions.label=Display options
+page.myAccount.editPreferences.defaultSearchForm.label=Default Search Form:
+page.myAccount.editPreferences.displaySearchResults.label=Display Search Results:
+page.myAccount.editPreferences.save.button=Save
+page.myAccount.editPreferences.save.button.message=Save user search preferences
+page.myAccount.editPreferences.cancel.button=Cancel
+page.myAccount.editPreferences.cancel.button.message=Cancel editing user search preferences
+page.myAccount.editPreferences.clear.button=Clear
+page.myAccount.editPreferences.clear.button.message=Clear user selected preferences
+#==============================================================================#
+#
+#  My Account Preferences - page e.g. basic, advanced, author, subject, course
+#   reserve set preference to Y to display the preference choice
+#
+#==============================================================================#
+page.myAccount.editPreferences.preferences.page.preference=Y
+page.myAccount.editPreferences.preferences.page.name=Default Search Form:
+page.myAccount.editPreferences.preferences.page.type.basic=Basic
+page.myAccount.editPreferences.preferences.page.type.advanced=Advanced
+page.myAccount.editPreferences.preferences.page.type.subject=Subject
+page.myAccount.editPreferences.preferences.page.type.author=Author
+page.myAccount.editPreferences.preferences.page.type.courseReserve=CourseReserve
+#==============================================================================#
+#
+#  My account edit preferences -- search basic page available indices
+#
+#==============================================================================#
+page.myAccount.editPreferences.preferences.page.basic.label=Basic
+page.myAccount.editPreferences.preferences.page.basic.code=1
+page.myAccount.editPreferences.preferences.page.basic.codeName=basic
+page.myAccount.editPreferences.preferences.page.basic.name.GKEY=All Fields
+page.myAccount.editPreferences.preferences.page.basic.name.TKEY=Title
+page.myAccount.editPreferences.preferences.page.basic.name.SKEY=Subject
+page.myAccount.editPreferences.preferences.page.basic.name.NKEY=Author
+page.myAccount.editPreferences.preferences.page.basic.name.JKEY=Journal Title
+#==============================================================================#
+#
+#  My account edit preferences -- search advanced page available indices <--
+#   for developing the page the indices are actually from the database
+#
+#==============================================================================#
+page.myAccount.editPreferences.preferences.page.advanced.label=Advanced
+page.myAccount.editPreferences.preferences.page.advanced.code=2
+page.myAccount.editPreferences.preferences.page.advanced.codeName=advanced
+page.myAccount.editPreferences.preferences.page.advanced.name.TKEY=Title Keyword
+page.myAccount.editPreferences.preferences.page.advanced.name.SKEY=Subject Keyword
+page.myAccount.editPreferences.preferences.page.advanced.name.JKEY=Journal Title Keyword
+#==============================================================================#
+#
+#  My account edit preferences -- search subject page available indices (NEW)
+#
+#==============================================================================#
+page.myAccount.editPreferences.preferences.page.subject.label=Subject
+page.myAccount.editPreferences.preferences.page.subject.code=3
+page.myAccount.editPreferences.preferences.page.subject.codeName=subject
+page.myAccount.editPreferences.preferences.page.subject.name.SKEY=Subject Keyword
+#==============================================================================#
+#
+#  My account edit preferences -- search author page available indices
+#
+#==============================================================================#
+page.myAccount.editPreferences.preferences.page.author.label=Author
+page.myAccount.editPreferences.preferences.page.author.code=4
+page.myAccount.editPreferences.preferences.page.author.codeName=author
+page.myAccount.editPreferences.preferences.page.author.name.AUTH=Name Title Browse
+#==============================================================================#
+#
+#  My account edit preferences -- search course reserve page available indices
+#
+#==============================================================================#
+page.myAccount.editPreferences.preferences.page.courseReserve.label=Course Reserve
+page.myAccount.editPreferences.preferences.page.courseReserve.code=5
+page.myAccount.editPreferences.preferences.page.courseReserve.codeName=courseReserve
+page.myAccount.editPreferences.preferences.page.courseReserve.instructor.label=Instructor
+page.myAccount.editPreferences.preferences.page.courseReserve.department.label=Department
+page.myAccount.editPreferences.preferences.page.courseReserve.course.label=Course
+page.myAccount.editPreferences.preferences.page.courseReserve.section.label=Section
+#==============================================================================#
+#
+#  My Account Preferences - display e.g. number of records on a page
+#  set preference to Y to display the preference choice
+#
+#==============================================================================#
+page.myAccount.editPreferences.preferences.display.preference=Y
+#==============================================================================#
+#
+#   My Account - personal information
+#
+#==============================================================================#
+page.myAccount.viewPersonalInfo.title=WebVoy\u00E1ge My Account Personal Information
+page.myAccount.viewPersonalInfo.heading=Personal Information
+page.myAccount.viewPersonalInfo.label=Personal Information
+page.myAccount.viewPersonalInfo.fullname.label=Name:
+page.myAccount.viewPersonalInfo.firstName.label=First Name:
+page.myAccount.viewPersonalInfo.lastName.label=Last Name:
+page.myAccount.viewPersonalInfo.permanentAddress=Permanent Address:
+page.myAccount.viewPersonalInfo.activeAddress=Active Address:
+page.myAccount.viewPersonalInfo.addressLine1.label=Address Line1:
+page.myAccount.viewPersonalInfo.addressLine2.label=Address Line2:
+page.myAccount.viewPersonalInfo.addressLine3.label=Address Line3:
+page.myAccount.viewPersonalInfo.addressLine4.label=Address Line4:
+page.myAccount.viewPersonalInfo.addressLine5.label=Address Line5:
+page.myAccount.viewPersonalInfo.city.label=City:
+page.myAccount.viewPersonalInfo.state.label=State:
+page.myAccount.viewPersonalInfo.zipCode.label=Zip Code
+page.myAccount.viewPersonalInfo.country.label=Country:
+page.myAccount.viewPersonalInfo.activeAddress.label=Active Address:
+page.myAccount.viewPersonalInfo.permanentAddress.label=Permanent Address:
+page.myAccount.viewPersonalInfo.permanentAddress.preference=Y
+page.myAccount.viewPersonalInfo.phone.label=Phone:
+page.myAccount.viewPersonalInfo.mobile.label=Cell Phone:
+page.myAccount.viewPersonalInfo.fax.label=Fax:
+page.myAccount.viewPersonalInfo.otherPhone.label=Other:
+page.myAccount.viewPersonalInfo.email.label=Email:
+page.myAccount.viewPersonalInfo.expirationDate.label=Expiration Date:
+page.myAccount.viewPersonalInfo.smsNumber.label=SMS Number:
+page.myAccount.viewPersonalInfo.smsNumber.save.button=Save
+page.myAccount.viewPersonalInfo.smsNumber.save.button.message=Save text number
+page.myAccount.viewPersonalInfo.smsNumber.update.success.message=Patron SMS number was added/updated successfully
+page.myAccount.viewPersonalInfo.smsNumber.update.error.message=Patron SMS number failed to be added/updated
+#==============================================================================#
+#
+#   My Account - change PIN
+#
+#==============================================================================#
+page.myAccount.changePin.title=WebVoy\u00E1ge My Account Change PIN
+page.myAccount.changePin.heading=Change PIN
+page.myAccount.changePin.changePin.label=Change PIN
+page.myAccount.changePin.save.button=Save
+page.myAccount.changePin.save.button.message=Save new PIN
+page.myAccount.changePin.cancel.button=Cancel
+page.myAccount.changePin.cancel.button.message=Cancel change PIN
+page.myAccount.changePin.currentPin.label=Current PIN:
+page.myAccount.changePin.newPin.label=New PIN:
+page.myAccount.changePin.ConfirmNewPin.label=Confirm New PIN:
+#==============================================================================#
+#
+#   My Account - change PIN error code
+#
+#     Customizable Change PIN message from OPAC.ini and add success message code
+#
+#==============================================================================#
+page.myAccount.changePin.errorCode.PINMessage1=You have not entered your current PIN correctly.
+page.myAccount.changePin.errorCode.PINMessage2=Not all fields have been entered. Please try again.
+page.myAccount.changePin.errorCode.PINMessage3=New PIN does not contain 4-12 characters. Please enter again.
+page.myAccount.changePin.errorCode.PINMessage4=New PIN and Confirm PIN do not mach. Please enter again.
+page.myAccount.changePin.errorCode.PINMessage5=New PIN matches existing PIN. Please enter again.
+page.myAccount.changePin.errorCode.PINMessage6=Unable to change PIN. Please ask for help at the Circulation or Reference Desk.
+page.myAccount.changePin.errorCode.PINMessage7=Change PIN success
+#==============================================================================#
+#
+#  My list page used configurable labels, buttons
+#
+#==============================================================================#
+page.myList.page.title=WebVoy\u00E1ge My List
+page.myList.page.heading=My List
+page.myList.pubDate.label=Publisher date:
+page.myList.saveOn.label=Saved on:
+page.myList.delete.button=delete
+page.myList.delete.message=delete the list
+page.myList.noOfHits.label=
+page.myList.noOfHits.posttext= items in your list
+page.myList.message.empty.display=Your list is empty.
+#==============================================================================#
+# My list book bag error message
+#==============================================================================#
+page.myList.bookbagMessage1=Record not found, or it has been deleted.
+page.myList.bookbagMessage2=Database is no longer available.
+page.myList.bookbagMessage3=No email address has been entered. Please enter an email address.
+page.myList.bookbagMessage4=No records have been selected to save to your list.
+page.myList.bookbagMessage5=To save to your list, you must log into your account.
+page.myList.bookbagMessage6=The selected records have been added to your list.
+page.myList.bookbagMessage7=You may not save more than 1000 records to your list.
+page.myList.bookbagMessage8=Your list is empty.
+page.myList.bookbagMessage9=Save record operation may have failed.
+page.myList.bookbagMessage10=You must be registered at this institution to save your records.
+page.myList.bookbagMessage11=Items from remote databases can not be saved to your list.
+#==============================================================================#
+#
+# End of My Account
+# =================
+#==============================================================================#
+
+#==============================================================================#
+#
+# Patron Requests page properties
+#
+#==============================================================================#
+option.patronRequests=Y
+page.patronRequests.title=WebVoy\u00E1ge Patron Requests
+page.patronRequests.heading=Patron Requests
+page.patronRequests.label=Patron Requests
+page.patronRequests.select.message=Select the type of request below:
+page.patronRequests.available.pretext=(
+page.patronRequests.available.posttext= available)
+page.patronRequests.returnToHoldings.linkText=Return to holdings
+page.patronRequests.returnToHoldings.pretext=
+page.patronRequests.returnToHoldings.posttext=
+
+#############
+# Patron Requests barcode/IID input:
+# There are two options for the value page.patronRequests.idPrompt.
+# Y = Show the barcode or Institution ID prompt on the request page, and make it mandatory
+# N = Do not show the barcode or Institution ID prompt on the request page at all.
+############
+page.patronRequests.idPrompt=Y
+
+#==============================================================================#
+#
+# Patron Request page properties
+#
+#==============================================================================#
+page.patronRequest.submit.button=Submit
+page.patronRequest.submit.button.message=Submit the request
+page.patronRequest.cancel.button=Cancel
+page.patronRequest.cancel.button.message=Cancel request
+page.patronRequest.returnToRequests.linkText=Return to requests
+page.patronRequest.returnToRequests.pretext=
+page.patronRequest.returnToRequests.posttext=
+page.patronRequest.requiredFields.message=Please enter data for the required field
+#==============================================================================#
+#
+# Patron Requests - request form label text
+#    These define the text labels on patron request forms.
+#    Please be aware that some patron request form field labels are defined
+#    in SysAdmin and cannot be changed here.
+#
+#==============================================================================#
+# These labels are used on many request forms:
+page.patronRequest.label.anyCopy=Any Copy
+page.patronRequest.label.anyCopyAt=Any Copy At:
+page.patronRequest.label.comment=Comment:
+page.patronRequest.label.instructions=Instructions:
+page.patronRequest.label.pickUpAt=Pick Up At:
+page.patronRequest.label.notNeededAfter=Not Needed After:
+page.patronRequest.label.selectItem=Select an item:
+page.patronRequest.label.thisCopy=This Copy:
+page.patronRequest.label.thisIssue=Specify an issue:
+page.patronRequest.label.title=Title:
+# These are the labels for the option buttons on the Call Slip request form
+page.patronRequest.label.callSlipPick=Select an item:
+page.patronRequest.label.callSlipSpecify=Specify an issue:
+# These are the labels on the "No Bib" Form (OPAC Purchase Request)
+page.patronRequest.label.field1=Author:
+page.patronRequest.label.field2=Title:
+page.patronRequest.label.field3=Number:
+page.patronRequest.label.field4=Publisher:
+page.patronRequest.label.field5=Date:
+page.patronRequest.label.field6=Edition:
+page.patronRequest.label.field7=Email:
+# This is the label for the Bib Info section on the Bib Level requests
+page.patronRequest.label.bibInfo=Bib Info:
+# These labels are used on the Short Loan request form
+page.patronRequest.label.reservationDate=Select Reservation Date:
+page.patronRequest.label.startTime=Start Time:
+page.patronRequest.label.endTime=End Time:
+# This is for the NLNZ BibU and Index ILL Forms.
+page.patronRequest.label.note=Note:
+# These are labels for the UB Request form
+page.patronRequest.label.holdingsLib=Library:
+page.patronRequest.label.pickupLib=Pick Up Library:
+page.patronRequest.label.SelectPickupLocsMsg=You must provide a Pick Up Library and Desk before your request is complete!
+# These are labels for the Media Bookings forms
+page.patronRequest.label.callNumber=Call Number:
+page.patronRequest.label.deliverTo=Deliver To:
+page.patronRequest.label.equipmentInRoom=Equipment In Room:
+page.patronRequest.label.itemNotAvailable=This item is not available during the following times:
+page.patronRequest.label.itemLoanPeriod=This item may be booked for up to \\n \\i(s).
+page.patronRequest.label.mediaStartDate=Select Start Date and Time:
+page.patronRequest.label.mediaEndDate=Select End Date and Time:
+page.patronRequest.label.otherEquipment=Other Equipment Available For Your Booking:
+page.patronRequest.label.selectEquipment=Select Equipment:
+#==============================================================================#
+#
+# Patron Requests - request messages
+#
+#==============================================================================#
+page.patronRequests.message.request.success=Your request was successful.
+page.patronRequests.message.request.fail=Your request failed.
+page.patronRequests.message.request.validation=The barcode you entered does not match that of the currently logged in patron. You may retry your request or log out and start over.
+
+#==============================================================================#
+#
+# Patron Requests - no requests message. This is displayed if:
+#    1: the patron has no requests available in the current database
+#   OR
+#    2: the patron is blocked from making requests
+#
+#==============================================================================#
+page.patronRequests.message.noRequests=You have no requests available in this database.
+
+#==============================================================================#
+#
+# Patron Requests - generic request blocked messages
+#
+#==============================================================================#
+page.patronRequests.message.requestblocked-4=There are no circulating items available to satisfy your UB Borrowing Request.
+page.patronRequests.message.requestblocked-2=No items are available for CallSlip requests.
+page.patronRequests.message.requestblocked-1=No items are available for Hold requests.
+page.patronRequests.message.requestblocked1=No holdings are available.
+page.patronRequests.message.requestblocked2=The item is on order.
+page.patronRequests.message.requestblocked3=The item is not charged.
+page.patronRequests.message.requestblocked4=The item is missing.
+page.patronRequests.message.requestblocked5=The item is lost.
+page.patronRequests.message.requestblocked6=The item is at the bindery.
+page.patronRequests.message.requestblocked7=No items are available for recall.
+page.patronRequests.message.requestblocked8=You have already placed a request for this item.
+page.patronRequests.message.requestblocked9=No recall policy is defined for this item.
+page.patronRequests.message.requestblocked10=No hold policy is defined for this item.
+page.patronRequests.message.requestblocked11=This item has been scheduled through media booking.
+page.patronRequests.message.requestblocked12=This item is not available for hold.
+
+#==============================================================================#
+#
+# Patron Requests - automated retrieval system request blocked messages
+#
+#==============================================================================#
+page.patronRequests.message.arsblocked1=Your Automated Retrieval System Request failed. This item is not a Remote Storage item.
+page.patronRequests.message.arsblocked2=Your Automated Retrieval System Request failed. This item has already been requested from Remote Storage.
+page.patronRequests.message.arsblocked3=Your Automated Retrieval System Request failed. This item is not available for Remote Storage request.
+page.patronRequests.message.arsblocked-3=No items are available for Remote Storage requests.
+
+#==============================================================================#
+#
+# Patron Requests - short loan request blocked messages
+#
+#==============================================================================#
+page.patronRequests.message.shortloanblocked1=This item is not authorized for Short Loans.
+page.patronRequests.message.shortloanblocked2=This item is not available for Short Loan at the selected time.
+page.patronRequests.message.shortloanblocked3=This item cannot be requested on this date since the Library will be closed.
+page.patronRequests.message.shortloanblocked4=The Short Loan configuration is not valid. Please inform the nearest librarian.
+page.patronRequests.message.shortloanblocked5=Patron has accrued blocks.
+page.patronRequests.message.shortloanblocked6=Patron has reached the maximum number of short loans allowed.
+page.patronRequests.message.shortloanblocked7=Patron has reached the maximum number of short loans allowed for this title.
+page.patronRequests.message.shortloanblocked8=Patron has reached the maximum number of short loans allowed for this day.
+page.patronRequests.message.shortloanblocked99=No items are available for Short Loan.
+
+#==============================================================================#
+#
+# Patron Requests - media booking block messages
+#
+#==============================================================================#
+page.patronRequests.message.medbaddelloc=The selected media item cannot be delivered to the specified location. Please select another delivery location from the list.
+page.patronRequests.message.medbadend=Your selected ending date and/or time does not fall within the media calendar. Please enter a different end time.
+page.patronRequests.message.medbadequiptimes=The selected equipment cannot be booked at the specified time. Please select a different piece of equipment from the list, or adjust your booking times.
+page.patronRequests.message.medbadpickuploc=The selected media item cannot be picked up at the specified location. Please select a different pickup location from the list.
+page.patronRequests.message.medbadroomtimes=The selected room cannot be booked at the specified time. Please select a different room from the list, or change the time of your booking.
+page.patronRequests.message.medbadstart=Your selected starting date and/or time does not fall within the media calendar. Please enter a different start time.
+page.patronRequests.message.medbooklimit=You have reached the maximum number of bookings. Please see staff at the Media Desk.
+page.patronRequests.message.medcancellimit=You have too many cancelled media bookings. Please see staff at the Media Desk.
+page.patronRequests.message.medendclosed=The library is closed on the specified end date or time. Please enter a different end time.
+page.patronRequests.message.medequipintervalmax=The specified booking schedule exceeds the maximum booking interval for the selected equipment. Please select a different piece of equipment from the list, or change the booking times.
+page.patronRequests.message.medequipnousage=The selected equipment cannot be picked up or delivered. Please select a different piece of equipment from the list.
+page.patronRequests.message.medequippiecesmax=You have reached the maximum number of pieces of equipment allowed in a media booking. Please remove one or more pieces from the list.
+page.patronRequests.message.medfeelimit=You have reached the maximum balance in media booking fees. Please see staff at the Media Desk.
+page.patronRequests.message.meditemintervalmax=The specified booking schedule exceeds the maximum loan period for the selected item. Please consult the displayed loan period and modify the booking times.
+page.patronRequests.message.meditemnousage=The selected item cannot be picked up or delivered. Please select a different item.
+page.patronRequests.message.meditemunavail=The selected item is not available for booking at the specified times. Please consult the displayed schedule and modify the booking times.
+page.patronRequests.message.medlatelimit=You have too many "late return" media bookings. Please see staff at the Media Desk.
+page.patronRequests.message.mednoitems=No items are available for use in your booking.
+page.patronRequests.message.medroomintervalmax=The specified booking schedule exceeds the maximum booking interval for the selected room. Please select a different room from the list, or change the booking times.
+page.patronRequests.message.medroomnousage=The selected location cannot be used for delivery. Please select a different delivery location.
+page.patronRequests.message.medroomunavail=The selected room is not available for booking at the specified times. Please select a different room from the list, or change the booking times.
+page.patronRequests.message.medstartclosed=The library is closed on the specified start date or time. Please enter a different start time.
+page.patronRequests.message.medunclaimlimit=You have too many unclaimed media bookings. Please see staff at the Media Desk.
+
+#==============================================================================#
+#
+# Patron Requests - call slip request messages:
+#    The final segment of the message codes must match those defined in SysAdmin.
+#
+#==============================================================================#
+page.patronRequests.message.callslipmsg.SM1_NxtDay=Call Slip requests should be fulfilled by the next day.
+
+#==============================================================================#
+#
+# Patron Requests - media booking confirmation form
+#
+#==============================================================================#
+page.mediaBookingConf.title=WebVoy\u00E1ge Media Booking Request
+page.mediaBookingConf.heading=Media Booking Confirmation
+page.mediaBookingConf.label=Media Booking Confirmation
+
+#==============================================================================#
+#
+# Send Email
+#
+#==============================================================================#
+page.searchResults.emailResults.page.title=WebVoy\u00E1ge E-mail
+page.searchResults.emailResults.page.heading=E-mail
+page.searchResults.emailResults.page.label=E-mail
+page.searchResults.emailResults.page.email.label1=To e-mail the selected results, enter the information below and click E-mail.
+page.searchResults.emailResults.page.email.label2=(
+page.searchResults.emailResults.page.email.label2.value=*
+page.searchResults.emailResults.page.email.label2.posttext= = required field)
+page.searchResults.emailResults.page.email.label3=The information entered on this page will not be used to send unsolicited e-mail, and will not be sold to a 3rd party.
+page.searchResults.emailResults.page.email.to.argument.label=To:
+toString.asterisk=*
+page.searchResults.emailResults.page.email.subject.argument.label=Subject:
+page.searchResults.emailResults.page.email.bodytext.argument.label=Body Text:
+page.searchResults.emailResults.page.email.email.button=E-mail
+page.searchResults.emailResults.page.email.email.button.message=Send Email Message
+page.searchResults.emailResults.page.email.cancel.button=Cancel
+page.searchResults.emailResults.page.email.cancel.button.message=Cancel Email Message
+page.searchResults.emailResults.page.errorCode.EMAILMessage1=No email address has been entered. Please enter an email address.
+page.searchResults.emailResults.page.errorCode.EMAILMessage2=Email address is not valid.
+page.searchResults.emailResults.page.errorCode.EMAILMessage3=No records were selected.
+page.searchResults.emailResults.page.errorCode.EMAILMessage4=The maximum number of characters on subject line is 100.
+page.searchResults.emailResults.page.errorCode.EMAILMessage5=The maximum number of characters of body text is 2000.
+page.searchResults.emailResults.page.errorCode.EMAILMessage6=Your Email Request failed!
+page.searchResults.emailResults.page.email.success=Your Email was sent correctly
+page.searchResults.emailComplete.page.title=WebVoy\u00E1ge E-mail Confirmation
+page.searchResults.emailComplete.page.heading=E-Mail Sent
+page.searchResults.emailComplete.page.label=E-mail Sent
+page.searchResults.emailComplete.page.success.label=Your e-mail has been sent successfully to
+page.searchResults.emailComplete.page.return.button=Return
+page.searchResults.emailComplete.page.return.button.message=Return Email Message
+
+#==============================================================================#
+# Option to enable email functionality
+#==============================================================================#
+option.email=N
+mail.host=
+mail.transport.protocol=smtp
+mail.user=voyager
+mail.subject=Search Results
+
+#============================================================================
+#
+# Image Server configuration for link, thumbnail alter text
+#
+#============================================================================
+#imageServer.scanDoc=___WEBVOYAGE_CLASSIC_URL___/cgi-bin/Pscandoc.cgi?
+#imageServer.scandocAltText=Scan Document
+#imageServer.thumbnailAltText=Thumbnail
+#imageServer.loginRequiredText=**** Login Required ****
+
+
+
+
+
+

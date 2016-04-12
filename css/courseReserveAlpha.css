@@ -1,0 +1,79 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: courseReserveAlpha css
+**          Version : 7.2.0
+**          Created : 01-OCT-2007
+**      Orig Author : David Sellers
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+#fieldText
+{
+    FONT-SIZE: smaller;
+	padding: 1px;
+	padding-right: 5px;
+	margin: 0px;
+	border: 0px;
+	text-align: left;
+
+	width: 98%;
+}
+
+
+#locationInfo
+{
+	padding: 10px 0px 10px 10px;
+}
+
+
+#searchCRAlphaText
+{
+	padding: 0px 0px 10px 10px;
+}
+
+#searchCRAlphaInstructor, #searchCRAlphaDepartment, #searchCRAlphaCourse
+{
+	padding: 0px 0px 10px 10px;
+}
+
+#searchCRAlphaInstructor #fieldLabel,
+#searchCRAlphaDepartment #fieldLabel,
+#searchCRAlphaCourse #fieldLabel 
+{
+   width: 95px;
+   float:left;
+}
+
+
+#fieldAlphaLabel
+{
+
+
+    FONT-SIZE: smaller;
+	text-align: left;
+	padding: 0px 2px 0px 10px;
+	margin: 0px 0px 0px 0px;
+}
+
+#searchCRAlphaInstructor a,
+#searchCRAlphaDepartment a,
+#searchCRAlphaCourse a 
+{
+
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+
+
+

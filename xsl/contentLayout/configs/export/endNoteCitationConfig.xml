@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Revision: 1.3.2.1 $ $Date: 2012/06/11 22:25:06 $ -->
+<!-- 
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+-->
+
+<!--
+**          Product : WebVoyage :: displaycfg
+**          Version : 7.1.0
+**          Created : 17-OCT-2007
+**      Orig Author : David Sellers
+**    Last Modified : 09-MAR-2009
+** Last Modified By : Mel Pemble
+
+--> 
+
+	<display>
+
+		<displayTags label="Author:">
+			<displayTag field="100" indicator1="X"  indicator2="X" subfield="aq"/>
+			<displayTag field="110" indicator1="X"  indicator2="X" subfield="ab"/>
+			<displayTag field="700" indicator1="X"  indicator2="X" subfield="aqd"/>
+			<displayTag field="710" indicator1="X"  indicator2="X" subfield="ab"/>
+		</displayTags>
+		
+		<titleTags label="Title:">
+			<displayTag field="130" indicator1="X"  indicator2="X" subfield="aplskfmnor"/>
+			<displayTag field="240" indicator1="X"  indicator2="X" subfield="aplskfmnor"/>
+			<displayTag field="730" indicator1="X"  indicator2="X" subfield="aplskfmnor"/>
+			<displayTag field="245" indicator1="X"  indicator2="X" subfield="abcfknps"/>
+		</titleTags>	
+
+		<displayTags label="Series Editor:" >
+			<displayTag field="800" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="810" indicator1="X"  indicator2="X" subfield="a" />
+		</displayTags>
+
+		<displayTags label="Series Title:" >
+			<displayTag field="400" indicator1="X"  indicator2="X" subfield="abdfklnptv" />
+			<displayTag field="410" indicator1="X"  indicator2="X" subfield="abdfklnptv" />
+			<displayTag field="411" indicator1="X"  indicator2="X" subfield="acdefklnpt" />
+			<displayTag field="440" indicator1="X"  indicator2="X" subfield="anpv" />
+			<displayTag field="490" indicator1="X"  indicator2="X" subfield="av" />
+		</displayTags>
+		
+		<displayTags label="City:" >
+			<displayTag field="260" indicator1="X"  indicator2="X" subfield="a" />
+		</displayTags>
+		
+		<displayTags label="Publisher:" >
+			<displayTag field="260" indicator1="X"  indicator2="X" subfield="b" />
+		</displayTags>
+<!--
+    <displayTags label="Physical Description:">
+        <displayTag field="7107"/>
+    </displayTags>
+    
+    <displayTags label="Includes:">
+        <displayTag field="7106"/>
+    </displayTags>
+-->
+    <displayTags label="Format:">
+        <displayTag field="7000"/>
+    </displayTags>
+    
+		<displayTags label="Volume:" >
+			<displayTag field="362" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="440" indicator1="X"  indicator2="X" subfield="v" />
+		</displayTags>
+		
+		<displayTags label="Number of Volumes:" >
+			<displayTag field="773" indicator1="X"  indicator2="X" subfield="g" />
+		</displayTags>
+		
+		<displayTags label="Number:" >
+			<displayTag field="773" indicator1="X"  indicator2="X" subfield="g" />
+		</displayTags>
+		
+		<displayTags label="Number of Pages:" >
+			<displayTag field="300" indicator1="X"  indicator2="X" subfield="a" />
+		</displayTags>
+		
+		<displayTags label="Edition:" >
+			<displayTag field="250" indicator1="X"  indicator2="X" subfield="a" />
+		</displayTags>
+		
+		<displayTags label="Translator:" >
+			<displayTag field="700" indicator1="X"  indicator2="X" subfield="a" />
+		</displayTags>
+		
+		<displayTags label="ISBN:" >
+			<displayTag field="020" indicator1="X"  indicator2="X" subfield="a" />
+		</displayTags>
+		
+		<displayTags label="Reprint Edition:" >
+			<displayTag field="250" indicator1="X"  indicator2="X" subfield="a" />
+		</displayTags>
+		
+		<displayTags label="Accession Number:" >
+			<displayTag field="035" indicator1="X"  indicator2="X" subfield="a" />
+		</displayTags>
+		
+		<displayTags label="Call Number:" >
+			<displayTag field="050" indicator1="X"  indicator2="X" subfield="ab" />
+			<displayTag field="082" indicator1="X"  indicator2="X" subfield="ab" />
+		</displayTags>
+		
+		<displayTags label="Notes:" >
+			<displayTag field="500" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="501" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="502" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="504" indicator1="X"  indicator2="X" subfield="ab" />
+			<displayTag field="506" indicator1="X"  indicator2="X" subfield="abcde" />
+			<displayTag field="520" indicator1="X"  indicator2="X" subfield="ab" />
+			<displayTag field="525" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="530" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="533" indicator1="X"  indicator2="X" subfield="ae" />
+			<displayTag field="538" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="540" indicator1="X"  indicator2="X" subfield="abcd" />
+			<displayTag field="545" indicator1="X"  indicator2="X" subfield="ab" />
+			<displayTag field="546" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="555" indicator1="X"  indicator2="X" subfield="ab" />
+			<displayTag field="590" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="591" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="592" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="593" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="594" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="595" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="596" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="597" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="598" indicator1="X"  indicator2="X" subfield="a" />
+			<displayTag field="599" indicator1="X"  indicator2="X" subfield="a" />
+		</displayTags>
+		
+		<displayTags label="Holdings Information" notFound="No holdings available">
+        	<displayTag field="9000"/>
+    	</displayTags>
+		
+	</display>
+
+

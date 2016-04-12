@@ -1,0 +1,171 @@
+/* $Revision: 1.6 $ $Date: 2012/06/08 20:13:23 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: print brief record css
+**          Version : 7.2.0
+**          Created : 01-NOV-2007
+**      Orig Author : Scott Morgan
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+body
+{
+   margin:1px;
+   padding:1px;
+   clear:both;
+   width:99%;
+   font-family: "Arial Unicode MS","GNU Unifont",Arial,Verdana,Helvetica,sans-serif;
+}
+
+.logo
+{
+   margin-bottom:15px;
+}
+
+.bibliographicData
+{
+   clear:both;
+}
+
+.bibRecord
+{
+   border-top:1px dotted black;
+   margin:1px;
+   padding:1px;
+   margin-bottom:15px;
+   clear:both;
+   display: table;
+}
+
+.bibTitle
+{
+   padding: 0px 0px 0px 25px;
+   margin: 0px 0px 0px 0px;
+}
+
+.bibTitle p
+{
+   color: #000000;
+   font-size: larger;
+   font-weight: bold;
+}
+
+.bibTags,.holdingsLabel,.holdingsArea ,.displayHoldings,.oddHoldingsRow
+{
+   margin:0px;
+   padding:0px;
+   clear:both;
+}
+
+.bibTags ul
+{
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
+}
+
+.bibTag
+{
+   margin:1px;
+   padding:1px;
+   clear:both;
+   float:left;
+   display:table-row;
+   width:100%;
+   /*width:99%;*/
+}
+
+.fieldLabelSpan
+{
+   clear:both;
+   color: #000000;
+   font-size: smaller;
+   font-weight: bold;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: right;
+   white-space: nowrap;
+   width:175px;
+   float:left;
+   display: table-cell;
+}
+
+.subfieldData
+{
+   color: #000000;
+   font-size: smaller;
+   padding: 0px;
+   margin: 0 0 0 2px;
+   border: 0px;
+   text-align: left;
+   width:auto;
+   xxfloat:left;
+   display: table-cell;
+}
+
+h2.nav,h2.navFooter
+{
+   position: absolute;
+   left: -200em;
+}
+.holdingsLabel
+{
+   padding-top:10px;
+}
+h3
+{
+   font-size: smaller;
+   font-weight: bold;
+   margin-left:185px;
+}
+
+#printFooter
+{
+   border-top: 1px dotted grey;
+   padding-top: 15px;
+   clear:both;
+}
+.marcRecord{
+   margin:0px;
+   padding:0px;
+}
+
+.marcRecord li
+{
+   clear:both;
+   display: block;
+}
+.marcRecord li label{
+   float: left;
+   margin-right: 8px;
+}
+.marcRecord li.dataField{
+width: 100%;
+display: inline-block;
+
+}
+
+.marcRecord li .fieldtext{
+   display: block;
+
+}
+
+.marcRecord li .boldit {
+    font-weight: bold;
+}
+
+
+
+.tagLabel {
+    font-weight: bold;
+}
+

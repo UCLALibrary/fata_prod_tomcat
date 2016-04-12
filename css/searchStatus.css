@@ -1,0 +1,108 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: searchStatus
+**          Version : 7.2.0
+**          Created : 09-OCT-2007
+**      Orig Author : David Sellers
+**    Last Modified : 21-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+/*  Search Status */
+
+/* Search Status Form*/
+.searchStatusForm {	min-height: 20em;}
+
+/* Search Status Table*/
+.searchStatusTable
+{
+   width: 80%; 
+   border-top-width: 1px;
+   border-top-style: solid;
+   border-top-color: #62b3ff;
+   border-left-width: 1px;
+   border-left-style: solid;
+   border-left-color: #62b3ff;
+}
+
+.tableCellHeading
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding-right: 3px; 
+   padding-left: 3px; 
+   padding-top: 6px; 
+   padding-bottom: 6px; 
+   background-color: #c9e5ff; 
+   border-bottom: 1px solid #62b3ff; 
+   border-right: 1px solid #62b3ff;
+}
+
+.rowHighlight {background-color: #EBEBEB;}
+
+.tableCell
+{
+   FONT-SIZE: smaller;
+   padding-right: 3px; 
+   padding-left: 3px; 
+   padding-top: 6px; 
+   padding-bottom: 6px; 
+   border-bottom: 1px solid #62b3ff; 
+   border-right: 1px solid #62b3ff;
+}
+
+/* Buttons */
+.searchStatusButtons
+{
+   width: 45%; 
+   text-align: center; 
+   margin: 20px 0px 0px 0px;
+   overflow-y: hidden;		
+   overflow-x: hidden;		
+}
+
+.stopBtn, .showBtn
+{
+   color: #ffffff;
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #003061; 
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #000; 
+   border-left: 1px solid #fff;
+   border-right: 1px solid #000; 
+   height: 22px; 
+   cursor: pointer;
+   margin-right: 10px;
+   margin-left: 10px;
+   white-space: nowrap;
+}
+
+.stopBtn
+{
+   float: right;
+}
+
+.showBtn
+{
+   float: right;
+}
+
+.stopBtn:hover, .showBtn:hover
+{
+   color: #003061;
+   background-color: #ffffff;
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #003061; 
+   border-left: 1px solid #000;
+   border-right: 1px solid #003061; 
+}
+
+

@@ -1,0 +1,84 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: resultsTitles
+**          Version : 7.2.0
+**          Created : 15-OCT-2007
+**      Orig Author : David Sellers
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+/* Filters */
+.filters 
+{
+   width: 20%;
+   float: right;
+   background-color: #c9e5ff; 
+   border-top: 1px solid #62b3ff;
+   border-bottom: 1px solid #62b3ff; 
+   border-left: 0px solid #62b3ff;
+   border-right: 0px solid #62b3ff;
+   margin-left: 5px;
+   margin-right: 0px;
+   margin-top: 10px;
+   overflow-y: hidden;	
+   overflow-x: hidden;
+}
+
+.filters ul 
+{
+   list-style: none; 
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 15px 10px;   
+}
+
+
+.filters ul li
+{
+   FONT-SIZE: smaller;
+   padding: 5px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;   
+   overflow-y: hidden;
+}
+
+.filters ul li span
+{
+   float: left;
+   width: 50%;
+}
+
+.filters h3
+{
+   FONT-SIZE: smaller;
+   padding: 11px 0px 6px 10px;
+   margin: 0px 0px 0px 0px;   
+}
+
+.filters h3.nav
+{
+  position: absolute;
+  left: -200em;
+}
+
+.filterBox
+{
+   font-size:14px;
+   font-weight:bold;
+   border-bottom:1px solid #aaccff;
+   padding-top:5px;
+   padding-left:10px;
+   padding-bottom:10px;
+   display:block;
+}
+
+/* Filters */
+
+
+

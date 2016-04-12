@@ -1,0 +1,92 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+   
+**          Product : WebVoyage :: request confirmation css
+**          Version : 7.2.0
+**          Created : 21-JAN-2008
+**      Orig Author : Mel Pemble
+**    Last Modified : 21-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+#mainContent fieldset
+{
+   margin-bottom: 10px;
+   margin-top: 20px;
+   border: 1px solid #000;
+   background: url(../images/requestForm-fieldset.gif) left bottom repeat-x;
+}
+
+#confirmation legend
+{
+   border: 1px solid #000;
+   background: #ddf;
+   padding: 0 2px;
+   font-weight: bold;
+   font-size: 14px;
+   color: #000;
+}
+
+#mainContent fieldset fieldset
+{
+   margin-bottom: 10px;
+   margin-top: 20px;
+   border: 1px solid #000;
+   background: url(../images/requestForm-fieldsetfs.gif) left bottom repeat-x;
+}
+
+#mainContent fieldset li
+{
+   list-style: none;
+   margin: 0;
+   padding: 5px 10px 7px;
+}
+
+#mainContent fieldset ol
+{
+   margin: 0;
+   padding: 0;
+}
+
+#confirmation li
+{
+   clear:both;
+}
+#confirmation  label
+{
+   color:#000;
+   font-style:normal;
+   font-weight:bold;
+   width:150px;
+   display:block;
+   float:left;
+}
+
+#confirmation span
+{
+   margin-left:5px;
+   color: #000;
+   display:block;
+   float:left;
+}
+
+#mainContent fieldset
+{
+   font-size: 12px;
+}
+
+#mainContent ol label
+{
+   padding: 0px;
+   font-weight: bold;
+   text-align:right;
+}
+
+
+

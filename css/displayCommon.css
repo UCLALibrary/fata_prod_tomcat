@@ -1,0 +1,465 @@
+/* $Revision: 1.6 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: displayRecord
+**          Version : 7.2.0
+**          Created : 13-MAY-2008
+**      Orig Author : Mel Pemble
+**    Last Modified : 11-SEP-2009 
+** Last Modified By : Mel Pemble
+*/
+
+.recordForm
+{
+   clear:both;
+   float: left;
+   margin: 0;
+   padding:0;
+   width: 100%;
+}
+
+.recordContent 
+{
+   float: left;
+   margin:0px;
+   padding:0px;
+   clear:both;
+   width: 100%;
+}
+
+.recordLinkBullet 
+{
+   padding-left: 7px;
+   padding-right: 6px;
+   width: 1%;
+   font-size: smaller;
+   font-weight: bold;
+}
+
+/**********************
+ * Action Box Section *
+ **********************/
+ 
+.actionBox
+{
+   background-color:#C9E5FF;
+   border-bottom:1px solid #62B3FF;
+   border-left:0px solid #62B3FF;
+   border-right:0px solid #62B3FF;
+   float:right;
+   font-size:smaller;
+   margin-left:5px;
+   margin-right:0px;
+   width:19%;
+
+/*   
+*original style
+   background-color:#C9E5FF;
+   border:1px solid #62B3FF;
+   float:right;
+   font-size:smaller;
+   margin:0px 0px 0px 3px;
+   padding-bottom: 5px;
+   width:250px; */
+}
+
+.actionBox ul
+{
+   list-style: none; 
+   padding: 0;
+   margin: 0px 0px 0px 25px;   
+}
+
+.actionBox ul li
+{
+   padding: 0;
+   margin: 0;   
+}
+
+.actionBox h3
+{
+   FONT-SIZE: smaller;
+   padding: 11px 0px 6px 10px;
+   margin: 0px 0px 0px 0px;   
+}
+
+.actions, .moreInfo 
+{
+   padding: 5px 0px 10px 0px;
+   margin: 0px 0px 0px 0px;   
+}
+.actions, .moreInfo img
+{
+   border: none;
+}
+
+.thisItem 
+{
+   border-bottom: 1px solid #62b3ff; 
+   padding: 5px 0px 15px 0px;
+   margin: 0px 0px 0px 0px;   
+}
+
+.thisItem label, .actions label, .moreInfo label
+{
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 5px;   
+}
+
+.thisItem ul label
+{
+   color: #9f175e;
+   font-weight: bold;
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;   
+}
+
+
+
+/******************************
+ * Bibliographic Data Section *
+ ******************************/
+
+.bibliographicData
+{
+   display:inline;
+   width:auto;
+}
+
+.bibliographicData .fieldLabel, .displayHoldings .fieldLabel
+{
+	width: 15%;
+	min-width: 150px; 	
+	float: left;
+}
+
+.bibTitle 
+{
+  margin: 0; 
+}
+
+.bibTitle p
+{
+  font-size: larger;
+  font-weight: bold;
+}
+
+.bibTags
+{
+   width:100%;
+}
+
+.bibTags ul
+{
+   list-style-image:none;
+   list-style-position:outside;
+   list-style-type:none;
+   margin:0px;
+   padding:0px;
+}
+
+.bibTags ul li
+{
+  padding-top: 2px;
+  width:auto;
+}
+
+.fieldLabelSpan
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   min-width: 240px;
+   float:left;
+}
+
+.subfieldData
+{
+   display:table-cell;
+   margin-left: 0px;
+}
+
+
+
+
+
+
+.fieldLabel
+{
+   clear:both;
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   width: 1%;
+}
+
+
+
+.displayHoldings .fieldData
+{
+  margin: 0px 0px 3px 0px; 
+}
+
+.fieldData
+{
+   display:block;
+   font-size:smaller;
+}
+
+
+
+
+.fieldSubText
+{
+   font-size: xx-small;
+}
+
+#extLink
+{
+   float:left;
+}
+
+
+.bibCover 
+{
+    float: left;
+    width: auto;
+}
+
+.recordCoverImage
+{
+   margin: 0px;
+   padding-right: 10px;
+   float: left;
+   border: none;
+   width: auto;
+}
+
+
+
+
+
+.holdingsData
+{
+  clear:both;
+}
+
+.holdingsData .fieldData
+{
+  margin: 0px 0px 10px 20px;
+}
+
+
+
+
+/**************************
+ * MARC Data (Staff View) *
+ **************************/
+
+.marcData 
+{
+   padding: 1px;
+   margin: 0px 0px 0px 0px; 
+   font-size: smaller;
+}
+
+.marcData ul
+{
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  float: none;
+}
+
+.marcData ul li
+{
+  clear: both;
+  padding: 0px 0px 0px 0px;
+  margin: 2.5px 0px 0px 0px;
+  display: table-row; 
+}
+
+.tagLabel 
+{
+   float: left;
+   padding: 0px 5px 0px 0px;
+   margin: 0px 0px 0px 0px; 
+   font-weight: bold;
+}
+
+.tagLabel2 
+{
+   float: left;
+   padding: 0px 5px 0px 0px;
+   margin: 0px 0px 0px 0px; 
+}
+
+
+.marcData p 
+{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  float: left;
+
+}
+
+.marcData .boldit
+{
+   font-weight: bold;
+}
+
+
+
+
+
+.holdingsLabel
+{
+   margin-top: 65px;
+}
+
+.holdingsData
+{
+   width: 50%;
+   padding: 25px 0px 0px 0px;
+   margin: 0px 0px 0px 0px; 
+}
+
+.orange_tb
+{
+   font-size: smaller;
+   font-weight: bold;
+   padding: 0px -1px 0px 3px;
+   margin: 0px 0px 5px 0px; 
+   border-bottom: 1px solid #000000; 
+   width: 100%;
+}
+
+.oddHoldingsRow
+{
+   background-color: #EBEBEB; 
+}
+.evenHoldingsRow
+{
+   background-color: #F1F7F7;
+}
+
+.oddHoldingsRow, .evenHoldingsRow
+{
+   padding: 5px;
+   margin: 1px; 
+}
+
+.holdingsBottom
+{
+   padding: 0px 0px 0px 0px;
+   margin: 5px 0px 0px 0px; 
+   border-top: 1px solid #000000; 
+}
+
+.holdingsSummaryHeading
+{
+   font-size: smaller;
+   font-weight: bold;
+   padding: 0px 0px 0px 3px;
+   margin: 8px 10px 5px 0px; 
+}
+
+.holdingsSummary 
+{
+	font-size: smaller;
+}
+
+.holdingsSummary table 
+{
+   width: 100%;
+}
+
+.holdingsSummary table th
+{
+	font-weight: bold;
+	border-bottom: 1px solid #000000; 
+}
+
+.holdingsSummary table td
+{
+	padding: 3px 6px 3px 3px;
+}
+
+#pageHeadingTitle 
+{
+   float:left;	 
+   position: relative; 
+   right: 999em;
+   margin:0;
+   padding:0;
+}
+
+
+/********************
+ ** Related Records *
+ ********************/
+
+.frameWorkUI #pageContainer
+{
+   min-width: 925px;
+}
+#relatedRecordsTable
+{
+   border:1px solid #996633;
+   margin:0pt;
+   min-width:400px;
+   padding:0pt;
+}
+
+#relatedRecordsTable caption
+{
+	padding: 0 0 0px 0;
+	font: italic 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+#relatedRecordsTable thead
+{
+   background: green;
+}
+#relatedRecordsTable thead tr th
+{
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA;
+}
+#relatedRecordsTable tbody td
+{
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	padding: 6px 6px 6px 12px;
+	background: #F5FAFA;
+	color: #797268;
+}
+.relatedBibsPreText
+{
+   padding-right: 5px;
+}
+.relatedBibsPostText
+{
+   padding-left: 5px;
+}
+
+
+

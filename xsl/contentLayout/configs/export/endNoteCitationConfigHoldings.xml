@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Revision: 1.6 $ $Date: 2013/11/20 22:21:58 $ -->
+<!--
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2013 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+-->
+<!--
+**          Product : WebVoyage :: endNoteCitationConfigHoldings.xml
+**          Version : 7.1.0
+**          Created : 31-JAN-2008
+**      Orig Author : David Sellers, Mel Pemble
+**    Last Modified : 09-MAR-2009
+** Last Modified By : Mel Pemble
+-->
+    <display>
+
+        <View_Record_Page>  <!-- Previously in opac.ini -->
+            <HoldingsText></HoldingsText>
+        </View_Record_Page>
+
+<!--        <holdingsTags label="Database:" notFound="No information available">
+            <displayTag field="1002" />
+        </holdingsTags>
+-->
+
+<!-- MFHD location will be displayed along with item locations in BMD1005 below -->
+        <!-- Item location -->
+        <holdingsTags label="Location:" notFound="No Location available">
+            <displayTag field="1005" />
+        </holdingsTags>
+
+        <holdingsTags label="Call Number:" notFound="No call number available">
+            <displayTag field="852" indicator1="X"  indicator2="X" subfield="khij" />
+        </holdingsTags>
+
+        <holdingsTags label="Order Information:">
+            <displayTag field="1030" />
+        </holdingsTags>
+
+        <holdingsTags label="Shelving Title:">
+            <displayTag field="852" indicator1="X"  indicator2="X" subfield="l" />
+        </holdingsTags>
+
+        <holdingsTags label="E-Items:">
+            <displayTag field="1050"/>
+        </holdingsTags>
+
+        <holdingsTags label="Number of Items:" notFound="None">
+            <displayTag field="1010" />
+        </holdingsTags>
+
+        <holdingsTags label="Status:" notFound="No information available">
+            <displayTag field="1012" />
+        </holdingsTags>
+
+        <holdingsTags label="Recent Issues:">
+            <displayTag field="866" indicator1="|"  indicator2="|" subfield="az" />
+            <displayTag field="1020" />
+        </holdingsTags>
+
+        <holdingsTags label="Older Issues:">
+            <displayTag field="1040" />
+            <displayTag field="866" indicator1="|"  indicator2="0" subfield="az" />
+            <displayTag field="866" indicator1="|"  indicator2="1" subfield="az" />
+            <displayTag field="866" indicator1="|"  indicator2="2" subfield="az" />
+            <displayTag field="866" indicator1="3"  indicator2="0" subfield="az" />
+            <displayTag field="866" indicator1="3"  indicator2="1" subfield="az" />
+            <displayTag field="866" indicator1="3"  indicator2="2" subfield="az" />
+            <displayTag field="866" indicator1="4"  indicator2="0" subfield="az" />
+            <displayTag field="866" indicator1="4"  indicator2="1" subfield="az" />
+            <displayTag field="866" indicator1="4"  indicator2="2" subfield="az" />
+            <displayTag field="866" indicator1="5"  indicator2="0" subfield="az" />
+            <displayTag field="866" indicator1="5"  indicator2="1" subfield="az" />
+            <displayTag field="866" indicator1="5"  indicator2="2" subfield="az" />
+            <displayTag field="899" indicator1="X"  indicator2="X" subfield="a" />
+        </holdingsTags>
+
+        <holdingsTags label="Supplements:">
+           <displayTag field="1042" />
+            <displayTag field="867" indicator1="X"  indicator2="X" subfield="az" />
+            <displayTag field="1022" />
+        </holdingsTags>
+
+        <holdingsTags label="Indexes:">
+           <displayTag field="1044" />
+            <displayTag field="868" indicator1="X"  indicator2="X" subfield="az" />
+            <displayTag field="1024" />
+        </holdingsTags>
+
+        <holdingsTags label="Notes:">
+            <displayTag field="852" indicator1="X"  indicator2="X" subfield="z" />
+        </holdingsTags>
+
+        <holdingsTags label="Linked Resources:">
+            <displayTag field="3000" />
+        </holdingsTags>
+
+    </display>
+
+

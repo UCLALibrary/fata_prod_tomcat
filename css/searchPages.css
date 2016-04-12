@@ -1,0 +1,246 @@
+/* $Revision: 1.7 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: searchPages css
+**          Version : 7.2.0
+**          Created : 29-OCT-2007
+**      Orig Author : Mel Pemble
+**    Last Modified : 17-SEP-2009
+** Last Modified By : Mel Pemble
+*/
+
+/*
+   This is the main stylesheet for all the search pages 
+   you may override any syle that is defined here in the
+   page individual stylesheet
+*/
+
+p.noHitsError
+{
+    background:#FFFF90 none repeat scroll 0 50%;
+    border:0.1em solid red;
+    color:#FF0000;
+    font-size:0.9em;
+    font-weight:bold;
+    padding:0.3em;
+    text-align:center;
+    width:300px; 
+}
+
+#searchForm
+{
+   background: #C9E5FF none repeat scroll 0 0; 
+   border: 1px solid #000;
+   clear: left; 
+   margin: 0; 
+   padding: 0;
+   color: inherit;
+   -moz-border-radius-bottomleft:10px;
+   -moz-border-radius-bottomright:10px;
+   -moz-border-radius-topright:10px;
+}
+
+#searchForm form
+{
+    margin:0px;
+    padding:0px;
+}
+
+#searchForm label
+{
+   font-size: 12px;
+   font-weight: bold;
+   margin: 3px 0 0;
+}
+
+/* Search Navigation*/
+#searchNav
+{
+   margin: 0px; 
+   padding: 0px;
+   float: left;
+}
+#searchHistoryLink 
+{
+   float: right;
+   text-align: right; 
+   margin: 1px 5px 0px 0px;
+}
+
+#searchHistoryLink a
+{
+   background:url("../images/icon_srchhistory.gif") no-repeat left top;
+   padding:0px 0px 10px 20px ;
+   font-size: smaller;
+   color: black;
+}
+
+#searchNav ul
+{
+   float: left; 
+   list-style: none; 
+   margin: 0px; 
+   padding: 0px;
+}
+
+#searchNav li
+{
+   font-size: 12px;
+   font-weight: bold;
+   float:left;
+   display:block;
+   margin: 0px 0px -1px 0px;
+}
+#searchNav li#off
+{
+  font-weight: normal; 
+}
+
+#searchNav a
+{
+   color: #fff;
+   float:left;
+   background:url("../images/search_nav_right_off.gif") no-repeat right top;
+   padding:0px 2px 0px 0px;
+   margin: 0px 0px 0px 8px;                 
+   text-decoration:none;
+   display:block;
+   border-bottom: 1px solid #000;
+}
+
+#searchNav a span
+{
+   float:left;
+   background:url("../images/search_nav_left_off.gif") no-repeat left top;
+   color:white;
+   padding: 7px 20px 5px;  
+   text-align:center;
+   display:block;
+}
+
+#searchNav li.on a, #searchNav a:hover
+{
+   color: #333;
+   border-bottom: 1px solid #c9e5ff;
+   cursor: pointer;
+}
+
+#searchNav a:hover
+{
+   background:url("../images/search_nav_right_on.gif") no-repeat right top;
+   border-bottom: 1px solid #000;
+   color:blue;
+}
+
+#searchNav a:hover span
+{
+   background:url("../images/search_nav_left_on.gif") no-repeat left top;
+   color:blue;
+}
+
+#searchNav li.on a
+{
+   background:url("../images/search_nav_right_on.gif") no-repeat right top;
+   color:black;
+}
+
+#searchNav li.on a span
+{
+   background:url("../images/search_nav_left_on.gif") no-repeat left top;
+   color:black;
+}
+
+#searchInputs
+{
+   padding: 0px 0px 10px 7px;
+   width: 75%;
+}
+
+#searchInputs label
+{
+   padding: 1px;
+   margin: 2px;
+   white-space: nowrap;
+   width: 1%;
+}
+
+#quickLimits 
+{
+   padding: 0px 0px 10px 7px;
+   width: 50%;
+}
+
+#quickLimits label
+{
+   padding: 1px;
+   padding-right: 5px;
+   margin: 2px;
+   border: 0px;
+   white-space: nowrap;
+   width: 1%;
+}
+
+#searchRecs
+{ 
+   float:left;
+   margin: 0px 0px 0px 7px;
+   padding:0px;
+}
+
+#searchRecs label
+{
+   padding: 1px;
+   margin: 2px;
+   white-space: nowrap;
+   width: 1%;
+}
+
+#searchLinks
+{ 
+   clear: both;
+   margin:0px 20px 20px 0px;
+   padding: 16px 0px 0px 0px;
+}
+
+#searchLinks input
+{  
+   margin:0px 0px 0px 10px ;
+}
+
+#databaseInfo 
+{
+   padding: 0px 0px 10px 0px;
+}
+
+#databaseInfo label 
+{
+   font-size: smaller;
+   font-weight: bold;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 2px;
+   border: 0px;
+   white-space: nowrap;
+}
+
+#databaseInfo span 
+{
+   font-size: smaller;
+   padding: 1px;
+   margin: 0px;
+   border: 0px;
+}
+
+#databaseInfo a
+{
+   padding-left: 5px;
+}
+
+
+

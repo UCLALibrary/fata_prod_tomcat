@@ -1,0 +1,105 @@
+/* $Revision: 1.5 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: searchCommon
+**          Version : 7.2.0
+**          Created : 12-MAR-2009
+**      Orig Author : Mel Pemble
+**    Last Modified : 21-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+/*  Search History */
+
+/* Search Status Form*/
+/*.searchHistoryForm {min-height: 20em;}*/
+
+
+/* Search Status Table*/
+.searchHistoryTable, .searchMySearchesTable
+{
+   width: 100%; 
+   border-top-width: 1px;
+   border-top-style: solid;
+   border-top-color: #62b3ff;
+   border-left-width: 1px;
+   border-left-style: solid;
+   border-left-color: #62b3ff;
+}
+
+.tableCellHeading, .tableCellHeadingCenter
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding-right: 3px; 
+   padding-left: 3px; 
+   padding-top: 6px; 
+   padding-bottom: 6px; 
+   background-color: #c9e5ff; 
+   border-bottom: 1px solid #62b3ff; 
+   border-right: 1px solid #62b3ff;
+}
+
+.rowHighlight {background: #EBEBEB;}
+
+.tableCell, .tableCellCenter
+{
+   FONT-SIZE: smaller;
+   padding-right: 3px; 
+   padding-left: 3px; 
+   padding-top: 6px; 
+   padding-bottom: 6px; 
+   border-bottom: 1px solid #62b3ff; 
+   border-right: 1px solid #62b3ff;
+}
+
+.tableCellCenter, .tableCellHeadingCenter {text-align: center;}
+
+.btnLeft
+{
+   background:url("../images/btn_yellow_left.gif") no-repeat right top;
+   float:left;	
+   height: 18px; 
+   width: 4px;
+}
+   
+.btnRight
+{
+   background:url("../images/btn_yellow_right.gif") no-repeat left top;
+   float:left;	
+   height: 18px;    
+   width: 4px;
+}
+
+.btnCenter
+{
+    background:#FEFECA none repeat scroll 0 0;
+    border-color:black;
+    border-style:solid none;
+    border-width:1px medium;
+    cursor:pointer;
+    float:left;
+    font-size:12px;
+    height:18px;
+    padding-bottom:2px;
+    padding-left:5px;
+    padding-right:5px;
+    white-space:nowrap;
+}
+
+.CombineSearchesButton, .mySearchesSave 
+{
+   display: block;
+   float: left;
+   text-align: left;
+   padding: 4px;
+   margin: 0px;
+}
+
+

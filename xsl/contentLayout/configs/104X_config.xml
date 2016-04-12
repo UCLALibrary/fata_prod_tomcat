@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Revision: 1.3.2.1 $ $Date: 2012/06/11 22:25:06 $ -->
+<!-- 
+**========================================================================
+**
+**          Copyright 2007-2012 Ex Libris (USA) Inc.
+**                          All Rights Reserved
+**
+**========================================================================
+-->
+<Config>
+	
+	<!--	Should data be displayed in NISO format, or the old Standard WebVoyage format?
+			Valid values:	("NISO"|"Standard") -->
+			<displayFormat>Standard</displayFormat>
+	
+	<!--	The punctuation that separates enumerative levels.-->
+			<StandardEnumLevelSeparator>, </StandardEnumLevelSeparator>
+	
+	<!--	The punctuation that separates enumerative labels and enumerative data.-->
+			<StandardEnumLabelDataSeparator> </StandardEnumLabelDataSeparator>
+
+	<!--	The punctuation that separates chronological labels and chronological data.-->
+			<StandardChronLabelDataSeparator> </StandardChronLabelDataSeparator>
+
+	<!--	The punctuation that separates the chronological levels.-->
+			<StandardChronologyLevelSeparator>:</StandardChronologyLevelSeparator>
+			
+	<!--	The punctuation that separates the starting range of values from the ending 
+			range of chronological values.-->
+			<StandardChronologyRangeSeparator> - </StandardChronologyRangeSeparator>
+
+	<!--	The punctuation that separates enumerative levels.-->
+			<NISOEnumLevelSeparator>:</NISOEnumLevelSeparator>
+	
+	<!--	The punctuation that separates enumerative labels and enumerative data.-->
+			<NISOEnumLabelDataSeparator>.</NISOEnumLabelDataSeparator>
+	
+	<!--	The punctuation that separates chronological labels and chronological data.-->
+			<NISOChronLabelDataSeparator>.</NISOChronLabelDataSeparator>
+	
+	<!--	The punctuation that separates the chronological levels.-->
+			<NISOChronologyLevelSeparator>:</NISOChronologyLevelSeparator>
+	
+	<!--	The punctuation that separates the starting range of values from the ending 
+			range of chronological values.-->
+			<NISOChronologyRangeSeparator>-</NISOChronologyRangeSeparator>
+	
+	<!--	Pairs of 853/863 fields will not be displayed unless the 1st indicator is 
+			listed below.-->
+			<Valid863Indicators_1>3,4,5</Valid863Indicators_1>
+	
+	<!--	Pairs of 853/863 fields will not be displayed unless the 2nd indicator is 
+			listed below.-->
+			<Valid863Indicators_2>0,1</Valid863Indicators_2>
+	
+	<!--	Pairs of 854/864 fields will not be displayed unless the 1st indicator is 
+			listed below.-->
+			<Valid864Indicators_1>3,4,5</Valid864Indicators_1>
+	
+	<!--	Pairs of 854/864 fields will not be displayed unless the 2nd indicator is 
+			listed below.-->
+			<Valid864Indicators_2>0,1</Valid864Indicators_2>
+	
+	<!--	Pairs of 855/865 fields will not be displayed unless the 1st indicator is 
+			listed below.-->
+			<Valid865Indicators_1>4</Valid865Indicators_1>
+	
+	<!--	Pairs of 855/865 fields will not be displayed unless the 2nd indicator is 
+			listed below.-->
+			<Valid865Indicators_2>1</Valid865Indicators_2>
+			
+	<!--	Caption to precede 854 $o -->
+			<SupplementCaption>Supplement</SupplementCaption>
+	
+	<!--	Caption to precede 855 $o -->
+			<IndexCaption>Index</IndexCaption>
+	
+</Config>
+
+
+
+

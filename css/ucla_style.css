@@ -1,0 +1,410 @@
+/*
+UCLA Local CSS file - overwrites Ex Libris css files.  Created using framework suggested by Michael Doran as implemented by Kalee Sprague at Yale
+
+Created by: Kalee Sprague
+Created on: 05/20/2010
+Updated by:  Sharon Shafer to be for UCLA Library 
+Last Updated:
+
+*/
+
+body {
+   color: black;
+   background: white;
+   margin: 0;          /* it's good practice to zero the margin and padding of the body element
+                          to account for differing browser defaults */
+   padding: 0;
+   text-align: center; /* this centers the container in IE 5* browsers. The text is then set to
+                          the left aligned default in the #container selector */
+    /* default font */
+   font-family: "Arial Unicode MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:16px;
+    min-width: 850px;
+}
+
+a, a:link, a:hover, a:visited {
+color: #0066cc;
+text-decoration: none
+}
+
+.frameWorkUI #pageContainer {
+border-bottom-style: none;
+}
+
+.frameWorkUI #pageHeader {
+background-image: none;
+border-bottom-style: none;
+padding-left: 0px;
+}
+
+.frameWorkUI #headerRow {
+height: 80px;
+background-color: #536895;
+width: 100%;
+}
+
+#headerTabs {
+height: 30px;
+border-top: dotted 1px;
+border-bottom: dotted 1px;
+border-color: #F9BE00;
+}
+
+#patronCol {
+height: 75px;
+}
+
+#headerTabs li {
+padding-bottom: 4px;
+}
+
+#headerTabs li.on {
+background-color: #ffffff;
+}
+
+
+#headerTabs li a, #headerTabs li a:hover {
+background-image: none;
+color: #5784a3;
+font-size: small;
+font-weight: normal;
+}
+
+#headerTabs span.otherCatalogs {
+color: #5784a3;
+font-size: small;
+font-weight: normal;
+float:right;
+position:relative; 
+bottom:18px;
+padding-right: 15px;
+}
+
+#headerTabs span.otherCatalogs a {
+color: #5784a3;
+}
+
+#headerTabs li a span, #headerTabs li a:hover span {
+background-image:none;
+padding-top: 0px;
+padding-left: 10px;
+}
+
+#headerTabs li.on a, #headerTabs li.on a:hover {
+background-image: none;
+font-weight: normal;
+}
+
+#headerTabs li.on a span, #headerTabs li.on a:hover span {
+background-image:none;
+color: #5784a3;
+}
+
+#headerPatron {
+font-size: 11px;
+}
+
+#quickSearchBar form {
+text-align: right;
+padding-right: 5px;
+padding-top: 5px;
+vertical-align: middle;
+}
+
+.frameWorkUI #mainContent {
+border: none;
+}
+
+/* #searchForm {
+background-color: #fdf4dc;
+border-style: solid;
+border-color: #000000;
+border-width: 1px;
+}
+*/
+
+.frameWorkUI #pageHeadingTitle {
+color: #666655;
+font-size: 1.2em;
+font-weight: normal;
+float: left;
+width: 50%;
+vertical-align: bottom;
+}
+ 
+.frameWorkUI #pageFooter {
+background-color: #fdf4dc;
+border-top-color: #f9be00;
+border-top-style: dotted;
+border-top-width: 1px;
+margin-top: 20px;
+}
+
+#footerTabs {
+background-color: #fdf4dc;
+}
+
+#footerTabs li a, .navlist li.extend {
+/*color: #0066cc;*/
+background-color: #fdf4dc;
+border-top-color: #f9be00;
+border-top-style: dotted;
+border-top-width: 1px;
+}
+
+.searchTip .example {
+color: #c00;
+font-weight: normal;
+}
+
+#quickSearchBar {
+background-color: #ffffff;
+border-top: none;
+border-bottom: none;
+vertical-align: middle;
+}
+
+#searchNav a span {
+background-image: none;
+}
+
+.highlight {
+background-color: #FFFF99;
+color:#000000;
+}
+
+.resultsHeader .resultsHeaderHeader span{
+color: #000000;
+font-weight: normal;
+padding-top:0px;
+margin-top: 0px;
+}
+
+#loginForm {
+background-color: #FFFFFF;
+padding-bottom: 20px;
+}
+
+#span_extPatAuth {
+background-color: transparent;
+background-image: url("../images/button-design.gif");
+background-repeat: no-repeat;
+background-attachment: scroll;
+display: block;
+padding-top: 5px;;
+padding-bottom: 5px;
+padding-left: 18px;
+color: #0f4d92;
+font-family: arial,sans-serif;
+font-size: 14px;
+height: 24px;
+margin-right: 6px;
+padding-right: 28px;
+text-decoration: none;
+position: absolute;
+left: 21px;
+top: 190px;
+}
+
+#loginForm {
+border-top-width: 0px;
+border-bottom-width: 0px;
+}
+
+#loginForm label, #loginForm input, #loginForm select {
+font-weight: normal;
+}
+
+#loginForm input:focus, textarea:focus {
+background-color:#FFFFFF;
+}
+
+#loginBtn, #cancelBtn {
+background-color:#D4D0C8;
+color:#000000;
+}
+
+.LoginInstructionText {
+padding-top: 150px;
+padding-left: 11px;
+font-size:.9em;
+}
+
+.LoginInstructionText p {
+border-top-width: 1px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+border-right-width: 0px;
+border-style: dotted;
+width: 50%;
+}
+
+.yaleLoginInstructionText {
+padding-top: 20px;
+padding-left: 11px;
+}
+
+.pageErrorText {
+width: 400px;
+color: #cc0000;
+background-color: #FFFFFF;
+}
+
+span.readonly {
+width: 90%;
+}
+
+#cancel {
+top: 0px;
+}
+
+#YaleLimitWarning {
+font-size: 12px;
+padding-bottom: 12px;
+padding-left: 12px;
+}
+
+#quickLimits {
+padding-bottom: 2px;
+}
+
+#databaseInfo span {
+color: #000000;
+}
+
+#yale_header_links {
+font-size: 11px;
+color: #0066cc;
+position: absolute;
+right: 5px;
+top: 20px;
+white-space: nowrap;
+}
+
+#yale_header_links a {
+color: #0066cc;
+white-space: nowrap;
+}
+
+#headerTabs {
+position: absolute;
+top: 50px;
+left: 0px;
+width: 100%;
+background-color: #FDF4DC;
+border-top: 1px dotted;
+border-color: #f9be00;
+margin-left: 0px;
+}
+
+#headerTabs .navbar {
+height: 1.5em;
+}
+
+#headerTabs li {
+margin-top: 0px;
+}
+
+p.noHitsError
+{
+   background:#FFFFFF none repeat scroll 0%;
+   border:1px solid #cccccc;
+   color:#C00000;
+   font-size:1em;
+   font-weight:bold;
+   padding:5px;
+   text-align:center;
+   width:300px; 
+   position:relative;
+}
+
+.yale_nohits {
+color: #000000;
+font-size: .9em;
+}
+
+.yale_nohist a {
+color: #0066cc;
+}
+
+#close_box {position:absolute;right:1px;top:1px;border:1px solid red;cursor:pointer;}
+
+/*Comment out "More about this item from" section that includes SFX button*/
+.moreInfo {
+display: none;
+}
+
+#searchBasic #searchLinks input {
+//margin-left:654px;
+}
+
+#buildAdvancedSearch #searchLinks input {
+//position: absolute;
+//top: 372px;
+font-size: 14px;
+//margin-left:760px;
+}
+
+#searchLinks {
+text-align: left;
+}
+
+.evenHoldingsRow, .oddHoldingsRow {
+margin-bottom: 15px;
+}
+
+#databaseInfo {
+padding-bottom: 5px;
+}
+
+#searchRecs {
+float:none;
+margin-left: 7px;
+}
+
+#yellowButton {
+float:left;
+}
+
+.help ul.none {
+list-style-type:none;
+}
+
+.help ul.none li {
+list-style-image:none
+}
+
+.stuffLine {
+	width: 100%;
+}
+
+.pubYear {
+    float:left;
+    width: 13%;
+    text-align: center;
+}
+
+.callAvailWrap {
+    float:right;
+    width: 83%;
+}
+
+.callNo {
+    float:left;
+    width: 23%;
+    text-align: center;
+}
+
+.localeAvail {
+    float:right;
+    width: 75%;
+    text-align: left;
+}
+
+#fata_logo
+{
+   float: left;
+   height: 46px;
+   width: 33%;
+   border:none;
+}

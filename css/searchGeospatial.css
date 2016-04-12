@@ -1,0 +1,405 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: search Geospatial css
+**          Version : 7.2.0
+**          Created : 20-NOV-2007
+**      Orig Author : Mel Pemble
+**    Last Modified : 11-SEP-2009
+** Last Modified By : Mel Pemble
+*/
+
+form.searchGeo
+{
+   margin:0px;  
+}
+#geoSearchForm
+{
+   clear: left; 
+   background-color: white; 
+   border: 1px solid black;
+   margin-left: 10px;
+   margin-right: 10px; 
+   margin-bottom: 10px;
+   margin-top: 0px; 
+   padding: 0px;
+}
+
+#geoFormatType
+{
+   float:right;
+   padding-right: 7px;
+   padding-top: 7px;
+   text-align:left;
+}
+
+
+/***********************
+ * Geo Navigation Bars *
+ ***********************/
+
+#geoNav
+{
+   margin: 0px; 
+   padding: 0px;
+   float: left;
+}
+
+#geoNav ul
+{
+   float: left; 
+   list-style: none; 
+   margin: 0px; 
+   padding: 0px;
+}
+
+#geoNav li
+{
+   font-size: 11px;
+   font-weight: bold;
+   float:left;
+   display:block;
+   margin: 0px 0px -1px 0px;
+}
+
+#geoNav
+{
+   width:100%;
+   padding-top:15px;
+}
+#geoNav ul
+{
+   padding-left:15px;
+}
+
+#geoNav a
+{
+   color: #fff;
+   float:left;
+   background:url("../images/search_nav_right_off.gif") no-repeat right top;
+   padding:0px 2px 0px 0px;
+   margin: 0px 0px 0px 6px;                 
+   text-decoration:none;
+   display:block;
+   border-bottom: 1px solid black;
+}
+
+#geoNav a span
+{
+   float:left;
+   background:url("../images/search_nav_left_off.gif") no-repeat left top;
+   padding: 6px 9px; 	
+   text-align:center;
+   display:block;
+}
+
+#geoNav li#on a,#geoNav a:hover
+{
+   color: #333;
+   border-bottom: 1px solid white;
+   cursor: pointer;
+}
+#geoNav a:hover
+{
+   background:url("../images/geosearch_nav_right_on.gif") no-repeat right top;
+}
+
+#geoNav a:hover span
+{
+   background:url("../images/geosearch_nav_left_on.gif") no-repeat left top;
+}
+
+#geoNav li#on a
+{
+   background:url("../images/geosearch_nav_right_on.gif") no-repeat right top;
+}
+
+#geoNav li#on a span
+{
+   background:url("../images/geosearch_nav_left_on.gif") no-repeat left top;
+}
+
+
+/******************************
+ * Main Group form Components *
+ ******************************/
+
+#displayFields
+{
+   clear:both;
+}
+
+#mainGroup
+{
+   background-color:#eee;
+   
+   border-width:2px;
+   border-style:solid;
+   border-color:#7c5b47;
+   
+   font-size:12px;
+   
+   margin:40px 20px 20px 20px;
+   
+   position:relative;
+   display:block;
+}
+
+form #displayFields fieldset,fieldset.radius
+{
+   background-color:#fff9e7;
+   
+   border-width:1px;
+   border-style:solid;
+   border-color:#62b3ff;
+   
+   margin:20px 0px 20px 20px;
+
+   position:relative;
+   display:block;
+   padding: 0px 10px 10px 10px;
+   float:left;
+   width: 400px;
+}
+
+
+
+form #displayFields fieldset legend,fieldset.radius legend{	
+	background-color:#fff;
+	
+	border-width:1px;
+	border-style:solid;
+	border-color:#62b3ff;
+	
+	font-weight:bold;
+	font-variant:small-caps;
+	font-size:14px;
+		
+	padding:2px 5px;
+	margin:0px 0px 10px 0px;
+	position:relative;
+	top: -12px;
+	
+}
+	 
+form #displayFields fieldset legend img{
+	padding:0px 5px 0px 5px;	
+}
+
+#displayFields fieldset label,fieldset.radius label
+{
+	display:block;
+	float:left;
+	width:150px;
+	text-align:right;
+	margin:3px 5px 0px 0px;
+	clear:both;
+}
+#displayFields fieldset input,#displayFields fieldset select,fieldset.radius input,fieldset.radius select
+{
+   margin: 1px;
+   float: left;
+}
+
+form #searchParams fieldset.radius
+{
+   width:450px;
+}
+
+
+fieldset.radius label
+{
+   clear: both;
+   font-size:11px;
+	
+	display:block;
+	float:left;
+	width:150px;
+	text-align:right;
+	margin:3px 5px 0px 0px;
+}
+
+fieldset.radius select, fieldset.radius input
+{
+   float: left;
+}
+
+.button{
+	background-color:#fff9e7;
+	
+	border-width:1px;
+	border-style:solid;
+	border-color:#7c5b47;
+	
+	font-weight:bold;
+
+}
+
+/*************************
+ * Geospatial Map Limits *
+ *************************/
+
+span#toggleLimits
+{
+   background: #DDD;
+   margin-right: 5px;
+   border: 1px solid #444;
+   font-weight: bold;
+   color: #444;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: .8em;
+}
+
+span#toggleLimits:hover
+{
+   background: #fff;
+   margin-right: 5px;
+   border: 1px solid #444;
+   font-weight: bold;
+   color: #aaa;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   cursor:pointer;
+}
+
+span#toggleLimits
+{
+   padding: 2px;
+   padding-left: 5px;
+   padding-right: 5px;
+   text-decoration:none;
+   position:relative;
+   top: -5px;
+   display:inline;
+}
+
+#mapLimits
+{
+   margin: 0px 95px 37px 19px;
+   clear:left;
+   width:630px;
+}
+
+fieldset#mainLimitGroup
+{
+   background:#cef;
+   border:1px solid black;
+}
+
+fieldset#mainLimitGroup legend
+{
+   background:#efe;
+   border:1px solid black;
+}
+
+div.limitGroup
+{
+   clear:both;
+   border:1px solid #333;
+   margin-top: 5px;
+   background:#dff;
+   padding:5px;
+}
+
+div.limitFieldLabel
+{
+   float: left;
+   width: 150px;
+
+}
+.limitFieldData
+{
+   margin-left:155px;
+}
+
+.mapDateComponent
+{
+   padding-top:4px;
+   padding-bottom:4px;
+}
+
+.limitFieldData input
+{
+   margin-right:10px;
+   margin-left:5px;
+}
+
+.limitFieldData select
+{
+   margin-right:10px;
+}
+
+
+/******************
+ * Geo Search Bar *
+ ******************/
+
+#geoSearchBar
+{
+   clear:left;
+   padding: 5px;
+}
+
+#geosearchBarTop
+{
+   clear:left;
+   margin-bottom:5px;
+}
+#geosearchBarTop label
+{
+   width:150px;
+   display:block;
+}
+#geoFormatSize
+{
+   padding-left: 14px;
+}
+
+#geosearchRecs
+{
+   padding-top:10px;
+   padding-left: 14px;
+}
+
+#geosearchBarBottom
+{
+   text-align:left;
+}
+
+#geoLimitsBtns a
+{
+padding-right: 7px;
+}
+
+.submit, .reset
+{
+   background: #DDD;
+   margin-right: 5px;
+   border: 1px solid #444;
+   font-weight: bold;
+   color: #444;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   margin-left:14px;
+   float:none;
+}
+
+.submit:hover, .reset:hover
+{
+   background: #fff;
+   margin-right: 5px;
+   border: 1px solid #444;
+   font-weight: bold;
+   color: #aaa;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+

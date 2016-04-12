@@ -1,0 +1,161 @@
+/* $Revision: 1.6 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: request forms css
+**          Version : 7.2.0
+**          Created : 02-MAY-2007
+**      Orig Author : Mel Pemble
+**    Last Modified : 11-SEP-2009
+** Last Modified By : Mel Pemble
+*/
+
+#mainContent legend
+{
+   border: 1px solid #000;
+   background: #ddf;
+   padding: 0 2px;
+   font-weight: bold;
+   color: #000;
+}
+
+#mainContent fieldset
+{
+   margin-bottom: 10px;
+   margin-top: 20px;
+   border: 1px solid #000;
+   background: #ccdeff;
+}
+
+
+span.readonly
+{
+   display:block;
+   padding:2px;
+   margin:1px;
+   color: #33F;
+   background:#eee;
+   border:1px solid #999;
+   width:450px;
+}
+
+fieldset legend
+{
+   border:1px solid black;
+
+}
+ol
+{
+   list-style:none;
+}
+
+
+li.field
+{
+   clear:both;
+   margin:0px;
+   padding:0px;
+   margin:5px;
+   padding:3px;
+}
+
+.labelSection
+{
+   float:left;
+   padding-bottom:2px;
+   padding-top:2px;
+   width:185px;
+   text-align:right;
+   margin:1px;
+}
+
+.dataSection
+{
+   text-align:left;
+   margin:1px;
+   margin-left:190px;
+}
+
+*:focus
+{
+   outline-color:#ddd;
+   outline-style:ridge;
+   outline-width:thin;
+}
+
+
+#mainContent ol input.hidden
+{
+  position: absolute;
+  left: -200em;
+}
+
+#mainContent ol #submitBtns
+{
+   clear:both;
+   position:relative;
+   left:198px;
+   display:inline;
+}
+
+.requestSubmitButton, #cancel, .submit
+{
+   background: #DDD;
+   margin-right: 5px;
+   border: 1px solid #444;
+   font-weight: bold;
+   color: #444;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.requestSubmitButton:hover, #cancel:hover, .submit:hover
+{
+   background: #fff;
+   margin-right: 5px;
+   border: 1px solid #444;
+   font-weight: bold;
+   font-size:100%;
+   color: #aaa;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+#cancel
+{
+   padding: 1px 5px;
+   text-decoration:none;
+   display:inline;
+}
+
+
+#messageArea
+{
+   background:Cornsilk none repeat scroll 0 0;
+   border:1px dashed red;
+   color:Navy;
+   padding:5px;
+   width:400px;
+   display:none;
+}
+
+.requestSubmitButtonDisabled
+{
+   background: #eee;
+   margin-right: 5px;
+   border: 1px solid #bbb;
+   font-weight: bold;
+   color: #ccc;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+
+
+
+
+

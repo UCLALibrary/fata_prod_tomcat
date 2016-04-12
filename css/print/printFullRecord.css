@@ -1,0 +1,116 @@
+/* $Revision: 1.6 $ $Date: 2012/06/08 20:13:23 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: print full record css
+**          Version : 7.2.0
+**          Created : 01-NOV-2007
+**      Orig Author : Scott Morgan
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+/*
+.bibliographicData
+{
+   padding-left: 20px;
+}
+
+.bibTitle
+{
+  padding: 0px 0px 0px 0px;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  margin: 0px 0px 0px 0px;
+}
+
+.bibTitle p
+{
+   color: #000000;
+   font-size: larger;
+   font-weight: bold;
+}
+
+.bold
+{
+   width: 25%;
+   min-width: 200px;
+   float: left;
+}
+
+.notbold
+{
+   display:inline;
+}
+
+.bibTags ul
+{
+   list-style: none;
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+}
+
+.bibTag
+{
+   padding: 3px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+   clear:both;
+}
+
+.evenHoldingsRow,.oddHoldingsRow
+{
+   clear:both;
+   float:left;
+   padding-bottom:15px;
+}
+
+.fieldLabel
+{
+   clear:both;
+   COLOR: #000000;
+   FONT-FAMILY: "Arial Unicode MS","GNU Unifont",Verdana, Arial, Helvetica, sans-serif;
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: right;
+   white-space: nowrap;
+   width:175px;
+   float:left;
+}
+
+.fieldData
+{
+   COLOR: #000000;
+   FONT-FAMILY: "Arial Unicode MS","GNU Unifont",Verdana, Arial, Helvetica, sans-serif;
+   FONT-SIZE: smaller;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   float:left;
+   width:65%;
+}
+
+h2.nav,h2.navFooter
+{
+   position: absolute;
+   left: -200em;
+}
+h3
+{
+   FONT-FAMILY: "Arial Unicode MS","GNU Unifont",Verdana, Arial, Helvetica, sans-serif;
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   margin-left:181px;
+}
+*/
+
+

@@ -1,0 +1,87 @@
+/* $Revision: 1.6 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: help css
+**          Version : 7.2.0          
+**          Created : 11-OCT-2007  
+**      Orig Author : ejw   
+**    Last Modified : 19-AUG-2009 
+** Last Modified By : Mel Pemble   
+*/
+
+.help 
+{
+	font-family: "Arial Unicode MS","GNU Unifont",Arial,Verdana,Helvetica,sans-serif;
+	FONT-SIZE: .9em;
+	font-weight: normal;
+}
+
+.help  h2
+{
+    COLOR: #9F175E;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 1em;
+    font-weight: normal;
+}
+
+.help  ol, .help  ul
+{
+	font-size: small;
+}
+
+.help ul li
+{
+	list-style-image: url(../images/icon_book.gif);
+}
+
+.help #helpNav
+{
+	font-size: small;
+	position: relative;	
+        height: 2.25em;
+}
+
+.help  #back2vwebv
+{
+	position: absolute;
+	width: 40%;
+	top: 1.3em;
+}
+
+.help #getMoreHelp 
+{
+	position: absolute;
+	top: 1.3em;	
+        left: 75%;
+/*
+* original style
+	top: 5px;
+	right: 5px; */
+}
+
+.help  #getMoreHelp img
+{
+	border: 0;
+	vertical-align: text-top;
+
+}
+h1{
+    color: #990000;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+p {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10pt;
+    margin: 7px;
+             
+}
+

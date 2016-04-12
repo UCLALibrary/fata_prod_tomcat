@@ -1,0 +1,60 @@
+/* $Revision: 1.10 $ $Date: 2013/08/05 20:08:34 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2013 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: ie8Fixes
+**          Version : 7.2.0
+**          Created : 26-MAY-2009
+**      Orig Author : Mel Pemble
+**    Last Modified : 11-SEP-2009
+** Last Modified By : Mel Pemble
+*/
+
+fieldset
+{
+   position: relative;
+   padding-top:20px;
+}
+
+#databases
+{
+   margin-top: 30px;
+}
+
+legend
+{
+   position: absolute;
+   top: -11px;
+   left: 5px;
+}
+
+.requestForm
+{
+   padding-top:25px;
+}
+
+.requestForm #checkSchedule, #bookingButton
+{
+   padding:1px 5px 1px 5px;
+}
+
+.requestSubmitButton
+{
+   padding: 1px 5px;
+   text-decoration:none;
+   display:inline;
+}
+
+.oddRow .resultListCheckBox, .evenRow .resultListCheckBox
+{
+   margin: 0px 0px 0px 18px;
+}
+
+.resultListRow .checkbox,.resultListRowHighlight .checkbox {
+   padding-left : 17px;
+}

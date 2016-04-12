@@ -1,0 +1,80 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: searchAuthor css
+**          Version : 7.2.0
+**          Created : 23-OCT-2007
+**      Orig Author : David Sellers
+**    Last Modified : 17-SEP-2009
+** Last Modified By : Mel Pemble
+*/
+
+/* Search Author*/
+
+#searchAuthorLabel label
+{
+   padding: 1px;
+   margin: 2px;
+   white-space: nowrap;
+   width: 1%;
+}
+
+#searchAuthorMessage
+{
+   font-size: smaller;
+   margin: 0px;
+   padding: 10px 0px 0px 7px;
+}
+
+#searchAuthorLabel
+{
+   margin: 0px;
+   padding: 30px 0px 0px 7px;
+   float: left;
+}
+
+#searchInputs
+{
+   margin: 0px;
+   padding: 0px;
+   height: 60px;
+}
+
+#inputLastName
+{
+   margin: 0px;
+   padding: 11px 5px 0px 0px;
+   float: left;
+   border: 0px;
+}
+
+#inputFirstName
+{
+   margin: 0px;
+   padding: 11px 0px 0px 0px;
+   float: left;
+   border: 0px;
+}
+
+#searchInputs label
+{
+   margin: 0px;
+   padding: 0px;
+   float: left;
+}
+
+#searchInputs input
+{
+   margin: 2px 5px 0px 0px;
+   padding: 0px;
+   clear: left;
+   float: left;
+}
+
+

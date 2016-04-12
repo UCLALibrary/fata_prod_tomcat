@@ -1,0 +1,96 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: pageProperties css
+**          Version : 7.2.0
+**          Created : 26-NOV-2007
+**      Orig Author : Mel Pemble
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+.searchTip
+{
+	font-size: .80em;
+}
+
+.searchTip .example 
+{
+	font-weight: bold;	
+	color: red;	
+}
+
+.searchTip .label
+{
+	font-size: .95em;
+	font-weight: bold;
+}
+
+.instructionText
+{
+	font-size: .75em;
+	font-style: italic;
+}
+
+.uiLabelRef
+{
+	font-style: italic;
+	font-weight: bold;
+}
+
+.myAccountInstructions
+{
+   background-color: #eff;
+   border:1px solid #ccc;
+   padding:5px;
+   margin-bottom: 15px;
+   width:500px;
+}
+
+.pageErrorText
+{
+   font-size: 16px;
+   background-color: #cee;
+   border:1px solid #ccc;
+   color:red;
+   padding:5px;
+   width:300px;
+}
+
+.blockMessage
+{
+   font-size: 16px;
+   background-color: #eff;
+   border:1px solid #ccc;
+   color:red;
+   padding:5px;
+   width:500px;
+}
+
+#backToRecord
+{
+   margin-top: 40px;
+}
+
+#backToRecord a
+{
+   border: dotted 2px #2277DD;
+   padding: 8px;
+   background-color: #E9F0F8;
+   display: block;
+   width:170px;
+   color: #444;
+   background: #EDEDED;
+   text-align: center;
+   margin: 0px 0px 30px;
+   text-decoration:underline;
+   color:#14d;
+}
+
+

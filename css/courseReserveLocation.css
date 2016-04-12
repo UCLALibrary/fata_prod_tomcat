@@ -1,0 +1,83 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: courseReserveLocation css
+**          Version : 7.2.0
+**          Created : 20-SEP-2007
+**      Orig Author : David Sellers
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+/*Form*/
+#courseReserveLocationForm
+{
+	background-color: #c9e5ff; 
+	border-top: 2px solid #62b3ff;
+	border-bottom: 1px solid #62b3ff; 
+	border-left: 0px none;
+	border-right: 0px none; 
+	padding: 5px 0px 0px 10px;
+	margin: 0px 0px 0px 0px;
+	width: 540px;
+}
+
+/*Info Text*/
+#crLocationText
+{
+
+    FONT-SIZE: smaller;
+        padding: 10px 0px 10px 5px;
+	margin: 0px 0px 0px 0px;
+}
+
+/*Radio*/
+#crLocationRadio{
+
+    FONT-SIZE: smaller;
+    FONT-WEIGHT: bold;
+    padding: 0px 0px 5px 5px;
+}
+
+/*Button(s)*/
+#crLocationButton
+{
+	padding: 10px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+        text-align:center;
+}
+
+#submitBtn
+{
+   color: #ffffff;
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #003061; 
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #000; 
+   border-left: 1px solid #fff;
+   border-right: 1px solid #000; 
+   height: 22px; 
+   cursor: pointer;
+   margin-right: 5px;
+   white-space: nowrap;
+}
+
+#submitBtn:hover
+{
+   color: #003061;
+   background-color: #ffffff;
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #003061; 
+   border-left: 1px solid #000;
+   border-right: 1px solid #003061; 
+}
+
+
+

@@ -1,0 +1,31 @@
+/* $Revision: 1.6 $ $Date: 2013/01/10 21:45:23 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2013 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: ie7Fixes
+**          Version : 7.2.0
+**          Created : 17-SEP-2009
+**      Orig Author : Mel Pemble
+**    Last Modified : 17-SEP-2009
+** Last Modified By : Mel Pemble
+*/
+
+#headerTabs li{
+   margin-top: 27px;  
+}
+
+.oddRow .resultListCheckBox, .evenRow .resultListCheckBox {
+  margin:0px 0px 0px 17px;  
+}
+
+#mainContent OL #submitBtns{
+   position: static;
+   margin-left: 198px;
+}
+
+

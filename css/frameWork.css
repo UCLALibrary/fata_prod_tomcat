@@ -1,0 +1,202 @@
+/* $Revision: 1.6 $ $Date: 2012/06/08 20:13:22 $ */
+@charset "utf-8";
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: frameWork css
+**          Version : 8.0.0
+**          Created : 20-JUL-2007
+**      Orig Author : Mel Pemble
+**    Last Modified : 24-MAR-2010
+** Last Modified By : Mel Pemble
+*/
+
+@charset "utf-8";
+* {
+	margin: 0;
+}
+html, body {
+
+height: 100%;
+
+}
+
+body{
+   width:auto;
+   color : black;
+   background : white;
+   margin : 0;            /* it's good practice to zero the margin and padding of the body element
+                             to account for differing browser defaults */
+   padding : 0;
+   text-align : center;   /* this centers the container in IE 5* browsers. The text is then set to
+                             the left aligned default in the #container selector */
+   /* default font */
+   font-family : "Arial Unicode MS", Verdana, Arial, Helvetica, sans-serif;
+   font-size : 16px;
+}
+
+select,input{
+   font-family : "Arial Unicode MS", Verdana, Arial, Helvetica, sans-serif;
+   font-size : 12px;
+}
+
+.frameWorkUI #pageContainer  {
+   min-width: 757px;
+   /*min-width : 800px;*/
+   margin : 1px auto;
+   text-align : left;
+   min-height: 100%;
+   height: auto !important;
+   height: 100%;
+   margin: 0 auto -80px;
+   width:auto;
+   border-bottom: 1px solid #000000;
+}
+
+.frameWorkUI #pageHeader {
+/*
+* original style
+   background : #fff url("../images/img_headerBackground.png") repeat-x left top;
+   padding : 0 0 0 4px;
+   border-bottom : 1px solid #426ab3;
+   color : black;
+   width:auto; */
+
+   background:url("../images/img_headerBackground.png") #fff repeat-x left top;
+   padding: 0px 0px 0px 8px;
+   border-bottom: 1px solid #426ab3;
+}
+
+.frameWorkUI #mainContent {
+   width:auto;
+   border-top: 2px solid #62b3ff;   
+   border-bottom: 2px solid #62b3ff;
+   margin-top : 1px;
+   margin-bottom : 1px;
+   /*margin-left:5px;
+   margin-right:5px;*/
+   /* remember that padding is the space inside the div box
+      and margin is the space outside the div box */
+
+   padding-top:5px;
+   padding-bottom:20px;
+   padding-left:10px;
+   padding-right:10px;
+
+   overflow: hidden;
+   clear:both;
+}
+
+.frameWorkUI #pageFooter  {
+   border-top : 1px solid #333;
+   /* this padding matches the left alignment of the elements
+   in the divs that appear above it. */
+   padding : 0 10px;
+   background : #ccc;
+   color : black;
+   clear:both;
+   width:auto;
+}
+.frameWorkUI #pageFooter, .push {
+    height: 79px;
+    clear:both;
+}
+
+.frameWorkUI #pageHeadingTitle {
+   color : #9f175e;
+   font-family : "Arial Unicode MS", Verdana, Arial, Helvetica, sans-serif;
+   font-size : 1.2em;
+   font-weight : normal;
+   margin : 1px;
+   padding : 1px;
+}
+
+.accessibilityHeader  {
+visibility : hidden;
+}
+
+/* accent color */
+#pageHeadingTitle, .resultsHeaderHeader, .help h2, .jumpBarLabelSelected, .jumpBarMiddle .current, .jumpBarMiddle .totalHits {
+   color : #9f1753;
+}
+
+/* link colors */
+A:link  {
+   color : #003061;
+}
+
+A:visited {
+   color : #9f1753;
+}
+
+A:hover {
+   color : #9f1753;
+   text-decoration : none;
+}
+
+A:active {
+   color : #9f1753;
+   text-decoration : none;
+}
+
+.pageHTMLSnippet
+{
+   clear:both;
+}
+
+#waitmsg
+{
+   background-color:#EEEEEE;
+   background-image:url("../images/ajax-loader.gif");
+   background-position: 4px 5px;
+   background-repeat:no-repeat;
+   border:1px outset black;
+   color:black;
+   font-weight:bold;
+   margin:0px auto;
+   padding:10px 10px 10px 42px;
+   position:relative;
+   top:50%;
+   z-index:1001;
+   width: 125px
+}
+
+#disablingDiv
+{
+    /*
+    ** Do not display the div on page entry
+    */
+    display: none;
+
+    /*
+    ** Display the layer with index of 1000.
+    ** Make sure this is the highest z-index value
+    ** used on that page
+    */
+    z-index:1000;
+
+    /*
+    ** cover the entire screen
+    */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    padding-top:25%;
+    /*
+    ** make it white
+    ** but transparent
+    */
+    background-color: white;
+    opacity:0.6;
+    filter: alpha(opacity=60);
+}
+
+

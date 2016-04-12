@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Revision: 1.6 $ $Date: 2013/01/10 21:47:45 $ -->
+<!--
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2013 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+-->
+
+<!--
+**          Product : WebVoyage :: emailcfg
+**          Version : 7.1.0
+**          Created : 01-NOV-2007
+**      Orig Author : Scott Morgan
+**    Last Modified : 09-MAR-2009
+** Last Modified By : Mel Pemble
+**   Notes This is a config for the xsl that creates
+**           email body content
+-->
+
+    <display>
+
+        <displayTags label="Title:" >
+            <displayTag field="130" indicator1="X"  indicator2="X" subfield="aplskf"/>
+            <displayTag field="240" indicator1="X"  indicator2="X" subfield="aplskf"/>
+            <displayTag field="245" indicator1="X"  indicator2="X" subfield="ab"/>
+        </displayTags>
+
+        <!--displayTags label="Author:">
+            <displayTag field="100" indicator1="X"  indicator2="X" subfield="aq"/>
+            <displayTag field="110" indicator1="X"  indicator2="X" subfield="ab"/>
+        </displayTags>
+
+        <displayTags label="Publisher:">
+            <displayTag field="260" indicator1="X"  indicator2="X" subfield="abc"/>
+        </displayTags>
+
+        <displayTags label="ISBN:">
+            <displayTag field="020" indicator1="X"  indicator2="X" subfield="a"/>
+        </displayTags>
+
+        <displayTags label="ISSN:">
+            <displayTag field="022" indicator1="X"  indicator2="X" subfield="a"/>
+        </displayTags>
+
+        <displayTags label="Description:">
+            <displayTag field="250" indicator1="X"  indicator2="X" subfield="ab"/>
+        </displayTags-->
+
+<!--
+    <displayTags label="Physical Description:">
+        <displayTag field="7107"/>
+    </displayTags>
+
+    <displayTags label="Includes:">
+        <displayTag field="7106"/>
+    </displayTags>
+-->
+    <!--displayTags label="Format:">
+        <displayTag field="7000"/>
+    </displayTags>
+
+        <displayTags label="Contents:">
+            <displayTag field="2000"/>
+        </displayTags>
+
+        <displayTags label="Series:">
+            <displayTag field="400" indicator1="X"  indicator2="X" subfield="abdfklnptv"/>
+        </displayTags>
+
+        <displayTags label="Subjects:">
+            <displayTag field="600" indicator1="X"  indicator2="X" subfield="abcdefghkjlmnopqrstuvxyz"/>
+        </displayTags>
+
+        <displayTags label="Links:">
+            <displayTag field="3000"/>
+        </displayTags-->
+
+        <holdingsTags label="Holdings Information" notFound="No holdings available - check at the Circulation Desk.">
+            <displayTag field="9000" />
+        </holdingsTags>
+
+    </display>
+
+

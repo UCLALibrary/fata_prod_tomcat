@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- $Revision: 1.4.2.1 $ $Date: 2012/06/11 22:30:26 $ -->
+<!-- 
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+-->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">@import "../../css/frameWork.css";</style> 
+        <style type="text/css">@import "../../css/header.css";</style> 
+
+        <link href="../../css/help.css" rel="stylesheet" type="text/css">
+        <title>WebVoyáge Geospatial Search Help</title> 
+</head> 
+<body class="frameWorkUI">
+        <div id="pageContainer">
+      <div id="pageHeader">
+        <div id="headerRow">
+          <div id="logo">
+            <img alt="WebVoyáge" src="../../images/webVoyageLogo.jpg">
+          </div>
+      </div>
+      </div>
+        <!-- help body -->
+        <div id="mainContent" class="help">
+                <h1 id="pageHeadingTitle">WebVoyáge Geospatial Search Help</h1>
+                
+<p>WebVoyáge provides you with a variety of options when searching 
+ for map-related items in your database. You can conduct a search for items 
+ by specifying a region which must be covered, in part or in whole, by 
+ the item. This region can be a rectangle, a polygon, a point or circle, 
+ a corridor or route, or a range.</p>
+<p>
+<a href="#rectangleSearch">Rectangle Search</a><br>
+<a href="#polygonSearch"> Polygon Search</a><br>
+<a href="#radiusSearch">Point and Radius Search</a><br>
+<a href="#corridorSearch">Corridor/Route Search</a><br>
+<a href="#rangeSearch">Range Search</a></p>
+
+
+
+
+<h2><a NAME=rectangleSearch></a>Rectangle Search</h2>
+
+<p>The Rectangular Search function allows you to perform a search on a 
+ rectangular area. To define the area, you must provide the lower-left 
+ corner and the upper-right corner of the rectangle.</p>
+
+<p>To perform a search on a rectangular area:</p>
+
+<ol>
+	
+	<li >Click the <b>Rectangle Search</b> button. The 
+ Rectangle Search tools appear on the screen..</li>
+	
+	<li >Enter whether you want your search to include 
+ only the area covered by the map or the Minimum Bounding Rectangle (the 
+ smallest rectangular area that would enclose the entire map) by selecting 
+ <b>Polygon</b> or <b>MBR</b> from the <b>Shoe Size</b> drop-down list.</li>
+	
+	<li >Enter which units you want to use in order 
+ to describe the coordinates by clicking on the <b>Format Type</b> drop-down 
+ and selecting a type from the list. You can select <b>Degrees/Minutes/Seconds</b>; 
+ <b>Degrees/Decimal Minutes</b>; <b>Decimal Degrees</b>; <b>UTM Meters</b>; 
+ <b>MGRS</b>; or <b>UPS</b>.</li>
+	
+	<li >Enter the coordinates for the lower-left 
+ point of the area into the field(s) in the Lower Left column. If you selected 
+ units of Degrees/Minutes/Seconds, Degrees/Decimal Minutes, or Decimal 
+ Degrees, you must enter a Latitude value and a Longitude value. If you 
+ selected UTM Meters, MGRS, or UPS, you must enter the point into the field 
+ in that format.</li>
+	
+	<li >Enter the coordinates for the upper-right 
+ point of the area into the field(s) in the Upper-Right column. If you 
+ selected units of Degrees/Minutes/Seconds, Degrees/Decimal Minutes, or 
+ Decimal Degrees, you must enter a Latitude value and a Longitude value. 
+ If you selected UTM Meters, MGRS, or UPS, you must enter the point into 
+ the field in that format.</li>
+	
+	<li >Select how many records you want to appear 
+ on each page of search results by clicking on the <b>Records per page</b> 
+ drop-down and selecting a number from the list.</li>
+	
+	<li >Click the <b>Search</b> button to perform 
+ the search; or click the <b>Clear</b> button to reset the fields on the 
+ screen.</li>
+</ol>
+
+<h2><a NAME=polygonSearch></a>Polygon Search</h2>
+
+<p>The Polygon Searching function allows you to perform a search on an 
+ area that is not rectangular. You can enter up to ten points into the 
+ list. The area that will be searched is created by connecting each coordinate 
+ with the next in the order in which they were entered. (The first and 
+ last coordinates are also connected together.)</p>
+
+<p>For example, if you entered Latitude and Longitude information into 
+ the fields Coordinate 1 through Coordinate 5, Coordinate 1 would be connected 
+ with Coordinates 2 and 5; Coordinate 2 would be connected to Coordinates 
+ 1 and 3; and so on.</p>
+
+<p>To perform a search on a polygonal area:</p>
+
+<ol >
+	
+	<li>Click the <b>Polygon Search</b> button. The Polygon 
+ Search tools appear on the screen..</li>
+	
+	<li >Enter whether you want your search to include 
+ only the area covered by the map or the Minimum Bounding Rectangle (the 
+ smallest rectangular area that would enclose the entire map) by selecting 
+ <b>Polygon</b> or <b>MBR</b> from the <b>Shoe Size</b> drop-down list.</li>
+	
+	<li >Enter which units you want to use in order 
+ to describe the coordinates by clicking on the <b>Format Type</b> drop-down 
+ and selecting a type from the list. You can select <b>Degrees/Minutes/Seconds</b>; 
+ <b>Degrees/Decimal Minutes</b>; <b>Decimal Degrees</b>; <b>UTM Meters</b>; 
+ <b>MGRS</b>; or <b>UPS</b>.</li>
+	
+	<li>Enter the coordinates for each point of 
+ the area to be searched (in the order that they are to be connected to 
+ form the polygon; the last point in the list will be connected to the 
+ first point in the list) into the Coordinate fields. If you selected units 
+ of Degrees/Minutes/Seconds, Degrees/Decimal Minutes, or Decimal Degrees, 
+ you must enter a Latitude value and a Longitude value for each coordinate. 
+ If you selected UTM Meters, MGRS, or UPS, you must enter the coordinates 
+ into the field in that format.</li>
+	
+	<li>Select how many records you want to appear 
+ on each page of search results by clicking on the <b>Records per page</b> 
+ drop-down and selecting a number from the list.</li>
+	
+	<li>Click the <b>Search</b> button to perform 
+ the search; or click the <b>Clear</b> button to reset the fields on the 
+ screen.</li>
+</ol>
+
+
+<h2><a NAME=radiusSearch></a>Point and Radius Search</h2>
+
+<p>The Point and Radius Searching function allows you to perform a search 
+ for a single point, or for a circular area centered around a point.</p>
+
+<p>To perform a search on a circular area:</p>
+
+<ol>
+	
+	<li>Click the <b>Point and Radius Search</b> button. 
+ The Point and Radius Search tools appear on the screen..</li>
+	
+	<li>Enter whether you want your search to include 
+ only the area covered by the map or the Minimum Bounding Rectangle (the 
+ smallest rectangular area that would enclose the entire map) by selecting 
+ <b>Polygon</b> or <b>MBR</b> from the <b>Shoe Size</b> drop-down list.</li>
+	
+	<li>Enter which units you want to use in order to 
+ describe the coordinates by clicking on the <b>Format Type</b> drop-down 
+ and selecting a type from the list. You can select <b>Degrees/Minutes/Seconds</b>; 
+ <b>Degrees/Decimal Minutes</b>; <b>Decimal Degrees</b>; <b>UTM Meters</b>; 
+ <b>MGRS</b>; or <b>UPS</b>.</li>
+	
+	<li>Enter the coordinates for the center point of 
+ the circle into the field(s) in the Point and Radius block. If you selected 
+ units of Degrees/Minutes/Seconds, Degrees/Decimal Minutes, or Decimal 
+ Degrees, you must enter a Latitude value and a Longitude value. If you 
+ selected UTM Meters, MGRS, or UPS, you must enter the point into the field 
+ in that format.</li>
+	
+	<li>Enter the dimension of the radius of the circle 
+ into the Radius field, and select a unit of measurement for the radius 
+ from the Radius drop-down menu. Entering a Radius measurement is optional.</li>
+	
+	<li>Select how many records you want to appear on 
+ each page of search results by clicking on the <b>Records per page</b> 
+ drop-down and selecting a number from the list.</li>
+	
+	<li>Click the <b>Search</b> button to perform the 
+ search; or click the <b>Clear</b> button to reset the fields on the screen.</li>
+</ol>
+
+
+
+<h2><a NAME=corridorSearch></a>Corridor/Route Search</h2>
+
+<p>The Corridor/Route Searching function allows you to perform a search 
+ on an area defined as a path along a series of points. You can enter up 
+ to ten points into the list. The area that will be searched is created 
+ by connecting each coordinate with the next in the order in which they 
+ were entered, and then measuring tangentially away from each �leg� of 
+ the path. (Unlike the Polygon Search, however, the first and last coordinates 
+ are not connected together, and no interior range is searched.)</p>
+
+<p>For example, if you entered Latitude and Longitude information into 
+ the fields Coordinate 1 through Coordinate 6, Coordinate 1 would be connected 
+ with Coordinate 2; Coordinate 2 would be connected to Coordinates 1 and 
+ 3; and so on.</p>
+
+<p>To perform a search on a corridor or route:</p>
+
+<ol>
+	
+	<li>Click the <b>Corridor/Route Search</b> button. 
+ The Corridor/Route Search tools appear on the screen..</li>
+	
+	<li>Enter whether you want your search to include 
+ only the area covered by the map or the Minimum Bounding Rectangle (the 
+ smallest rectangular area that would enclose the entire map) by selecting 
+ <b>Polygon</b> or <b>MBR</b> from the <b>Shoe Size</b> drop-down list.</li>
+	
+	<li>Enter which units you want to use in order 
+ to describe the coordinates by clicking on the <b>Format Type</b> drop-down 
+ and selecting a type from the list. You can select <b>Degrees/Minutes/Seconds</b>; 
+ <b>Degrees/Decimal Minutes</b>; <b>Decimal Degrees</b>; <b>UTM Meters</b>; 
+ <b>MGRS</b>; or <b>UPS</b>.</li>
+	
+	<li>Enter the coordinates for each point of 
+ the route to be searched (in the order in which they are to be connected 
+ to form the route; unlike the Polygon Search, however, the last point 
+ in the list will not be connected to the first point in the list) into 
+ the Coordinate fields. If you selected units of Degrees/Minutes/Seconds, 
+ Degrees/Decimal Minutes, or Decimal Degrees, you must enter a Latitude 
+ value and a Longitude value for each coordinate. If you selected UTM Meters, 
+ MGRS, or UPS, you must enter the coordinates into the field in that format.</li>
+	
+	<li>Select how many records you want to appear 
+ on each page of search results by clicking on the <b>Records per page</b> 
+ drop-down and selecting a number from the list.</li>
+	
+	<li>Click the <b>Search</b> button to perform 
+ the search; or click the <b>Clear</b> button to reset the fields on the 
+ screen.</li>
+</ol>
+
+<h2><a NAME=rangeSearch></a>Range Search</h2>
+
+<p>The Range Search function allows you to perform a search on a partially 
+ bounded area. To define the area, you may provide any combination of upper, 
+ lower, left and right coordinates. </p>
+
+<p>To perform a search over a range:</p>
+
+<ol>
+	
+	<li>Click the <b>Range Search</b> button. The Range 
+ Search tools appear on the screen..</li>
+	
+	<li>Enter whether you want your search to include 
+ only the area covered by the map or the Minimum Bounding Rectangle (the 
+ smallest rectangular area that would enclose the entire map) by selecting 
+ <b>Polygon</b> or <b>MBR</b> from the <b>Shoe Size</b> drop-down list.</li>
+	
+	<li>Enter which units you want to use in order 
+ to describe the coordinates by clicking on the <b>Format Type</b> drop-down 
+ and selecting a type from the list. You can select <b>Degrees/Minutes/Seconds</b>; 
+ <b>Degrees/Decimal Minutes</b>; <b>Decimal Degrees</b>; <b>UTM Meters</b>; 
+ <b>MGRS</b>; or <b>UPS</b>.</li>
+	
+	<li>Enter the coordinate for each limit of the 
+ range into the field(s) in the Lower Left column. If you selected units 
+ of Degrees/Minutes/Seconds, Degrees/Decimal Minutes, or Decimal Degrees, 
+ you must enter a Latitude value and a Longitude value. If you selected 
+ UTM Meters, MGRS, or UPS, you must enter the point into the field in that 
+ format.</li>
+	
+	<li>Select how many records you want to appear 
+ on each page of search results by clicking on the <b>Records per page</b> 
+ drop-down and selecting a number from the list.</li>
+	
+	<li>Click the <b>Search</b> button to perform 
+ the search; or click the <b>Clear</b> button to reset the fields on the 
+ screen.</li>
+</ol>
+                
+		
+		
+		
+		<div id="helpNav">
+
+                        <div id="getMoreHelp">
+                                <a href="index.html">Get more help&nbsp;<img src="../../images/icon_help.gif" alt="Help Icon"/></a>
+                        </div> 
+                        <!-- end helpNav-->
+                </div> 
+                <!-- end mainContent -->
+        </div> 
+        <div id="pageFooter">
+                <div id="copyright">
+                        <span id="copySymbol">&copy;</span> <span>2011 Ex Libris Group. All rights 
+                        reserved.</span> 
+                </div> 
+        </div> 
+        <!-- end of pageFooter -->
+	</div>
+</body> 
+</html> 
+
+
+
+
+
+

@@ -1,0 +1,272 @@
+#   $Revision: 1.3.2.1 $ $Date: 2012/06/12 14:39:59 $ 
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris Group
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+###########################################################################
+#
+# Internal properties
+# ========================
+# This file contains properties that should not normally be changed to
+# customize an installation.  Developers and support staff only!
+###########################################################################
+
+###########################################################################
+#
+#   Header
+#
+###########################################################################
+page.header.buttons.search.action=searchBasic
+page.header.buttons.myList.action=myList
+page.header.buttons.mySearches.action=mySearch
+page.header.buttons.myAccount.action=myAccount
+page.header.login.link=login
+page.header.logout.link=logout.do
+###############################################################################
+#
+#   Footer
+#
+###############################################################################
+page.footer.buttons.search.action=searchBasic
+page.footer.buttons.myList.action=myList
+page.footer.buttons.mySearches.action=mySearch
+page.footer.buttons.myAccount.action=myAccount
+###############################################################################
+#
+#   Search Quick
+#
+###############################################################################
+searchQuickArgument=
+page.searchQuick.go.button.action=search
+page.searchQuick.searchHistory.link=searchHistory
+###############################################################################
+#
+#   Login Page
+#
+###############################################################################
+page.logIn.logIn.button.action=login.do
+page.logIn.cancel.button.action=searchBasic
+page.logIn.actions.extAuth.link=
+###############################################################################
+#
+#   My Account
+#
+###############################################################################
+page.myAccount.myAccount.link=myAccount
+page.myAccount.changePin.link=changePin
+page.myAccount.editPreferences.link=editPreferences
+page.myAccount.viewPersonalInfo.link=personalInformation
+page.myAccount.yourItems.itemAvail.link=http://www.exlibrisgroup.com
+page.myAccount.yourItems.reqPending.link=http://www.exlibriagroup.com
+page.myAccount.yourItems.chargedItem.link=http://www.exlibrisgroup.com
+page.myAccount.yourItems.borrowingBlocks.link=http://www.exlibrisgroup.com
+page.myAccount.yourItems.finesAndFees.link=http://www.exlibrisgroup.com
+page.myAccount.yourItems.demerits.link=http://www.exlibrisgroup.com
+page.myAccount.itemAvailable.cancel.button.action=cancel
+page.myAccount.reqPending.cancel.button.action=cancel
+page.myAccount.chargedItem.cancel.button.action=cancelRequest
+page.myAccount.chargedItem.renew.button.action=renew
+page.myAccount.update.button.action=update
+#Action to cancel an upcoming media booking
+page.myAccount.mediaBookings.cancel.button.action=cancel
+###############################################################################
+#
+#   My Account - change PIN
+#
+###############################################################################
+page.myAccount.changePin.save.button.action=changePIN.do
+page.myAccount.changePin.cancel.button.action=myAccount
+###############################################################################
+#
+#   My Account - update patron SMS number
+#
+###############################################################################
+page.myAccount.viewPersonalInfo.smsNumber.save.button.action=changeSMSNumber.do
+###############################################################################
+#
+#   My Account - edit preferences
+#
+###############################################################################
+page.myAccount.editPreferences.save.button.action=editPreferences.do
+page.myAccount.editPreferences.cancel.button.action=myAccount
+page.myAccount.editPreferences.clear.button.action=
+page.myAccount.editPreferences.selectDatabase.databases=
+###############################################################################
+#
+#   My Account - personal information
+#
+###############################################################################
+
+###############################################################################
+#
+#   Search
+#
+###############################################################################
+searchArgument=
+page.search.buttons.basic.action=searchBasic
+page.search.buttons.advanced.action=searchAdvanced
+page.search.buttons.subjectHeading.action=searchSubject
+page.search.buttons.author.action=searchAuthor
+page.search.buttons.courseReserve.action=enterCourseReserve.do
+page.search.change.link=selectDatabase
+page.search.searchHistory.link=searchHistory
+page.search.search.button.action=search
+# whether this information is used depends on setting of option.geospatialSearch in
+# webvoyage.properties
+page.search.geospatial.button=Geospatial Search
+page.search.geospatial.button.action=rectangleSearch
+page.search.geospatial.button.message=Perform a map search
+
+###############################################################################
+#
+#   Search Subject
+#
+###############################################################################
+
+###############################################################################
+#
+#   Search Author
+#
+###############################################################################
+
+###############################################################################
+#
+#   Search Advanced
+#
+###############################################################################
+
+###############################################################################
+#
+# Print and Export search result actions
+#
+###############################################################################
+page.return.button.action=
+page.printResults.print.button.action=
+page.exportResults.export.button.action=
+
+
+###############################################################################
+#
+#   Select database
+#
+###############################################################################
+page.selectDatabase.select.button.action=selectDatabase.do
+page.selectDatabase.cancel.button.action=
+selectedLibrariesArgument=
+
+###############################################################################
+#
+#  Select location
+#
+###############################################################################
+page.search.selectLocation.submit.button.action=selectLocation.do
+page.search.selectLocation.cancel.button.action=
+######################################################################
+#
+# The following link will determine where to go based on the browse option
+# location, and single cluster or multiple clusters.
+# Browse               Cluster       Location           Go where
+#-----------------------------------------------------------------
+# Y                    Single         Single            CourseReserveAlpha
+# Y                    Single         Multiple          Select location
+# Y                    Multiple       Don't care        Select location
+# N                    Single         Don't care        CourseReserveDataPage
+# N                    Multiple       Don't care        Select location
+#
+##########################################################################
+page.search.selectLocation.link=enterSelectLocation.do
+##########################################################################
+#
+# Search status page
+#
+##########################################################################
+page.searchStatus.show.button.action=searchStatus.do
+page.search.stop.button.action=searchStop.do
+page.searchStatus.refresh.link=searchStatus.do
+##########################################################################
+#
+# Search results, titles page header button link configuration
+#
+##########################################################################
+page.searchResults.editSearch.link=editSearch.do
+page.searchResults.saveSearch.link=saveSearchAdd.do
+page.searchResults.saveSearchAsAlert.link=saveSearchAlertAdd.do
+###########################################################################
+#
+# Search results, browse bar (print, export buttons, selection of all or page
+# record per page, post sort menu
+#
+###########################################################################
+page.searchResults.browseBar.print.button.action=PrintDialogServlet
+page.searchResults.browseBar.export.button.action=ExportDialogServlet
+page.searchResults.browseBar.email.button.action=EmailDialogServlet
+page.searchResults.browseBar.addToList.button.action=AddToList
+page.searchResults.browseBar.addToList.link=addToList.do
+page.searchResults.browseBar.update.button.action=update
+page.searchResults.browseBar.delete.button.action=DelFromList
+page.searchResults.browseBar.delete.link=delFromList.do
+
+###########################################################################
+#
+# Search results titles has a single place to go for a lot of actions.
+# This is it.
+#
+########################################################################
+page.searchResults.titles.action=titlesUpd
+########################################################################
+#
+# Link internal to invoke on the action box on holdings information page
+#
+########################################################################
+actionBox.recordView.link=
+actionBox.staffView.link=
+actionBox.actions.makeRequest.link=
+actionBox.actions.print.link=
+actionBox.actions.export.link=
+actionBox.actions.email.link=
+actionBox.actions.bibliography.link=
+actionBox.actions.addToList.link=holdingsInfo
+actionBox.linkFinder.link=
+actionBox.linkFinder.image.link=
+actionBox.requestURI.link=patronRequests
+actionBox.requestURI.image.link=
+
+###############################################################################
+#
+#   Patron Requests
+#
+###############################################################################
+page.patronRequests.request.link=patronRequest
+page.patronRequests.actions.returnToHoldings.link=holdingsInfo
+
+###############################################################################
+#
+#   Patron Request
+#
+###############################################################################
+page.patronRequest.submit.button.action=sendPatronRequest.do
+page.patronRequest.cancel.button.action=patronRequests
+page.patronRequest.actions.returnToRequests.link=patronRequests
+
+###############################################################################
+#
+#   Email Dialog
+#
+###############################################################################
+page.searchResults.emailResults.page.email.email.button.action=sendMail.do
+page.searchResults.emailResults.page.email.cancel.button.action=
+page.searchResults.emailComplete.page.return.button.action=
+###############################################################################
+#
+# My list page button links to invoke action such as delete
+#
+###############################################################################
+page.myList.delete.action=delete
+
+
+
+
+

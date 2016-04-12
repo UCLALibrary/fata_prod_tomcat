@@ -1,0 +1,117 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: login css
+**          Version : 7.2.0
+**          Created : 28-AUG-2007
+**      Orig Author : Mel Pemble
+**    Last Modified : 19-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+#loginForm label,
+#loginForm input,
+#loginForm select
+{
+   font-size: 12px;
+   font-weight: bold;
+}
+
+#loginForm
+{
+   background-color: #c9e5ff;
+   border-top: 1px solid #62b3ff;
+   border-bottom: 1px solid #62b3ff; 
+   border-left: 0px none;
+   border-right: 0px none; 
+   padding: 10px;
+   width: 500px;   
+}
+
+#barcodeDivDropdown label,
+#lastNameDiv label,
+#pinDiv label,
+#barcodeDiv label,
+#homeLibraryDropdown label
+{
+   text-align: right;
+   padding-right: 7px;
+   float:left;
+   width:126px;
+}
+
+#barcodeDiv,
+#lastNameDiv,
+#pinDiv,
+#barcodeDivDropdown,
+#homeLibraryDropdown
+{
+   clear:both;
+   float:right;
+   margin-bottom: 5px;
+   width:100%;  
+}
+
+#lastNameDiv label,
+#pinDiv label,
+#barcodeDiv label,
+#homeLibraryDropdown label
+{
+   margin-top: 2px;
+}
+
+input:focus,
+textarea:focus 
+{
+   background: #ffa;
+}
+
+#loginBtns
+{
+   padding-bottom: 3px;
+   padding-left: 133px;
+}
+
+#loginBtn,
+#cancelBtn
+{
+   color: #ffffff;
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #003061;
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #000; 
+   border-left: 1px solid #fff;
+   border-right: 1px solid #000; 
+   cursor: pointer;
+   margin-right: 5px;
+   text-decoration:none;
+   padding:3px 5px;
+}
+
+#loginBtn:hover,
+#cancelBtn:hover
+{
+   color: #003061;
+   background-color: #ffffff;
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #003061; 
+   border-left: 1px solid #000;
+   border-right: 1px solid #003061; 
+}
+
+#cancelLink
+{
+   padding:0px;
+   margin:0px;
+   text-decoration:none;
+}
+
+
+

@@ -1,0 +1,249 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: preferences.css
+**          Version : 7.2.0
+**          Created : 29-AUG-2007
+**      Orig Author : David Sellers
+**    Last Modified : 21-AUG-2009
+** Last Modified By : Mel Pemble
+*/
+
+#SubTitle
+{
+   color: #013064;
+   font-size: larger;
+   padding: 10px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+}
+
+#fieldLabel, #displayOptions label
+{
+   font-size: smaller;
+   font-weight: bold;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   white-space: nowrap;
+   width: 1%;
+}
+
+#dbPreferences li
+{
+   font-size: smaller;
+   padding: 1px;
+   margin: 0px;
+   border: 0px;
+}
+
+#displayOptions label#recsPerPage
+{
+   font-weight: normal;
+}
+
+
+#preferenceBody
+{
+   background-color: #c9e5ff; 
+   border-top: 2px solid #62b3ff;
+   border-bottom: 1px solid #62b3ff; 
+   border-left: 0px none;
+   border-right: 0px none; 
+   padding: 5px 0px 0px 10px;
+   margin: 0px 0px 0px 0px;
+   width: 540px;
+}
+
+#preferenceBody #buttons 
+{
+   text-align: center; 
+}
+
+#prefBtns
+{
+   clear:both;
+   padding-top: 15px;
+   padding-bottom: 3px;
+}
+
+#savePrefBtn, #cancelPrefBtn
+{
+   color: #ffffff;
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #003061;
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #000; 
+   border-left: 1px solid #fff;
+   border-right: 1px solid #000; 
+   cursor: pointer;
+   margin-right: 5px;
+   text-decoration:none;
+}
+
+#savePrefBtn
+{
+   padding:3px 5px;
+}
+
+#cancelPrefBtn
+{
+   padding:4px 6px;
+}
+
+#savePrefBtn:hover, #cancelPrefBtn:hover
+{
+   color: #003061;
+   background-color: #ffffff;
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #003061; 
+   border-left: 1px solid #000;
+   border-right: 1px solid #003061; 
+}
+
+#preferenceBody #buttons input
+{
+   padding:  2px;
+   margin: 10px 10px 10px 10px;
+}
+
+#dbPreferences ol
+{
+   list-style: none; 
+   padding-left: 100px;
+   margin: 0px 0px 15px 0px;
+}
+
+#pins #input 
+{
+   padding:  5px 0px 0px 10px;
+   margin: 0px 0px 0px 0px;
+}
+
+#pins #input label
+{
+   font-size: smaller;
+   font-weight: bold;
+   padding: 1px;
+   padding-right: 5px;
+   margin: 0px;
+   border: 0px;
+   text-align: left;
+   white-space: nowrap;
+   width: 1%;
+}
+
+#pins #input input
+{
+   text-align: left;
+}
+
+#myAccountLinks 
+{
+   padding: 0px 0px 50px 0px;
+}
+
+#myAccountLinks ul
+{
+   float: left; 
+   list-style: none; 
+   margin: 0px 0px 0px -10px; 
+   padding: 0px 0px 0px 0px;
+}
+
+#myAccountLinks li
+{
+   color: #ffffff;
+   font-size: 12px;
+   font-weight: bold;
+   border-top: 1px none #013064;
+   border-bottom: 1px none #013064; 
+   border-left: 0px none #013064;
+   border-right: 0px none #013064; 
+   cursor: pointer;
+   margin: 0px;
+   white-space: nowrap;
+   float:left;
+   display:block;
+}
+
+#myAccountLinks a
+{
+   text-decoration:none;
+   display:block;
+   background:url("../images/btn_ltblue_bg.gif") no-repeat right top;
+   padding: 0px 6px 2px 0px;
+   margin: 0px 0px 0px 11px;
+   float:left;	
+}
+
+#myAccountLinks a span
+{
+   float:left;	 
+   background:url("../images/btn_ltblue_left.gif") no-repeat left top;
+   padding: 6px 15px 5px; 	
+   text-align:center;
+   display:block;
+}
+
+#myAccountLinks a:link, #myAccountLinks a:visited, #myAccountLinks a:hover
+{
+   color: #fff;
+   text-decoration: none;
+}
+
+#courseReserveRadio
+{
+   font-size: smaller;
+   font-weight: bold;
+   float:left;	
+   padding: 0px 20px 60px 0px;
+   margin: 0px 0px 0px 0px;
+}
+
+#courseReserveDropDowns label,#courseReserveDropDowns select
+{
+   padding:0px;
+   margin:2px;
+}
+#courseReserveDropDowns label
+{
+   font-size: smaller;
+   width: 80px;
+   float:left;
+   margin-top:3px;
+}
+
+#searchTabRadio
+{
+   font-size: smaller;
+   font-weight: bold;
+   width: 150px;
+   float:left;	
+}
+
+#searchTabDropDowns
+{
+   padding: 1px 1px 1px 1px;
+   margin: 1px 1px 1px 1px;
+   float:none;	
+}
+
+.accessibilityHeader
+{
+   width: 0px;
+   float:left;	 
+   COLOR: white;
+   position: relative; 
+   right: 999em;
+}
+
+

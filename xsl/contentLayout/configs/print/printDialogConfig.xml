@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Revision: 1.3.2.1 $ $Date: 2012/06/11 22:25:07 $ -->
+<!-- 
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+-->
+
+<!--
+**          Product : WebVoyage :: displaycfg
+**          Version : 7.1.0
+**          Created : 12-DEC-2007
+**      Orig Author : Scott Morgan
+**    Last Modified : 09-MAR-2009
+        Modified by : 
+
+--> 
+
+	<display>
+
+		<displayTags label="Title:">
+			<displayTag field="130" indicator1="X"  indicator2="X" subfield="aplskf"/>
+			<displayTag field="240" indicator1="X"  indicator2="X" subfield="aplskf"/>
+			<displayTag field="245" indicator1="X"  indicator2="X" subfield="ab"/>
+		</displayTags>	
+
+		<displayTags label="Author:">
+			<displayTag field="100" indicator1="X"  indicator2="X" subfield="aq"/>
+			<displayTag field="110" indicator1="X"  indicator2="X" subfield="ab"/>
+			<displayTag field="111" indicator1="X"  indicator2="X" subfield="ab"/>
+		</displayTags>
+
+	</display>
+
+

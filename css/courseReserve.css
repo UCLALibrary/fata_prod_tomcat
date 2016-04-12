@@ -1,0 +1,290 @@
+/* $Revision: 1.4 $ $Date: 2012/06/08 20:13:22 $ */
+/*
+#(c)#=====================================================================
+#(c)#
+#(c)#       Copyright 2007-2012 Ex Libris (USA) Inc.
+#(c)#                       All Rights Reserved
+#(c)#
+#(c)#=====================================================================
+
+**          Product : WebVoyage :: courseReserve.css
+**          Version : 7.1.0
+**          Created : 29-AUG-2007
+**      Orig Author : David Sellers
+**    Last Modified : 09-MAR-2009
+** Last Modified By : Mel Pemble
+*/
+
+/* Search Navigation*/
+
+#searchNav ul
+{
+   float: left; 
+   list-style: none; 
+   margin: 0px 0 0 0; 
+   padding: 0px 0px 0 0px;
+}
+
+#searchNav li
+{
+   FONT-SIZE: smaller;
+   FONT-WEIGHT: bold;
+   float:left;
+   display:block;
+   margin: 0px 0px -1px 0px;
+}
+
+#searchNav a
+{
+   COLOR: #fff;
+   float:left;
+   background:url("../images/search_nav_right_off.JPG") no-repeat right top;
+   padding:0px 6px 2px 0px;
+   margin: 0px 0px 0px 11px;
+   text-decoration:none;
+   display:block;
+}
+
+#searchNav a span
+{
+   float:left;
+   background:url("../images/search_nav_left_off.JPG") no-repeat left top;
+   padding: 7px 20px 5px; 	
+   text-align:center;
+   display:block;
+}
+
+#searchNav a:hover
+{
+   background:url("../images/search_nav_right_hover.JPG") no-repeat right top;
+}
+
+#searchNav a:hover span
+{
+   background:url("../images/search_nav_left_hover.JPG") no-repeat left top;
+}
+
+#searchNav li#on a
+{
+   background:url("../images/search_nav_right_on.JPG") no-repeat right top;
+}
+
+#searchNav li#on a span
+{
+   background:url("../images/search_nav_left_on.JPG") no-repeat left top;
+}
+
+/* Search Basic*/
+
+#searchInputs
+{
+	padding: 0px 0px 10px 10px;
+}
+
+#searchInputs label
+{
+    COLOR: #000000;
+    FONT-SIZE: smaller;
+    FONT-WEIGHT: bold;
+	padding: 1px;
+	margin: 2px;
+	white-space: nowrap;
+	width: 1%;
+}
+
+#quickLimits 
+{
+	padding: 12px 0px 10px 10px;
+}
+
+#quickLimits label
+{
+    COLOR: #000000;
+    FONT-SIZE: smaller;
+    FONT-WEIGHT: bold;
+	padding: 1px;
+	padding-right: 5px;
+	margin: 2px;
+	border: 0px;
+	text-align: left;
+	white-space: nowrap;
+	width: 1%;
+}
+
+
+#searchCRForm
+{
+	clear: left; 
+	background-color: #c9e5ff; 
+	border: 1px solid #62b3ff; 
+}
+
+#searchCRButtons
+{ 
+  text-align: right; 
+  margin:0px 20px 20px 0px
+ }
+
+#searchCRButtons a
+{
+   background:url("../images/icon_srchtips.gif") no-repeat left top;
+   padding:0px 0px 10px 20px ;
+   margin: 0px 0px 3px 100px;
+   COLOR: #000000;
+   FONT-SIZE: xx-small
+}
+
+#searchCRButtons input
+{  
+   margin:0px 0px 0px 10px ;
+}
+
+
+
+
+#fieldLabel
+{
+    COLOR: #000000;
+    FONT-SIZE: smaller;
+    FONT-WEIGHT: bold;
+	padding: 1px;
+	padding-right: 5px;
+	margin: 0px;
+	border: 0px;
+	text-align: left;
+	white-space: nowrap;
+	width: 1%;
+}
+
+#fieldText
+{
+    COLOR: #000000;
+    FONT-SIZE: smaller;
+	padding: 1px;
+	padding-right: 5px;
+	margin: 0px;
+	border: 0px;
+	text-align: left;
+	white-space: nowrap;
+	width: 98%;
+}
+
+
+#databaseInfo 
+{
+	padding: 0px 0px 20px 0px;
+}
+
+#databaseInfo label 
+{
+    COLOR: #000000;
+    FONT-SIZE: smaller;
+    FONT-WEIGHT: bold;
+	padding: 1px;
+	padding-right: 5px;
+	margin: 2px;
+	border: 0px;
+	text-align: left;
+	white-space: nowrap;
+	width: 1%;
+}
+
+#databaseInfo span 
+{
+    COLOR: #000000;
+    FONT-SIZE: smaller;
+	padding: 1px;
+	margin: 0px;
+	border: 0px;
+	text-align: left;
+	width: 98%;
+}
+
+#databaseInfo a
+{
+	padding-left: 5px;
+
+}
+
+A:link
+{
+    COLOR: #003061
+}
+A:visited
+{
+    COLOR: #9F175E;
+}
+A:hover
+{
+    COLOR: #9F175E;
+    TEXT-DECORATION: none
+}
+A:active
+{
+    COLOR: #9F175E;
+    TEXT-DECORATION: none
+} 
+
+#searchHistoryLink 
+{ 
+  text-align: right; 
+  margin: 10px 5px 00px 0px;
+}
+
+#searchHistoryLink a
+{
+   background:url("../images/icon_srchhistory.gif") no-repeat left top;
+   padding:0px 0px 10px 20px ;
+   FONT-SIZE: smaller
+}
+
+
+#searchCRlocationInfo, #searchCRDropDowns, #searchCRInstructions
+{
+	padding: 10px 0px 10px 10px;
+}
+
+#searchCRDropDowns label{
+    COLOR: #000000;
+    FONT-SIZE: smaller;
+      white-space: nowrap;
+      padding: 1px 1px 1px 1px;
+      margin: 3px 5px 1px 1px;
+      text-align: right; 
+      width: 75px;
+      float: left;
+}
+
+#searchCRDropDowns select{
+   padding: 1px 1px 1px 1px;
+   margin: 1px 1px 5px 1px;
+   float: none;
+}
+
+#searchBtn
+{
+   color: #ffffff;
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #003061; 
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #000; 
+   border-left: 1px solid #fff;
+   border-right: 1px solid #000; 
+   height: 22px; 
+   cursor: pointer;
+   margin-right: 5px;
+   white-space: nowrap;
+}
+#searchBtn:hover
+{
+   color: #003061;
+   background-color: #ffffff;
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #003061; 
+   border-left: 1px solid #000;
+   border-right: 1px solid #003061; 
+}
+
+
+
