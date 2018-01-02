@@ -1,7 +1,7 @@
-#   $Revision: 1.3.2.1 $ $Date: 2012/06/12 14:39:59 $ 
+#   $Revision: 1.5 $ $Date: 2013/01/10 21:46:01 $ 
 #(c)#=====================================================================
 #(c)#
-#(c)#       Copyright 2007-2012 Ex Libris Group
+#(c)#       Copyright 2007-2013 Ex Libris Group
 #(c)#                       All Rights Reserved
 #(c)#
 #(c)#=====================================================================
@@ -265,6 +265,7 @@ page.searchResults.emailComplete.page.return.button.action=
 #
 ###############################################################################
 page.myList.delete.action=delete
+
 
 
 

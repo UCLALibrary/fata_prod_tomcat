@@ -1,7 +1,7 @@
-#   $Revision: 1.23.2.3 $ $Date: 2012/10/04 17:45:29 $
+#   $Revision: 1.38 $ $Date: 2014/12/12 15:54:39 $
 #(c)#=====================================================================
 #(c)#
-#(c)#       Copyright 2007-2012 Ex Libris Group
+#(c)#       Copyright 2007-2013 Ex Libris Group
 #(c)#                       All Rights Reserved
 #(c)#
 #(c)#=====================================================================
@@ -957,7 +957,7 @@ actionBox.moreAboutThisItem=More About This Item From
 #  turned on.
 # NOTE option.loadRelatedRecords must be Y
 # NOTE the pretext, linktext, and posttext are used to display the text
-# for the related items link.
+# for the related items link when the maxPerPage value is met.
 # The default is "Click (pretext) here (linktext has underlining URL to the
 # related items link) for related items" (posttext).
 # One link may be defined per bibliographic record linking profile, as defined
@@ -1074,7 +1074,7 @@ holdings.item.request.status.25=\\i Requests: \\c
 holdings.redirect.author.search.code=NAME
 holdings.redirect.title.search.code=TALL
 holdings.redirect.subject.search.code=SUBJ
-holdings.redirect.callNumber.search.code=CALL
+holdings.redirect.callNumber.search.code=CALL+
 
 #==============================================================================#
 # Links to holdings that allow users to navigate to the desired database display
@@ -1533,6 +1533,9 @@ page.myAccount.reqPending.select.option.all=All
 page.myAccount.reqPending.item.heading.item=Item
 page.myAccount.reqPending.item.heading.database=Database
 page.myAccount.reqPending.item.heading.status=Status
+page.myAccount.reqPending.item.heading.nofillreason=No Fill Reason
+page.myAccount.reqPending.item.heading.replynote=Reply Note
+
 # page.myAccount.reqPending.item.heading.holdExpires=Hold Expires
 page.myAccount.reqPending.item.heading.pickupLocation=Pickup Location
 page.myAccount.chargedItem.label=Charged Items
@@ -1571,6 +1574,7 @@ page.myAccount.chargedItem.itemInfo=\\t
 # \\u -> the item's due time, if the due date is today
 #==============================================================================#
 page.myAccount.chargedItem.dueDate=\\d \\t
+page.myAccount.chargedItem.dueDate.indef=Indefinite
 page.myAccount.update.button=Update
 page.myAccount.update.button.message=Refresh the data
 # Option to turn on or off Media Bookings on My Account page
@@ -1613,6 +1617,7 @@ page.myAccount.borrowingBlocks.item.reason.fine_limit_patron=You have \\p in fin
 page.myAccount.borrowingBlocks.item.reason.odue_limit_patron=You have \\p overdue items. The limit for your patron group is \\b.
 page.myAccount.borrowingBlocks.item.reason.odue_recall_limit_patron=You have \\p overdue recalled items. The limit for your patron group is \\b.
 page.myAccount.borrowingBlocks.item.reason.recall_limit_patron=You have recalled \\p items. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.hold_request_limit_patron=You have \\p pending hold requests.  The limit for your patron group is \\b.
 page.myAccount.borrowingBlocks.item.reason.claims_ret_limit_patron=You have claimed to have returned \\p items. The limit for your patron group is \\b.
 page.myAccount.borrowingBlocks.item.reason.lost_limit_patron=You have lost \\p items. The limit for your patron group is \\b.
 page.myAccount.borrowingBlocks.item.reason.sshelved_limit_patron=You have \\p self-shelved items. The limit for your patron group is \\b.
@@ -1631,6 +1636,10 @@ page.myAccount.borrowingBlocks.item.reason.sshelved_limit_ub_patron= You have \\
 page.myAccount.borrowingBlocks.item.reason.charge_limit_item_policy=You have \\p items charged. The limit for your patron group in this item's policy is \\b.
 page.myAccount.borrowingBlocks.item.reason.charge_limit_item_type=You have \\p items charged that have the item type \\i. The limit for your patron group is \\b.
 page.myAccount.borrowingBlocks.item.reason.charge_limit_item_policy_type=You have \\p items charged that have the item type \\i. The limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.charge_limit_patron_holds=You have \\p items charged and \\h pending hold requests. The combined limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.charge_limit_item_policy_holds=You have \\p items charged and \\h pending hold requests. The combined limit for your patron group in this item's policy is \\b.
+page.myAccount.borrowingBlocks.item.reason.charge_limit_item_type_holds=You have \\p items charged and \\h pending hold requests that have the item type \\i. The combined limit for your patron group is \\b.
+page.myAccount.borrowingBlocks.item.reason.charge_limit_item_policy_type_holds=You have \\p items charged and \\h pending hold requests that have the item type \\i. The combined limit for your patron group is \\b.
 page.myAccount.borrowingBlocks.item.reason.demerits_limit_ub_patron=You have \\p ub demerits. The limit for your ub demerits is \\b.
 page.myAccount.borrowingBlocks.item.reason.renew_limit_item=Your item has been renewed \\p times. The limit for your number of renewal for an item is \\b.
 
@@ -1732,6 +1741,7 @@ page.myAccount.chargedItem.item.status.variable.rd=unknown date
 #   7=Canceled
 #   8=Error
 #   9=Promoted
+#  10=In Transit to Pickup Location
 #==============================================================================#
 page.myAccount.reqPending.item.status.1=Accepted
 page.myAccount.reqPending.item.status.2=Printed
@@ -1742,6 +1752,7 @@ page.myAccount.reqPending.item.status.6=Expired
 page.myAccount.reqPending.item.status.7=Canceled
 page.myAccount.reqPending.item.status.8=Error
 page.myAccount.reqPending.item.status.9=Promoted
+page.myAccount.reqPending.item.status.10=In Transit to Pickup Location
 
 ###############################################################################
 #
@@ -1923,6 +1934,31 @@ page.myAccount.changePin.errorCode.PINMessage6=Unable to change PIN. Please ask 
 page.myAccount.changePin.errorCode.PINMessage7=Change PIN success
 #==============================================================================#
 #
+#   My Account -  Notification of patron expiration
+#
+#   The system administrator may choose to notify patrons when their account
+#   is about to expire.  The value in expireNotifyLead must be in days.
+#   Use the placeholder \\d to display that day value in the message(s).
+#   The message expireNotifyMsg will be displayed at the top of the My Account
+#   screen. The message viewPersonalInfo.expireNotifyMsg will display at the
+#   bottom of the Personal Info page.
+#   In cases where the expirate date happens within 24 hours the system will
+#   use the expireNotifyMsgWithin24Hrs message. The placeholders \\h \\m and \\s
+#   will be replaced with hours minutes and seconds left.
+#   The system wont calculate just minutes, or just seconds, so the message should
+#   contain Hours, or Hours and Minutes, or Hours Minutes and Seconds.
+#   The Syatem Administrator may opt to not include any hours,minutes, or seconds
+#   in the message as well.
+#==============================================================================#
+page.myAccount.expireNotify=Y
+page.myAccount.expireNotifyLead=30
+page.myAccount.expireNotifyMsg=Your patron account will expire in \\d days.
+page.myAccount.expireNotifyMsgWithin24Hrs=Your patron account will expire in \\h Hours \\m Minutes \\s Seconds
+page.myAccount.viewPersonalInfo.hasExpiredMsg=Your patron account has expired.
+page.myAccount.viewPersonalInfo.expireNotifyMsg=Your patron account will expire in \\d days.  Please contact your circulation desk for assistance.
+page.myAccount.viewPersonalInfo.expireNotifyMsgWithin24Hrs=Your patron account will expire in \\h Hours \\m Minutes \\s Seconds.  Please contact your circulation desk for assistance.
+#==============================================================================#
+#
 #  My list page used configurable labels, buttons
 #
 #==============================================================================#
@@ -2075,7 +2111,7 @@ page.patronRequests.message.requestblocked1=No holdings are available.
 page.patronRequests.message.requestblocked2=The item is on order.
 page.patronRequests.message.requestblocked3=The item is not charged.
 page.patronRequests.message.requestblocked4=The item is missing.
-page.patronRequests.message.requestblocked5=The item is lost.
+page.patronRequests.message.requestblocked5=The item has a lost status.
 page.patronRequests.message.requestblocked6=The item is at the bindery.
 page.patronRequests.message.requestblocked7=No items are available for recall.
 page.patronRequests.message.requestblocked8=You have already placed a request for this item.
@@ -2083,6 +2119,8 @@ page.patronRequests.message.requestblocked9=No recall policy is defined for this
 page.patronRequests.message.requestblocked10=No hold policy is defined for this item.
 page.patronRequests.message.requestblocked11=This item has been scheduled through media booking.
 page.patronRequests.message.requestblocked12=This item is not available for hold.
+page.patronRequests.message.requestblocked13=The item has a lost status.
+page.patronRequests.message.requestblocked14=No items are available for request because they are missing or lost.
 
 #==============================================================================#
 #
@@ -2198,16 +2236,23 @@ mail.host=
 mail.transport.protocol=smtp
 mail.user=voyager
 mail.subject=Search Results
+#
+#The optional mail.from properties specifies a valid and fully qualified email address. 
+#If it is present, it will be used in the From of the email
+#
+#mail.from=
 
 #============================================================================
 #
 # Image Server configuration for link, thumbnail alter text
 #
 #============================================================================
-#imageServer.scanDoc=___WEBVOYAGE_CLASSIC_URL___/cgi-bin/Pscandoc.cgi?
+#####imageServer.scanDoc=___WEBVOYAGE_CLASSIC_URL___/cgi-bin/Pscandoc.cgi?
+#imageServer.scanDoc=___SCANDOC_CGI_URL___
 #imageServer.scandocAltText=Scan Document
 #imageServer.thumbnailAltText=Thumbnail
 #imageServer.loginRequiredText=**** Login Required ****
+
 
 
 
