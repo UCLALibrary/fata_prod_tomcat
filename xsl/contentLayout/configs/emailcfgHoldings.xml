@@ -30,7 +30,7 @@
         </holdingsTags-->
 
         <!-- MFHD and Item Locations -->
-        <holdingsTags label="Location" notFound="No location available">
+        <!--holdingsTags label="Location" notFound="No location available">
             <displayTag field="1005" />
         </holdingsTags-->
 
