@@ -1,4 +1,4 @@
-#   $Revision: 1.1.1.1.10.1 $ $Date: 2012/06/12 14:39:59 $ 
+#   $Revision: 1.8 $ $Date: 2013/12/04 19:24:50 $
 ########################################################################################################
 #
 # linkresolver.properties
@@ -35,11 +35,24 @@
 # openUrl.cfg.LOCAL.key2.parseEnd=,
 # openUrl.cfg.LOCAL.key2.len2=0
 #
+#
+# For OpenURL 1.0 (Z39.88-2004) support, uncomment the "version" property
+# below, and use the openUrl.cfg.1.0* format properties.
 ########################################################################################################
-openUrl.cfg.LOCAL.openUrlDisplay=Y
+openUrl.cfg.LOCAL.openUrlDisplay=N
 linkResolver.page.label=Link Resolver Page
+#openUrl.cfg.LOCAL.version=1.0
 
-openUrl.cfg.LOCAL.urlRoot=http://host:port/SFXinstance?sid=Endeavor:CitationServer&
+openUrl.cfg.LOCAL.urlRoot=http://host:9999/SFXinstance?sid=Endeavor:CitationServer&
+#genre definition
+openUrl.cfg.LOCAL.numGenres=7
+openUrl.cfg.LOCAL.genre1=*m:book
+openUrl.cfg.LOCAL.genre2=*s:journal
+openUrl.cfg.LOCAL.genre3=*a:bookitem
+openUrl.cfg.LOCAL.genre4=*d:bookitem
+openUrl.cfg.LOCAL.genre5=*b:article
+openURL.cfg.LOCAL.genre6=*i:article
+openURL.cfg.LOCAL.genre7=**:book
 #title=245/a/0///0/
 openUrl.cfg.LOCAL.key1.key=title
 openUrl.cfg.LOCAL.key1.tag=245
@@ -54,14 +67,14 @@ openUrl.cfg.LOCAL.key2.tag=100
 openUrl.cfg.LOCAL.key2.subfield=a
 openUrl.cfg.LOCAL.key2.len1=0
 openUrl.cfg.LOCAL.key2.parseStart=
-openUrl.cfg.LOCAL.key2.parseEnd=, 
+openUrl.cfg.LOCAL.key2.parseEnd=,
 openUrl.cfg.LOCAL.key2.len2=0
 #aufirst=100/a/0/, //0/
 openUrl.cfg.LOCAL.key3.key=aufirst
 openUrl.cfg.LOCAL.key3.tag=100
 openUrl.cfg.LOCAL.key3.subfield=a
 openUrl.cfg.LOCAL.key3.len1=0
-openUrl.cfg.LOCAL.key3.parseStart=, 
+openUrl.cfg.LOCAL.key3.parseStart=,
 openUrl.cfg.LOCAL.key3.parseEnd=
 openUrl.cfg.LOCAL.key3.len2=0
 #date-year=260/c/4//./0/
@@ -128,4 +141,157 @@ openUrl.cfg.LOCAL.key11.len1=0
 openUrl.cfg.LOCAL.key11.parseStart=
 openUrl.cfg.LOCAL.key11.parseEnd=
 openUrl.cfg.LOCAL.key11.len2=0
+
+# OpenURL 1.0
+openUrl.cfg.1.0.LOCAL.openUrlDisplay=N
+openUrl.cfg.1.0.LOCAL.urlRoot=http://host:9999/SFXinstance?sid=Endeavor:CitationServer&
+openUrl.cfg.1.0.LOCAL.urlver=Z39.88-2004
+openUrl.cfg.1.0.LOCAL.prefix=rft.
+        // book
+openUrl.cfg.1.0.LOCAL.book.fmt=rft_val_fmt=info:ofi/fmt:kev:mtx:book
+#genre definition
+openUrl.cfg.1.0.LOCAL.numGenres=7
+openUrl.cfg.1.0.LOCAL.genre1=*m:book
+openUrl.cfg.1.0.LOCAL.genre2=*s:journal
+openUrl.cfg.1.0.LOCAL.genre3=*a:bookitem
+openUrl.cfg.1.0.LOCAL.genre4=*d:bookitem
+openUrl.cfg.1.0.LOCAL.genre5=*b:article
+openURL.cfg.1.0.LOCAL.genre6=*i:article
+openURL.cfg.1.0.LOCAL.genre7=**:book
+
+# OpenURL 1.0 book
+#title=245/a/0///0/
+openUrl.cfg.1.0.LOCAL.book.key1.key=btitle
+openUrl.cfg.1.0.LOCAL.book.key1.tag=245
+openUrl.cfg.1.0.LOCAL.book.key1.subfield=a
+openUrl.cfg.1.0.LOCAL.book.key1.len1=0
+openUrl.cfg.1.0.LOCAL.book.key1.parseStart=
+openUrl.cfg.1.0.LOCAL.book.key1.parseEnd=
+openUrl.cfg.1.0.LOCAL.book.key1.len2=0
+#aulast=100/a/0//, /0/
+openUrl.cfg.1.0.LOCAL.book.key2.key=aulast
+openUrl.cfg.1.0.LOCAL.book.key2.tag=100
+openUrl.cfg.1.0.LOCAL.book.key2.subfield=a
+openUrl.cfg.1.0.LOCAL.book.key2.len1=0
+openUrl.cfg.1.0.LOCAL.book.key2.parseStart=
+openUrl.cfg.1.0.LOCAL.book.key2.parseEnd=,\u0020
+openUrl.cfg.1.0.LOCAL.book.key2.len2=0
+#aufirst=100/a/0/, //0/
+openUrl.cfg.1.0.LOCAL.book.key3.key=aufirst
+openUrl.cfg.1.0.LOCAL.book.key3.tag=100
+openUrl.cfg.1.0.LOCAL.book.key3.subfield=a
+openUrl.cfg.1.0.LOCAL.book.key3.len1=0
+openUrl.cfg.1.0.LOCAL.book.key3.parseStart=,\u0020
+openUrl.cfg.1.0.LOCAL.book.key3.parseEnd=
+openUrl.cfg.1.0.LOCAL.book.key3.len2=0
+#date-year=260/c/4//./0/
+openUrl.cfg.1.0.LOCAL.book.key4.key=date
+openUrl.cfg.1.0.LOCAL.book.key4.tag=260
+openUrl.cfg.1.0.LOCAL.book.key4.subfield=c
+openUrl.cfg.1.0.LOCAL.book.key4.len1=4
+openUrl.cfg.1.0.LOCAL.book.key4.parseStart=
+openUrl.cfg.1.0.LOCAL.book.key4.parseEnd=.
+openUrl.cfg.1.0.LOCAL.book.key4.len2=0
+#issn=022/a/9///0/
+openUrl.cfg.1.0.LOCAL.book.key5.key=issn
+openUrl.cfg.1.0.LOCAL.book.key5.tag=022
+openUrl.cfg.1.0.LOCAL.book.key5.subfield=a
+openUrl.cfg.1.0.LOCAL.book.key5.len1=9
+openUrl.cfg.1.0.LOCAL.book.key5.parseStart=
+openUrl.cfg.1.0.LOCAL.book.key5.parseEnd=
+openUrl.cfg.1.0.LOCAL.book.key5.len2=0
+#isbn=020/a/10///0/
+openUrl.cfg.1.0.LOCAL.book.key6.key=isbn
+openUrl.cfg.1.0.LOCAL.book.key6.tag=020
+openUrl.cfg.1.0.LOCAL.book.key6.subfield=a
+openUrl.cfg.1.0.LOCAL.book.key6.len1=10
+openUrl.cfg.1.0.LOCAL.book.key6.parseStart=
+openUrl.cfg.1.0.LOCAL.book.key6.parseEnd=
+openUrl.cfg.1.0.LOCAL.book.key6.len2=0
+#spage=300/a/0///0/
+openUrl.cfg.1.0.LOCAL.book.key11.key=spage
+openUrl.cfg.1.0.LOCAL.book.key11.tag=300
+openUrl.cfg.1.0.LOCAL.book.key11.subfield=a
+openUrl.cfg.1.0.LOCAL.book.key11.len1=0
+openUrl.cfg.1.0.LOCAL.book.key11.parseStart=
+openUrl.cfg.1.0.LOCAL.book.key11.parseEnd=
+openUrl.cfg.1.0.LOCAL.book.key11.len2=0
+
+# OpenURL 1.0  journal
+openUrl.cfg.1.0.LOCAL.jrnl.fmt=rft_val_fmt=info:ofi/fmt:kev:mtx:journal
+
+#Title=245/a/0///0/
+openUrl.cfg.1.0.LOCAL.jrnl.key1.key=jtitle
+openUrl.cfg.1.0.LOCAL.jrnl.key1.tag=245
+openUrl.cfg.1.0.LOCAL.jrnl.key1.subfield=a
+openUrl.cfg.1.0.LOCAL.jrnl.key1.len1=0
+openUrl.cfg.1.0.LOCAL.jrnl.key1.parseStart=
+openUrl.cfg.1.0.LOCAL.jrnl.key1.parseEnd=
+openUrl.cfg.1.0.LOCAL.jrnl.key1.len2=0
+openUrl.cfg.1.0.LOCAL.jrnl.key1.urlEncode=Y
+
+openUrl.cfg.1.0.LOCAL.jrnl.key2.key=coden
+openUrl.cfg.1.0.LOCAL.jrnl.key2.tag=030
+openUrl.cfg.1.0.LOCAL.jrnl.key2.subfield=a
+openUrl.cfg.1.0.LOCAL.jrnl.key2.len1=0
+openUrl.cfg.1.0.LOCAL.jrnl.key2.parseStart=
+openUrl.cfg.1.0.LOCAL.jrnl.key2.parseEnd=
+openUrl.cfg.1.0.LOCAL.jrnl.key2.len2=0
+openUrl.cfg.1.0.LOCAL.jrnl.key2.urlEncode=Y
+
+#Author=100/a/0///0/
+openUrl.cfg.1.0.LOCAL.jrnl.key3.key=aulast
+openUrl.cfg.1.0.LOCAL.jrnl.key3.tag=100
+openUrl.cfg.1.0.LOCAL.jrnl.key3.subfield=a
+openUrl.cfg.1.0.LOCAL.jrnl.key3.len1=0
+openUrl.cfg.1.0.LOCAL.jrnl.key3.parseStart=
+openUrl.cfg.1.0.LOCAL.jrnl.key3.parseEnd=,\u0020
+openUrl.cfg.1.0.LOCAL.jrnl.key3.len2=0
+openUrl.cfg.1.0.LOCAL.jrnl.key3.urlEncode=Y
+
+openUrl.cfg.1.0.LOCAL.jrnl.key4.key=aufirst
+openUrl.cfg.1.0.LOCAL.jrnl.key4.tag=100
+openUrl.cfg.1.0.LOCAL.jrnl.key4.subfield=a
+openUrl.cfg.1.0.LOCAL.jrnl.key4.len1=0
+openUrl.cfg.1.0.LOCAL.jrnl.key4.parseStart=,\u0020
+openUrl.cfg.1.0.LOCAL.jrnl.key4.parseEnd=
+openUrl.cfg.1.0.LOCAL.jrnl.key4.len2=0
+openUrl.cfg.1.0.LOCAL.jrnl.key4.urlEncode=Y
+
+#Vol=773/g/0/v./(/0/
+openUrl.cfg.1.0.LOCAL.jrnl.key5.key=volume
+openUrl.cfg.1.0.LOCAL.jrnl.key5.tag=773
+openUrl.cfg.1.0.LOCAL.jrnl.key5.subfield=g
+openUrl.cfg.1.0.LOCAL.jrnl.key5.len1=0
+openUrl.cfg.1.0.LOCAL.jrnl.key5.parseStart=Vol.
+openUrl.cfg.1.0.LOCAL.jrnl.key5.parseEnd=(
+openUrl.cfg.1.0.LOCAL.jrnl.key5.len2=0
+
+#Issue=773/g/0/(/)/0/
+openUrl.cfg.1.0.LOCAL.jrnl.key6.key=issue
+openUrl.cfg.1.0.LOCAL.jrnl.key6.tag=773
+openUrl.cfg.1.0.LOCAL.jrnl.key6.subfield=g
+openUrl.cfg.1.0.LOCAL.jrnl.key6.len1=0
+openUrl.cfg.1.0.LOCAL.jrnl.key6.parseStart=(
+openUrl.cfg.1.0.LOCAL.jrnl.key6.parseEnd=)
+openUrl.cfg.1.0.LOCAL.jrnl.key6.len2=0
+
+#Pg=773/g/0/p.//0/
+openUrl.cfg.1.0.LOCAL.jrnl.key7.key=pages
+openUrl.cfg.1.0.LOCAL.jrnl.key7.tag=773
+openUrl.cfg.1.0.LOCAL.jrnl.key7.subfield=g
+openUrl.cfg.1.0.LOCAL.jrnl.key7.len1=0
+openUrl.cfg.1.0.LOCAL.jrnl.key7.parseStart=p.
+openUrl.cfg.1.0.LOCAL.jrnl.key7.parseEnd=
+openUrl.cfg.1.0.LOCAL.jrnl.key7.len2=0
+
+#ISSN
+openUrl.cfg.1.0.LOCAL.jrnl.key8.key=issn
+openUrl.cfg.1.0.LOCAL.jrnl.key8.tag=773
+openUrl.cfg.1.0.LOCAL.jrnl.key8.subfield=x
+openUrl.cfg.1.0.LOCAL.jrnl.key8.len1=0
+openUrl.cfg.1.0.LOCAL.jrnl.key8.parseStart=
+openUrl.cfg.1.0.LOCAL.jrnl.key8.parseEnd=
+openUrl.cfg.1.0.LOCAL.jrnl.key8.len2=0
+openUrl.cfg.1.0.LOCAL.jrnl.key8.urlEncode=Y
 

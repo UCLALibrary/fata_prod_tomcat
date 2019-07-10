@@ -1,7 +1,7 @@
-#   $Revision: 1.4.2.1 $ $Date: 2012/06/12 14:39:58 $   
+#   $Revision: 1.12 $ $Date: 2013/07/16 20:24:03 $
 #(c)#=====================================================================
 #(c)#
-#(c)#       Copyright 2007-2012 Ex Libris Group
+#(c)#       Copyright 2007-2013 Ex Libris Group
 #(c)#                       All Rights Reserved
 #(c)#
 #(c)#=====================================================================
@@ -81,13 +81,17 @@ email.format.briefAuth=briefAuthRecord.xsl
 # The comment list the Classic WebVoyage definition of the parser string
 # in comparison to the new format string, which enhances the readability of
 # each part of the parser string by spelling out its meaning.
+#
+# For OpenURL 1.0 (Z39.88-2004) support, uncomment the "version" property
+# below, and use the actionBox.openUrl.cfg.1.0* format properties.
 #=========================================================================
 actionBox.openUrl.image.linkText=SFX
 actionBox.openUrl.image.link=ui/en_US/images/sfx.gif
-actionBox.openUrl.urlRoot=http://host:port/SFXinstance
+actionBox.openUrl.urlRoot=http://host:9999/SFXinstance
 
 #LOCAL
-actionBox.openUrl.cfg.LOCAL.openUrlDisplay=Y
+actionBox.openUrl.cfg.LOCAL.openUrlDisplay=N
+actionBox.openUrl.cfg.LOCAL.version=1.0
 #Journal=245/a/0///0/
 actionBox.openUrl.cfg.LOCAL.key1.key=Journal
 actionBox.openUrl.cfg.LOCAL.key1.tag=245
@@ -138,6 +142,171 @@ actionBox.openUrl.cfg.LOCAL.key6.parseEnd=
 actionBox.openUrl.cfg.LOCAL.key6.len2=0
 #ISSN=0
 actionBox.openUrl.cfg.LOCAL.ISSN=0
+
+# Use these for OpenURL 1.0
+actionBox.openUrl.cfg.1.0.LOCAL.openUrlDisplay=N
+actionBox.openUrl.cfg.1.0.LOCAL.urlRoot=http://www.sfx.com/
+actionBox.openUrl.cfg.1.0.LOCAL.urlver=Z39.88-2004
+actionBox.openUrl.cfg.1.0.LOCAL.prefix=rft.
+
+# OpenURL 1.0 book
+actionBox.openUrl.cfg.1.0.LOCAL.book.fmt=rft_val_fmt=info:ofi/fmt:kev:mtx:book
+actionBox.openUrl.cfg.1.0.LOCAL.book.key1.key=btitle
+actionBox.openUrl.cfg.1.0.LOCAL.book.key1.tag=245
+actionBox.openUrl.cfg.1.0.LOCAL.book.key1.subfield=a
+actionBox.openUrl.cfg.1.0.LOCAL.book.key1.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key1.parseStart=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key1.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key1.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key1.urlEncode=Y
+actionBox.openUrl.cfg.1.0.LOCAL.book.key2.key=aulast
+actionBox.openUrl.cfg.1.0.LOCAL.book.key2.tag=100
+actionBox.openUrl.cfg.1.0.LOCAL.book.key2.subfield=a
+actionBox.openUrl.cfg.1.0.LOCAL.book.key2.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key2.parseStart=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key2.parseEnd=,\u0020
+actionBox.openUrl.cfg.1.0.LOCAL.book.key2.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key2.urlEncode=Y
+actionBox.openUrl.cfg.1.0.LOCAL.book.key3.key=aufirst
+actionBox.openUrl.cfg.1.0.LOCAL.book.key3.tag=100
+actionBox.openUrl.cfg.1.0.LOCAL.book.key3.subfield=a
+actionBox.openUrl.cfg.1.0.LOCAL.book.key3.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key3.parseStart=,\u0020
+actionBox.openUrl.cfg.1.0.LOCAL.book.key3.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key3.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key3.urlEncode=Y
+actionBox.openUrl.cfg.1.0.LOCAL.book.key4.key=date
+actionBox.openUrl.cfg.1.0.LOCAL.book.key4.tag=260
+actionBox.openUrl.cfg.1.0.LOCAL.book.key4.subfield=c
+actionBox.openUrl.cfg.1.0.LOCAL.book.key4.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key4.parseStart=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key4.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key4.len2=4
+actionBox.openUrl.cfg.1.0.LOCAL.book.key4.urlEncode=Y
+actionBox.openUrl.cfg.1.0.LOCAL.book.key5.key=pub
+actionBox.openUrl.cfg.1.0.LOCAL.book.key5.tag=260
+actionBox.openUrl.cfg.1.0.LOCAL.book.key5.subfield=b
+actionBox.openUrl.cfg.1.0.LOCAL.book.key5.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key5.parseStart=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key5.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key5.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key5.urlEncode=Y
+actionBox.openUrl.cfg.1.0.LOCAL.book.key6.key=pages
+actionBox.openUrl.cfg.1.0.LOCAL.book.key6.tag=300
+actionBox.openUrl.cfg.1.0.LOCAL.book.key6.subfield=a
+actionBox.openUrl.cfg.1.0.LOCAL.book.key6.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key6.parseStart=p.
+actionBox.openUrl.cfg.1.0.LOCAL.book.key6.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key6.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key7.key=issn
+actionBox.openUrl.cfg.1.0.LOCAL.book.key7.tag=490
+actionBox.openUrl.cfg.1.0.LOCAL.book.key7.subfield=x
+actionBox.openUrl.cfg.1.0.LOCAL.book.key7.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key7.parseStart=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key7.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key7.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key7.urlEncode=Y
+actionBox.openUrl.cfg.1.0.LOCAL.book.key8.key=isbn
+actionBox.openUrl.cfg.1.0.LOCAL.book.key8.tag=020
+actionBox.openUrl.cfg.1.0.LOCAL.book.key8.subfield=a
+actionBox.openUrl.cfg.1.0.LOCAL.book.key8.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key8.parseStart=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key8.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.book.key8.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.book.key8.urlEncode=Y
+//genre definition
+actionBox.openUrl.cfg.1.0.LOCAL.book.numGenres=4
+actionBox.openUrl.cfg.1.0.LOCAL.book.genre1=am:book
+actionBox.openUrl.cfg.1.0.LOCAL.book.genre2=g*:bookitem
+actionBox.openUrl.cfg.1.0.LOCAL.book.genre3=*d:bookitem
+actionBox.openUrl.cfg.1.0.LOCAL.book.genre4=**:book
+
+
+# OpenURL 1.0  journal
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.fmt=rft_val_fmt=info:ofi/fmt:kev:mtx:journal
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key1.key=jtitle
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key1.tag=245
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key1.subfield=a
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key1.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key1.parseStart=
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key1.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key1.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key1.urlEncode=Y
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key2.key=coden
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key2.tag=030
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key2.subfield=a
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key2.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key2.parseStart=
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key2.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key2.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key2.urlEncode=Y
+
+#Author=100/a/0///0/
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key3.key=aulast
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key3.tag=100
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key3.subfield=a
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key3.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key3.parseStart=
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key3.parseEnd=,\u0020
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key3.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key3.urlEncode=Y
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key4.key=aufirst
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key4.tag=100
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key4.subfield=a
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key4.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key4.parseStart=,\u0020
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key4.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key4.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key4.urlEncode=Y
+
+
+#Vol=773/g/0/v./(/0/
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key5.key=volume
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key5.tag=773
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key5.subfield=g
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key5.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key5.parseStart=Vol.
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key5.parseEnd=(
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key5.len2=0
+
+#Issue=773/g/0/(/)/0/
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key6.key=issue
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key6.tag=773
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key6.subfield=g
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key6.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key6.parseStart=(
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key6.parseEnd=)
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key6.len2=0
+
+#Pg=773/g/0/p.//0/
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key7.key=pages
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key7.tag=773
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key7.subfield=g
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key7.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key7.parseStart=p.
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key7.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key7.len2=0
+#ISSN
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key8.key=issn
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key8.tag=022
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key8.subfield=a
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key8.len1=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key8.parseStart=
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key8.parseEnd=
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key8.len2=0
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.key8.urlEncode=Y
+
+#genre definition
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.numGenres=4
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.genre1=*s:journal
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.genre2=*b:article
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.genre3=*i:article
+actionBox.openUrl.cfg.1.0.LOCAL.jrnl.genre4=**:journal
+
+
+
+
+
 
 #SD
 actionBox.openUrl.cfg.SD.openUrlDisplay=N
@@ -342,7 +511,7 @@ actionBox.openUrl.cfg.ALTA.ISSN=0
 # Request URI Definition
 #=========================================================================
 
-actionBox.requestURI.cfg.LOCAL.requestUriDisplay=Y
+actionBox.requestURI.cfg.LOCAL.requestUriDisplay=N
 # add prefix to each key as needed
 actionBox.requestURI.cfg.LOCAL.prefix=rft.
 actionBox.requestURI.cfg.LOCAL.key1.key=title
@@ -411,6 +580,7 @@ actionBox.requestURI.cfg.LOCAL.genre5=**:Book
 actionBox.requestURI.image.linkText=goto Relais
 actionBox.requestURI.image.link=ui/en_US/images/OpenURLRequestButton.jpg
 actionBox.requestURI.urlRoot=http://www.relais-intl.com/PUT YOUR ACCOUNT HERE/login.jsp?UT=P&
+
 
 
 
