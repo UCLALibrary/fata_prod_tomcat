@@ -103,6 +103,7 @@
             <displayTag field="852" indicator1="X"  indicator2="X" subfield="z" />
             <displayTag field="852" indicator1="X"  indicator2="X" subfield="q" />
             <displayTag field="843" indicator1="X"  indicator2="X" subfield="abcdefmn" />
+            <displayTag field="845" indicator1="X"  indicator2="X" subfield="a" />
         </holdingsTags>
 
         <holdingsTags label="Linked Resources:">
