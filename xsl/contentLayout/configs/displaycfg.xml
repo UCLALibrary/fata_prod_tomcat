@@ -49,7 +49,7 @@
 <displayTag field="240" indicator1="X" indicator2="X" subfield="aplskgdnfmroh" preText="[" postText="]" redirect="title" redirectOn="amnplskdro"/>
 </displayTags>
 
-    <displayTags label="">
+    <displayTags label="Title">
 <!--
         <displayTag field="130" indicator1="X" indicator2="X" subfield="aplskfmnor" redirect="title" redirectOn="apl"/>
         -->
@@ -59,11 +59,9 @@
 -->
         <displayTag field="245" indicator1="X" indicator2="X" subfield="abcfknps"/>
     </displayTags>
-<!--
     <displayTags label="Variant Title:">
-        <displayTag field="245" indicator1="X" indicator2="X" subfield="abfnp" redirect="title" redirectOn="ab"/>
+        <displayTag field="246" indicator1="X" indicator2="X" subfield="abfghinp" />
     </displayTags>
--->
     <!--<displayTags label="Author:">
         <displayTag field="100" indicator1="X" indicator2="X" subfield="aqd" redirect="author" redirectOn="aq"/>-->
 <!--
@@ -143,10 +141,10 @@
 <displayTag field="511" indicator1="X" indicator2="X" subfield="a"/>    
 </displayTags>
 
-<displayTags label="Credits:">
+<!--displayTags label="Notes:">
 <displayTag field="508" indicator1="X" indicator2="X" subfield="a"/>    
 <displayTag field="500" indicator1="X" indicator2="X" subfield="a"/>
-</displayTags>
+</displayTags-->
 
 <displayTags label="Genre(s)/form(s):">
 <displayTag field="655" indicator1="X" indicator2="X" subfield="3avxyz" redirect="subject" redirectOn="3abcvxyz">
@@ -373,10 +371,12 @@
 </displayTags>
 
 <displayTags label="Notes:">
+<displayTag field="500" indicator1="X" indicator2="X" subfield="a"/>
 <displayTag field="501" indicator1="X" indicator2="X" subfield="a"/>
 <displayTag field="502" indicator1="X" indicator2="X" subfield="a"/>
 <displayTag field="504" indicator1="X" indicator2="X" subfield="ab"/>
 <displayTag field="506" indicator1="X" indicator2="X" subfield="abcde"/>
+<displayTag field="508" indicator1="X" indicator2="X" subfield="a"/>    
 <displayTag field="518" indicator1="X" indicator2="X" subfield="adop"/>
 <displayTag field="525" indicator1="X" indicator2="X" subfield="a"/>
 <displayTag field="530" indicator1="X" indicator2="X" subfield="a"/>
@@ -397,11 +397,14 @@
 <displayTag field="520" indicator1="X" indicator2="X" subfield="abcu"/>
 </displayTags-->
 
-    <displayTags label="Credits heading(s):">
-        <displayTag field="246" indicator1="X" indicator2="X" subfield="abfghinp" />
+    <displayTags label="Additional Title:">
+        <displayTag field="730" indicator1="X" indicator2="X" subfield="aplskfmnor" redirect="title" redirectOn="apl"/>
+    </displayTags>
+
+    <displayTags label="Contributors:">
+        <!--displayTag field="246" indicator1="X" indicator2="X" subfield="abfghinp" /-->
         <displayTag field="700" indicator1="X" indicator2="X" subfield="abcdefghijklmnopqrstux" redirect="author" redirectOn="aq"/>
         <displayTag field="710" indicator1="X" indicator2="X" subfield="ab" redirect="author" redirectOn="ab"/>
-        <displayTag field="730" indicator1="X" indicator2="X" subfield="aplskfmnor" redirect="title" redirectOn="apl"/>
     </displayTags>
 
 <!--displayTags label="BBID (expression):">
